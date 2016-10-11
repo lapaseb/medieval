@@ -1,0 +1,60 @@
+//Police d'écriture
+//Régulier
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../data/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../data/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
+  font-family: 'RobotoRegular' !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Gras
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../data/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../data/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-bold {
+  font-family: 'RobotoBold' !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Italique
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url('../data/fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../data/fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-italic {
+  font-family: 'RobotoItalic' !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Gras et Italique
+@font-face {
+  font-family: 'RobotoBoldItalic';
+  src: url('../data/fonts/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../data/fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-bold-italic {
+  font-family: 'RobotoBoldItalic' !important;
+  font-weight: normal;
+  font-style: normal;
+}

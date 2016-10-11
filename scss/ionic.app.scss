@@ -15,9 +15,21 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+@import "../www/lib/ionic/scss/ionic";
+
+//Importations prioritaires
+@import "../scss/fonts.scss";
+//@import "../scss/menu.scss";
+
+//Autres importantions
+@import "../scss/accueil.scss";
+@import "../scss/carte.scss";
+@import "../scss/etablissements.scss";
+@import "../scss/programme.scss";
+@import "../scss/programmes.scss";
 

@@ -1,4 +1,14 @@
 {
   "name": "medieval",
-  "app_id": ""
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "scss/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }
