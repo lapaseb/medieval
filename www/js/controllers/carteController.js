@@ -16,7 +16,7 @@ angular.module('starter.controllers')
         maxBounds: bounds
     });
 
-	  L.tileLayer('../../data/img/MapQuest/{z}/{x}/{y}.png', {
+	  L.tileLayer('data/img/MapQuest/{z}/{x}/{y}.png', {
 		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	  }).addTo(map);
 
