@@ -26,11 +26,6 @@ $dark:                            #444 !default;
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
-#mapid {
-  width: 100%;
-  height: 94vh;
-}
-
 @font-face {
   font-family: "Ionicons";
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
@@ -9866,6 +9861,10 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
+#mapid {
+  width: 100%;
+  height: 94vh; }
+
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
