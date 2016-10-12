@@ -1,1 +1,25 @@
 /* Empty. Add your own CSS if you like */
+#sidebar_menu{
+	ion-side-menu{
+		ion-content{
+			overflow:hidden;
+
+			ion-item{
+				i{
+					color:#5d5d5d;
+				}
+			}
+		}
+
+		ion-header-bar{
+			i{
+				cursor:pointer;
+			}
+		}
+		
+		.item{
+		    border: 0;
+		    padding: 5px 0;
+		}
+	}
+}

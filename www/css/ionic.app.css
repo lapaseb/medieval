@@ -9860,9 +9860,24 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   font-style: normal; }
 
 /* Empty. Add your own CSS if you like */
+#sidebar_menu ion-side-menu ion-content {
+  overflow: hidden; }
+  #sidebar_menu ion-side-menu ion-content ion-item i {
+    color: #5d5d5d; }
+
+#sidebar_menu ion-side-menu ion-header-bar i {
+  cursor: pointer; }
+
+#sidebar_menu ion-side-menu .item {
+  border: 0;
+  padding: 5px 0; }
+
 /* Empty. Add your own CSS if you like */
+#page_accueil ion-content {
+  overflow: auto; }
+
 /* Empty. Add your own CSS if you like */
-#mapid {
+#page_carte #mapid {
   width: 100%;
   height: 94vh; }
 
