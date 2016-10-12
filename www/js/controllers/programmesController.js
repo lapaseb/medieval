@@ -1,17 +1,22 @@
 
 
 angular.module('starter.controllers')
-.controller('ProgrammesCtrl', ['$scope', '$http','$rootScope',
-    function($scope, $http, $rootScope) {
+.controller('ProgrammesCtrl', ['$scope', '$http','$rootScope', 'programmesService',
+    function($scope, $http, $rootScope, programmesService) {
        
-    	$scope.programmes = [
-		    { title: '1', id: 1 },
-		    { title: '2', id: 2 },
-		    { title: '3', id: 3 },
-		    { title: '4', id: 4 },
-		    { title: '5', id: 5 },
-		    { title: '6', id: 6 }
-		  ];
-       
+		programmesService.get(function (data) {
+			$scope.programmesRow = data;
+			$scope.programmes = [];
+			for (var i = 0; i < $scope.programmesRow.events.length; i++) {
+				$scope.programmes[i] = {
+					id: i, 
+					name: $scope.programmesRow.events[i].name,
+					start: $scope.programmesRow.events[i].start,
+					end: $scope.programmesRow.events[i].end
+				};
+
+			}
+		});
+
     }
 ]);

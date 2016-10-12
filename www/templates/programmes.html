@@ -2,8 +2,12 @@
   <ion-content>
     <ion-list>
    
-      <ion-item ng-repeat="programme in programmes" href="#/app/programme/{{playlist.id}}">
-        {{programme.title}}
+      <ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes" href="#/app/programme/{{programme.id}}">
+      	 <img src="data/img/image-test.jpg" />
+        <h2>{{programme.name}}</h2>
+        <p>Description de l'événement</p>
+        <p>{{programme.start}}</p>
+        <p>Statut: <span style="color:green;">En cours</span></p>
       </ion-item>
 
     </ion-list>
