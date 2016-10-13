@@ -2,10 +2,12 @@
   <ion-content>
     <ion-list>
    
-      <ion-item class="item" ng-repeat="etablissement in etablissements" href="#/app/programme/{{etablissement.id}}">
+      <ion-item class="item item-thumbnail-left" ng-repeat="etablissement in etablissements" href="#/app/programme/{{etablissement.id}}">
+      	 <img src="data/img/image-test.jpg" />
         <h2>{{etablissement.name}}</h2>
-        <p>{{etablissement.description}}</p>
-        <p>800m</p>
+        <p>Description de l'événement</p>
+        <p>{{etablissement.start}}</p>
+        <p>Statut: <span style="color:green;">En cours</span></p>
       </ion-item>
 
     </ion-list>

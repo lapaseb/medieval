@@ -10,7 +10,8 @@ angular.module('starter.controllers')
 				$scope.etablissements[i] = {
 					id: i, 
 					name: $scope.etablissementsRow.events[i].name,
-					description: $scope.etablissementsRow.events[i].description
+					start: $scope.etablissementsRow.events[i].start,
+					end: $scope.etablissementsRow.events[i].end
 				};
 
 			}
