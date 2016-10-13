@@ -1,84 +1,36 @@
 {
     "events": [
         {
-            "name" : "Ouverture des caisses",
-            "start" : "10.11.16/18.00",
-            "end" : "11.11.16/05.00"
+            "name" : "Hotel de la Couronne",
+            "description" : "L'Hôtel de la Couronne est situé dans le centre du village médiéval de Saint-Ursanne, à seulement 800 mètres de la gare."
         },
         {
-            "name" : "Vernissage des expositions au Cloître",
-            "start" : "10.11.16/18.00",
-            "end" : "11.11.16/05.00"
+            "name" : "Hotel la Cigogne",
+            "description" : "Raffiné, jovial et chaleureux. Situé près du Doubs et à côté de la Collégiale."
         },
        {
-            "name" : "Animations dans toutes les rues de la ville, Chants et danses, ripaille en musique dans les tavernes et les restaurants",
-            "start" : "10.11.16/19.30",
-            "end" : "11.11.16/05.00"
+            "name" : "Restaurant du Jura",
+            "description" : ""
         },
         {
-            "name" : "La Nuit de l'illumination avec l'artiste zurichois Gerry Hofstetter. Tout le centre de la cité médiévale sera illuminé",
-            "start" : "10.11.16/22.00",
-            "end" : "11.11.16/01.00"
+            "name" : "Restaurant des Deux-Clefs",
+            "description" : ""
         },
         {
-            "name" : "Contes médiévaux",
-            "start" : "10.11.16/22.00",
-            "end" : "10.11.16/23.00"
+            "name" : "Hotel du Boeuf",
+            "description" : "Situé dans un cadre idyllique, dans le centre médiéval de St-Ursanne, l'Hotel Du Boeuf propose des chambres confortables avec salle de bains privative et connexion Wi-Fi gratuite."
         },
         {
-            "name" : "Contes médiévaux",
-            "start" : "10.11.16/23.00",
-            "end" : "10.11.16/24.00"
+            "name" : "Hotel Demie-Lune",
+            "description" : "Situé à Saint-Ursanne dans le canton du Jura, l'Hotel Demi-Lune propose une terrasse bien exposée, des installations de sports nautiques et un restaurant sur place."
         },
         {
-            "name" : "Contes médiévaux",
-            "start" : "10.11.16/24.00",
-            "end" : "11.11.16/01.00"
+            "name" : "Le Chandelier",
+            "description" : "L'auberge de jeunesse Le Chandelier est située au bord de la rivière Doubs, à 800 mètres du centre de Saint-Ursanne. Elle dispose d'une grande terrasse avec barbecue et d'une aire de jeux pour enfants."
         },
         {
-            "name" : "Musique sur la scène de la place du Mai avec Delienn (delienn.ch)",
-            "start" : "10.11.16/22.15",
-            "end" : "11.11.16/00.15"
-        },
-        {
-            "name" : "Musique sur la scène de la place du Mai avec Slane (snale.ch)",
-            "start" : "11.11.16/00.15",
-            "end" : "11.11.16/02.15"
-        },
-        {
-            "name" : "Ouverture des caisses",
-            "start" : "11.11.16/09.00",
-            "end" : "12.11.16/05:00"
-        },
-        {
-            "name" : "Cérémonie d'ouverture officielle de la manifestation sur la place du Mai",
-            "start" : "11.11.16/10.00",
-            "end" : "11.11.16/12:00"
-        },
-        {
-            "name" : "Grand cortège aux flambeaux",
-            "start" : "11.11.16/21.30",
-            "end" : "11.11.16/23:00"
-        },
-        {
-            "name" : "Ouverture des caisses",
-            "start" : "12.11.16/09.00",
-            "end" : "12.11.16/22:00"
-        },
-        {
-            "name" : "Messe avec chants grégoriens à la Collégiale",
-            "start" : "12.11.16/10.00",
-            "end" : "12.11.16/11:00"
-        },
-        {
-            "name" : "Résultat du concours du plus beau costume",
-            "start" : "12.11.16/16.00",
-            "end" : "12.11.16/17:00"
-        },
-        {
-            "name" : "Grand cortège final",
-            "start" : "12.11.16/17.00",
-            "end" : "12.11.16/19:30"
+            "name" : "Taverne",
+            "description" : "Taverne médiévale spécialement aménagée pour les Médiévales"
         }
     ]
 }
