@@ -71,14 +71,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('app.etablissements', {
-      url: '/etablissements',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/etablissements.html',
-          controller: 'EtablissementsCtrl'
-        }
+    url: '/etablissements',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/etablissements.html',
+        controller: 'EtablissementsCtrl'
       }
-    });
+    }
+  })
+
+  .state('app.etablissement', {
+    url: '/etablissement/:programmeId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/etablissement.html',
+        controller: 'EtablissementCtrl'
+      }
+    }
+  })
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/accueil');
+  ;$urlRouterProvider.otherwise('/app/accueil');
 });
