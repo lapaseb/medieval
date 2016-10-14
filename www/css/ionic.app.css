@@ -9882,6 +9882,21 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   list-style-type: disc;
   margin: 15px; }
 
+#mapid {
+  width: 100%;
+  height: 70vh;
+  position: fixed;
+  bottom: 0; }
+
+.leaflet-top + .leaflet-right .leaflet-bar, .leaflet-top + .leaflet-right .leaflet-control, .leaflet-top + .leaflet-right .leaflet-control-custom {
+  background: url("../data/img/localisationicon.png") center center;
+  background-color: white;
+  background-size: 30px 30px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-repeat: no-repeat; }
+
 /* Empty. Add your own CSS if you like */
 #page_carte #mapid {
   width: 100%;
