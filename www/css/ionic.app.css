@@ -9882,7 +9882,7 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   list-style-type: disc;
   margin: 15px; }
 
-#mapid {
+#mapArtisan {
   width: 100%;
   height: 94vh;
   position: fixed;
@@ -9919,6 +9919,41 @@ h2 {
 
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
+.rating {
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0; }
+
+ul.rating {
+  display: inline-block; }
+
+.rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2em; }
+
+.rating .filled {
+  color: yellow; }
+
+.rating-system {
+  padding: 10px; }
+
+.star {
+  size: 40px; }
+
+h5 {
+  font-weight: bold; }
+
+#pageContent {
+  padding: 15px; }
+
+.showMap {
+  width: 100%; }
+
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */

@@ -1,9 +1,29 @@
 <ion-view view-title="Etablissement" id="page_etablissement">
   <ion-content>
+  <img src="data/img/taverne.jpg" />
+    <div id="pageContent">
     <h2>{{etablissement.name}}</h2>
-	<div class="item item-thumbnail-left">
-		<img id="vote" src="data/img/thumb-up.png" alt="Image vote" ng-click="toggleVote();" />
-		<p>{{etablissement.description}}</p>
-	</div>
+  	<p>{{etablissement.description}}</p>
+    <h5>Au menu : </h5>
+    <p>{{etablissement.menu}}</p>
+    <button class="button button-positive showMap">
+      Afficher sur la carte
+    </button>
+    <h5>Votez pour le concours de la meilleure taverne !</h5>
+    <div class="rating-system">
+      <h5>Notez votre repas</h5>
+      <div ng-init="rating = star.rating + 1"></div>
+      <div class="star-rating" star-rating rating-value="rating"
+      data-max="5" on-rating-selected="rateFunction(rating)"></div>
+      <h5>Notez l'ambiance</h5>
+      <div ng-init="rating = star.rating + 1"></div>
+      <div class="star-rating" star-rating rating-value="rating"
+      data-max="5" on-rating-selected="rateFunction(rating)"></div>
+      <h5>Notez la décoration</h5>
+      <div ng-init="rating = star.rating + 1"></div>
+      <div class="star-rating" star-rating rating-value="rating"
+      data-max="5" on-rating-selected="rateFunction(rating)"></div>
+    </div>
+  </div>
   </ion-content>
 </ion-view>
