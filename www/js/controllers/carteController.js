@@ -28,7 +28,6 @@ angular.module('starter.controllers')
           L.marker([position.coords.latitude, position.coords.longitude]).addTo(map).bindPopup('Vous êtes ici');
         }
 
-
     };
 
     // onError Callback receives a PositionError object
@@ -48,12 +47,6 @@ angular.module('starter.controllers')
 
       onAdd: function (map) {
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
-
-        container.style.backgroundColor = 'white';
-        container.style.backgroundImage = "url('data/img/localisationicon.png')";
-        container.style.backgroundSize = "30px 30px";
-        container.style.width = '30px';
-        container.style.height = '30px';
 
         container.onclick = function(){
           navigator.geolocation.getCurrentPosition(onSuccess, onError);

@@ -1,5 +1,3 @@
-
-
 angular.module('starter.controllers')
 .controller('ProgrammesCtrl', ['$scope', '$http','$rootScope', 'programmesService',
     function($scope, $http, $rootScope, programmesService) {

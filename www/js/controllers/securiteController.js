@@ -1,6 +1,8 @@
 angular.module('starter.controllers')
-.controller('EtablissementCtrl', ['$scope', '$http','$rootScope',
+.controller('SecuriteCtrl', ['$scope', '$http','$rootScope',
     function($scope, $http, $rootScope) {
+       
+    	
        
     }
 ]);
