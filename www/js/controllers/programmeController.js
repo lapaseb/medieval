@@ -1,8 +1,12 @@
 angular.module('starter.controllers')
-.controller('ProgrammeCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'programmesService',
-    function($scope, $http, $rootScope, $stateParams, programmesService) {
+.controller('ProgrammeCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'programmesService', '$location',
+    function($scope, $http, $rootScope, $stateParams, programmesService, $location) {
 
-    	var progid = $stateParams.programmeId;
+    $scope.go = function () {
+      $location.path('#/app/programme-map/' + $stateParams.programmeId);
+    };
+
+    var progid = $stateParams.programmeId;
 
 		programmesService.get(function (data) {
 			$scope.programmesRow = data;

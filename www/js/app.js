@@ -95,6 +95,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('app.programme-map', {
+    url: '/programme-map/:programmeId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/programme-map.html',
+        controller: 'ProgrammeMapCtrl'
+      }
+    }
+  })
+
   .state('app.etablissements', {
     url: '/etablissements',
     views: {

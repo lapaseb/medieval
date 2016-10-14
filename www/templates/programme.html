@@ -9,9 +9,11 @@
       <h5>Heure de fin</h5>
       <p>{{programme.end}}</p>
     	<p>Statut: <span style="color:green;">À venir</span></p>
-      <button class="button button-positive showMap">
-        Afficher sur la carte
-      </button>
+      <a href="#/app/programme-map/{{programme.id}}">
+        <button class="button button-positive showMap" >
+          Afficher sur la carte
+        </button>
+      </a>
     </div>
   </ion-content>
 </ion-view>

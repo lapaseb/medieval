@@ -1,14 +1,13 @@
 angular.module('starter.controllers')
-.controller('ArtisanCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'artisansService', '$ionicPopup',
-    function($scope, $http, $rootScope, $stateParams, artisansService, $ionicPopup) {
-
+.controller('ProgrammeMapCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'programmesService', '$ionicPopup',
+    function($scope, $http, $rootScope, $stateParams, programmesService, $ionicPopup) {
 
 
     var southWest = L.latLng(47.369743926768784, 7.174824539917747),
     northEast = L.latLng(47.360589810163582, 7.1379860116837257),
     bounds = L.latLngBounds(southWest, northEast);
 
-    var map = L.map('mapArtisan', {
+    var map = L.map('mapProgramme', {
         center: [47.364965, 7.154498],
         zoom: 18,
         minZoom: 15,
@@ -23,31 +22,31 @@ angular.module('starter.controllers')
 	  }).addTo(map);
 
 
-		var etaid = $stateParams.artisanId;
 
-		artisansService.get(function (data) {
-			$scope.artisansRow = data;
-			$scope.artisan = [];
-			for (var i = 0; i < $scope.artisansRow.artisans.length; i++) {
-				if(i == etaid) {
-					$scope.artisan = {
+    var progid = $stateParams.programmeId;
+
+		programmesService.get(function (data) {
+			$scope.programmesRow = data;
+			$scope.programme = [];
+			for (var i = 0; i < $scope.programmesRow.length; i++) {
+				if(i == progid) {
+					$scope.programme = {
 						id: i,
-						name: $scope.artisansRow.artisans[i].name,
-						description: $scope.artisansRow.artisans[i].description,
-            latitude: $scope.artisansRow.artisans[i].latitude,
-            longitude: $scope.artisansRow.artisans[i].longitude
+						name: $scope.programmesRow[i].name,
+            description: $scope.programmesRow[i].description,
+						start: $scope.programmesRow[i].start,
+						end: $scope.programmesRow[i].end,
+            latitude: $scope.programmesRow[i].latitude,
+            longitude: $scope.programmesRow[i].longitude
 					};
-
 				}
 			}
 
-      $scope.latLngArtisan = L.latLng($scope.artisan.latitude, $scope.artisan.longitude);
-
-      L.marker($scope.latLngArtisan).addTo(map).bindPopup('<h2>'+$scope.artisan.name+'</h2>' +  '<p class="artisanDescription">' + $scope.artisan.description + '</p>').openPopup();
-      map.panTo($scope.latLngArtisan);
+      $scope.latLngProgramme = L.latLng($scope.programme.latitude, $scope.programme.longitude);
+      L.marker($scope.latLngProgramme).addTo(map);
+      map.panTo($scope.latLngProgramme);
 
 		});
-
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
@@ -88,10 +87,7 @@ angular.module('starter.controllers')
 
     });
 
-
     map.addControl(new ourCustomControl());
-
-
 
     }
 ]);
