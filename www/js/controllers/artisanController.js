@@ -8,7 +8,7 @@ angular.module('starter.controllers')
     northEast = L.latLng(47.360589810163582, 7.1379860116837257),
     bounds = L.latLngBounds(southWest, northEast);
 
-    var map = L.map('mapid', {
+    var map = L.map('mapArtisan', {
         center: [47.364965, 7.154498],
         zoom: 18,
         minZoom: 15,
