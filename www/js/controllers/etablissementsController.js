@@ -1,7 +1,6 @@
 angular.module('starter.controllers')
 .controller('EtablissementsCtrl', ['$scope', '$http','$rootScope', 'etablissementsService',
     function($scope, $http, $rootScope, etablissementsService) {
-       
 		etablissementsService.get(function (data) {
 			$scope.etablissementsRow = data;
 			$scope.etablissements = [];
@@ -11,9 +10,7 @@ angular.module('starter.controllers')
 					name: $scope.etablissementsRow.events[i].name,
 					description: $scope.etablissementsRow.events[i].description
 				};
-
 			}
 		});
-
     }
 ]);
