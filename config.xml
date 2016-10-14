@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.medieval673946" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>medieval</name>
-  <description>&#xD;
-        An Ionic Framework and Cordova project.&#xD;
+  <name>Les Médiévales</name>
+  <description>&#xD;&#xD;
+        Application officielle des médiévales de Saint-Ursannes&#xD;&#xD;
     </description>
-  <author email="you@example.com" href="http://example.com.com/">&#xD;
-      Your Name Here&#xD;
+  <author email="webmaster@visitapp.ch" href="http://www.visitapp.ch/">&#xD;&#xD;
+      Visitapp.ch&#xD;&#xD;
     </author>
   <content src="index.html"/>
   <access origin="*"/>
@@ -20,10 +20,10 @@
   <feature name="Geolocation">
     <param name="ios-package" value="CDVLocation"/>
   </feature>
-  <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
+  <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
   <plugin name="cordova-plugin-device" spec="~1.1.3"/>
   <plugin name="cordova-plugin-console" spec="~1.0.4"/>
   <plugin name="cordova-plugin-whitelist" spec="~1.3.0"/>

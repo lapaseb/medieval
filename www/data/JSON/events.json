@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "events": [
         {
@@ -138,3 +139,93 @@
         }
     ]
 }
+=======
+[
+    {
+        "name" : "NOM DE L'EVENEMENT : ∞",
+        "description" : "DESCRIPTION : ∞",
+        "start" : "DEBUT : date et heure",
+        "end" : "FIN : date et heure"
+    },
+    {
+        "name" : "Ouverture des caisses",
+        "start" : "10.11.16/18.00",
+        "end" : "11.11.16/05.00"
+    },
+    {
+        "name" : "Vernissage des expositions au Cloître",
+        "start" : "10.11.16/18.00",
+        "end" : "11.11.16/05.00"
+    },
+   {
+        "name" : "Animations dans toutes les rues de la ville, Chants et danses, ripaille en musique dans les tavernes et les restaurants",
+        "start" : "10.11.16/19.30",
+        "end" : "11.11.16/05.00"
+    },
+    {
+        "name" : "La Nuit de l'illumination avec l'artiste zurichois Gerry Hofstetter. Tout le centre de la cité médiévale sera illuminé",
+        "start" : "10.11.16/22.00",
+        "end" : "11.11.16/01.00"
+    },
+    {
+        "name" : "Contes médiévaux",
+        "start" : "10.11.16/22.00",
+        "end" : "10.11.16/23.00"
+    },
+    {
+        "name" : "Contes médiévaux",
+        "start" : "10.11.16/23.00",
+        "end" : "10.11.16/24.00"
+    },
+    {
+        "name" : "Contes médiévaux",
+        "start" : "10.11.16/24.00",
+        "end" : "11.11.16/01.00"
+    },
+    {
+        "name" : "Musique sur la scène de la place du Mai avec Delienn (delienn.ch)",
+        "start" : "10.11.16/22.15",
+        "end" : "11.11.16/00.15"
+    },
+    {
+        "name" : "Musique sur la scène de la place du Mai avec Slane (snale.ch)",
+        "start" : "11.11.16/00.15",
+        "end" : "11.11.16/02.15"
+    },
+    {
+        "name" : "Ouverture des caisses",
+        "start" : "11.11.16/09.00",
+        "end" : "12.11.16/05:00"
+    },
+    {
+        "name" : "Cérémonie d'ouverture officielle de la manifestation sur la place du Mai",
+        "start" : "11.11.16/10.00",
+        "end" : "11.11.16/12:00"
+    },
+    {
+        "name" : "Grand cortège aux flambeaux",
+        "start" : "11.11.16/21.30",
+        "end" : "11.11.16/23:00"
+    },
+    {
+        "name" : "Ouverture des caisses",
+        "start" : "12.11.16/09.00",
+        "end" : "12.11.16/22:00"
+    },
+    {
+        "name" : "Messe avec chants grégoriens à la Collégiale",
+        "start" : "12.11.16/10.00",
+        "end" : "12.11.16/11:00"
+    },
+    {
+        "name" : "Résultat du concours du plus beau costume",
+        "start" : "12.11.16/16.00",
+        "end" : "12.11.16/17:00"
+    },
+    {
+        "name" : "Grand cortège final",
+        "start" : "12.11.16/17.00",
+        "end" : "12.11.16/19:30"
+    }
+]
+>>>>>>> origin/master

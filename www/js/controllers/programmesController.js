@@ -5,13 +5,13 @@ angular.module('starter.controllers')
 		programmesService.get(function (data) {
 			$scope.programmesRow = data;
 			$scope.programmes = [];
-			for (var i = 0; i < $scope.programmesRow.events.length; i++) {
+			for (var i = 0; i < $scope.programmesRow.length; i++) {
 				$scope.programmes[i] = {
 					id: i,
-					name: $scope.programmesRow.events[i].name,
-          description: $scope.programmesRow.events[i].description,
-					start: $scope.programmesRow.events[i].start,
-					end: $scope.programmesRow.events[i].end
+					name: $scope.programmesRow[i].name,
+          			description: $scope.programmesRow[i].description,
+					start: $scope.programmesRow[i].start,
+					end: $scope.programmesRow[i].end
 				};
 
 			}
