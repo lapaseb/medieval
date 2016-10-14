@@ -1,6 +1,44 @@
 <ion-view view-title="Accueil" id="page_accueil">
-  <ion-content class="padding">
-  	<img class="full-image logo_accueil" src="data/img/logo_medievales.png" />
+  <ion-content scroll="false">
+  	<img class="full-image logo_accueil" src="data/img/accueil_background.jpg" />
   	
+  	<div class="accueil_timer">
+		<div class="accueil_timer_title">
+			Début des festivités dans :
+	  	</div>
+
+	  	<div class="accueil_timer_container row">
+			<div class="col accueil_timer_box">
+				Jours
+				<span class="font-bold">54</span>
+		  	</div>
+		  	<div class="col accueil_timer_box">
+				Heures
+				<span class="font-bold">6</span>
+		  	</div>
+		  	<div class="col accueil_timer_box">
+				Minutes
+				<span class="font-bold">34</span>
+		  	</div>
+	  	</div>
+  	</div>
+
+  	<div class="accueil_events">
+		<div class="accueil_events_title">
+			Évenements à venir
+	  	</div>
+	  	
+		<ion-list>
+			<ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes" href="#/app/programme/{{programme.id}}">
+			 <img src="data/img/image-test.jpg" />
+			<h2>{{programme.name}}</h2>
+			<p>{{programme.description}}</p>
+			<p>{{programme.start}} - {{programme.end}}</p>
+			<p>Statut: <span style="color:green;">À venir</span></p>
+			</ion-item>
+		</ion-list>
+
+  	</div>
+
   </ion-content>
 </ion-view>

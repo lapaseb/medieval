@@ -1,7 +1,58 @@
 /* Empty. Add your own CSS if you like */
 #page_accueil{
 	ion-content{
-		overflow:auto;
-		background-image: url(../data/img/background.jpg);
+		overflow:hidden;
+
+		.logo_accueil {
+		    vertical-align: middle;
+		}
+
+		.accueil_timer{
+			background-color: #fff;
+			color: #e2211c;
+			font-size: 1.5em;
+			text-align:center;
+
+			.accueil_timer_title{
+				padding:15px 0;
+				border: solid 1px #dcdcdc;
+				border-bottom:0;
+			}
+
+			.accueil_timer_container{
+				.accueil_timer_box{
+					border: solid 1px #dcdcdc;
+					border-left:0;
+				}
+				.accueil_timer_box:first-child{
+					border-left: solid 1px #dcdcdc;
+				}
+				.font-bold{
+					font-size:2.4em;
+					margin:30px 0;
+					display:block;
+				}
+			}
+
+			.row{
+				padding:0;
+			}
+		}
+
+		.accueil_events{
+			background-color: #fff;
+			color: #e2211c;
+			font-size: 1.5em;
+			text-align:center;
+
+			.accueil_events_title{
+				padding:15px 0;
+				border: solid 1px #dcdcdc;
+				border-bottom:0;
+			}
+		}
+	}
+	.has-header {
+		top: 0;
 	}
 }

@@ -9874,8 +9874,41 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 
 /* Empty. Add your own CSS if you like */
 #page_accueil ion-content {
-  overflow: auto;
-  background-image: url(../data/img/background.jpg); }
+  overflow: hidden; }
+  #page_accueil ion-content .logo_accueil {
+    vertical-align: middle; }
+  #page_accueil ion-content .accueil_timer {
+    background-color: #fff;
+    color: #e2211c;
+    font-size: 1.5em;
+    text-align: center; }
+    #page_accueil ion-content .accueil_timer .accueil_timer_title {
+      padding: 15px 0;
+      border: solid 1px #dcdcdc;
+      border-bottom: 0; }
+    #page_accueil ion-content .accueil_timer .accueil_timer_container .accueil_timer_box {
+      border: solid 1px #dcdcdc;
+      border-left: 0; }
+    #page_accueil ion-content .accueil_timer .accueil_timer_container .accueil_timer_box:first-child {
+      border-left: solid 1px #dcdcdc; }
+    #page_accueil ion-content .accueil_timer .accueil_timer_container .font-bold {
+      font-size: 2.4em;
+      margin: 30px 0;
+      display: block; }
+    #page_accueil ion-content .accueil_timer .row {
+      padding: 0; }
+  #page_accueil ion-content .accueil_events {
+    background-color: #fff;
+    color: #e2211c;
+    font-size: 1.5em;
+    text-align: center; }
+    #page_accueil ion-content .accueil_events .accueil_events_title {
+      padding: 15px 0;
+      border: solid 1px #dcdcdc;
+      border-bottom: 0; }
+
+#page_accueil .has-header {
+  top: 0; }
 
 /* Empty. Add your own CSS if you like */
 #page_artisans ul {
