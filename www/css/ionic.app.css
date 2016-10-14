@@ -9884,7 +9884,7 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 
 #mapid {
   width: 100%;
-  height: 70vh;
+  height: 94vh;
   position: fixed;
   bottom: 0; }
 
@@ -9896,6 +9896,12 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   height: 40px;
   padding: 10px;
   background-repeat: no-repeat; }
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0px !important; }
+
+h2 {
+  font-weight: bold; }
 
 /* Empty. Add your own CSS if you like */
 #page_carte #mapid {
