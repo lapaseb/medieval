@@ -1,6 +1,12 @@
 {
     "events": [
         {
+            "name" : "NOM DE L'EVENEMENT : ∞",
+            "description" : "DESCRIPTION : ∞",
+            "start" : "DEBUT : date et heure",
+            "end" : "FIN : date et heure"
+        },
+        {
             "name" : "Ouverture des caisses",
             "start" : "10.11.16/18.00",
             "end" : "11.11.16/05.00"

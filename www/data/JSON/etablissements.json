@@ -1,6 +1,10 @@
 {
     "events": [
         {
+            "name" : "NOM DE L'ETABLISSEMENT : ∞",
+            "description" : "DESCRIPTION : ∞"
+        },
+        {
             "name" : "Hotel de la Couronne",
             "description" : "L'Hôtel de la Couronne est situé dans le centre du village médiéval de Saint-Ursanne, à seulement 800 mètres de la gare."
         },
