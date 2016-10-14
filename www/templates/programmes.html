@@ -1,12 +1,13 @@
 <ion-view view-title="Programmes" id="page_programmes">
   <ion-content>
     <ion-list>
-   
+
       <ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes" href="#/app/programme/{{programme.id}}">
       	 <img src="data/img/image-test.jpg" />
         <h2>{{programme.name}}</h2>
-        <p>Description de l'événement</p>
+        <p>{{programme.description}}</p>
         <p>{{programme.start}}</p>
+        <p>{{programme.end}}</p>
         <p>Statut: <span style="color:green;">En cours</span></p>
       </ion-item>
 
