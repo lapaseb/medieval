@@ -13,7 +13,8 @@ angular.module('starter.controllers')
         zoom: 18,
         minZoom: 15,
         maxNativeZoom: 20,
-        maxBounds: bounds
+        maxBounds: bounds,
+        zoomControl:false
     });
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
@@ -33,8 +34,6 @@ angular.module('starter.controllers')
     // onError Callback receives a PositionError object
     //
     function onError(error) {
-        alert('code: '    + error.code    + '\n' +
-              'message: ' + error.message + '\n');
     }
 
 
