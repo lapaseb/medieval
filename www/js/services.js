@@ -29,5 +29,15 @@ angular.module('starter.services', [])
                     callback(data);
                 });
             }
+        }
+    }])
+
+    .factory('artisansService', ['$http',function($http){
+        return {
+            get:function(callback) {
+                $http.get('data/JSON/artisans.json').success(function(data) {
+                    callback(data);
+                });
+            }
       }
     }])
