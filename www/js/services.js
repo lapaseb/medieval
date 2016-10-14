@@ -11,13 +11,13 @@ angular.module('starter.services', [])
                         var url = $rootScope.apiUrl + '/getEvents';
                     }
                 } else {
-                    var url = 'data/JSON/getEvents.json';
+                    var url = 'data/JSON/events.json';
                 }
 
                 $http.get(url).success(function(data) {
                     callback(data);
                 });
-               
+
             }
       }
     }])
