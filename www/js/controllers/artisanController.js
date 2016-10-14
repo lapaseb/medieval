@@ -43,7 +43,7 @@ angular.module('starter.controllers')
 
       $scope.latLngArtisan = L.latLng($scope.artisan.latitude, $scope.artisan.longitude);
 
-      L.marker($scope.latLngArtisan).addTo(map).bindPopup('<h2>'+$scope.artisan.name+'</h2>' +  '<p class="artisanDescription">' + $scope.artisan.description + '</p>').openPopup();
+      L.marker($scope.latLngArtisan).addTo(map).bindPopup('<h3>'+$scope.artisan.name+'</h3>' +  '<p class="artisanDescription">' + $scope.artisan.description + '</p>').openPopup();
       map.panTo($scope.latLngArtisan);
 
 		});

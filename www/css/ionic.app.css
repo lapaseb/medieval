@@ -9900,11 +9900,11 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 .leaflet-popup-content-wrapper {
   border-radius: 0px !important; }
 
-h2 {
+h3 {
   font-weight: bold; }
 
 .artisanDescription {
-  font-size: 1.35em; }
+  font-size: 1.15em; }
 
 /* Empty. Add your own CSS if you like */
 #page_carte #mapid {
