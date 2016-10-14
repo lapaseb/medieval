@@ -25,7 +25,7 @@ angular.module('starter.services', [])
                 }
             }
             */
-            
+
             get:function(callback) {
                 $http.get('data/JSON/events.json').success(function(data) {
                     callback(data);
@@ -38,6 +38,16 @@ angular.module('starter.services', [])
         return {
             get:function(callback) {
                 $http.get('data/JSON/etablissements.json').success(function(data) {
+                    callback(data);
+                });
+            }
+      }
+    }])
+
+    .factory('artisansService', ['$http',function($http){
+        return {
+            get:function(callback) {
+                $http.get('data/JSON/artisans.json').success(function(data) {
                     callback(data);
                 });
             }

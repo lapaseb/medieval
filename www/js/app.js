@@ -50,6 +50,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('app.artisan', {
+      url: '/artisan/:artisanId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/artisan.html',
+        controller: 'ArtisanCtrl'
+      }
+    }
+  })
   .state('app.carte', {
       url: '/carte',
       views: {
