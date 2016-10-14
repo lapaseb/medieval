@@ -41,7 +41,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+  .state('app.artisans', {
+    url: '/artisans',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/artisans.html',
+        controller: 'ArtisansCtrl'
+      }
+    }
+  })
   .state('app.carte', {
       url: '/carte',
       views: {
@@ -105,6 +113,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'menuContent': {
         templateUrl: 'templates/concours-costumes.html',
         controller: 'ConcoursCostumesCtrl'
+      }
+    }
+  })
+  .state('app.contacts', {
+    url: '/contacts',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/contacts.html',
+        controller: 'ContactsCtrl'
       }
     }
   })
