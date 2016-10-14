@@ -1,4 +1,3 @@
-
 angular.module('starter.controllers')
 .controller('EtablissementsCtrl', ['$scope', '$http','$rootScope', 'etablissementsService',
     function($scope, $http, $rootScope, etablissementsService) {

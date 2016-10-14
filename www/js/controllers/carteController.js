@@ -1,5 +1,3 @@
-
-
 angular.module('starter.controllers')
 .controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup',
     function($scope, $http, $rootScope, $ionicPopup) {

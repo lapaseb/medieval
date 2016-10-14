@@ -90,6 +90,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('app.securite', {
+    url: '/securite',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/securite.html',
+        controller: 'SecuriteCtrl'
+      }
+    }
+  })
+  .state('app.concoursCostumes', {
+    url: '/concoursCostumes',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/concours-costumes.html',
+        controller: 'ConcoursCostumesCtrl'
+      }
+    }
+  })
 
   // if none of the above states are matched, use this as the fallback
   ;$urlRouterProvider.otherwise('/app/accueil');

@@ -9886,3 +9886,9 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
+/* Empty. Add your own CSS if you like */
+#page_securite ul {
+  list-style-type: disc;
+  margin: 15px; }
+
+/* Empty. Add your own CSS if you like */
