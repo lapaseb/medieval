@@ -1,6 +1,9 @@
 <ion-view view-title="Etablissement" id="page_etablissement">
   <ion-content>
-    <h2>Établissement</h2>
-    <img src="data/img/thumb-up.png" alt="Image vote"/>
+    <h2>{{etablissement.name}}</h2>
+	<div class="item item-thumbnail-left">
+		<img id="vote" src="data/img/thumb-up.png" alt="Image vote" ng-click="toggleVote();" />
+		<p>{{etablissement.description}}</p>
+	</div>
   </ion-content>
 </ion-view>
