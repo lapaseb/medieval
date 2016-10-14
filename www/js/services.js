@@ -1,35 +1,23 @@
 angular.module('starter.services', [])
 
-    .factory('programmesService', ['$http',function($http){
+    .factory('programmesService', ['$http', '$rootScope', function($http, $rootScope){
         return {
-          /*
-            load:function(callback, lang){
-                if(lang == "fr"){
-                    $http.get('data/monumentsFR.json').success(callback);
-                } else if( lang == "de"){
-                    $http.get('data/monumentsDE.json').success(callback);
-                }
-            }
-            ,
-            get:function(lieuId, callback, lang) {
-                if(lang == "fr"){
-                    $http.get('data/monumentsFR.json').success(function(data) {
-                        var lieu = data.lieux[lieuId];
-                        callback(lieu);
-                    });
-                } else if( lang == "de"){
-                    $http.get('data/monumentsDE.json').success(function(data) {
-                        var lieu = data.lieux[lieuId];
-                        callback(lieu);
-                    });
-                }
-            }
-            */
-            
             get:function(callback) {
-                $http.get('data/JSON/events.json').success(function(data) {
+                if(window.Connection) {
+                    console.log($rootScope.apiUrl);
+                    if(navigator.connection.type == Connection.NONE) {
+                        var url = 'data/JSON/events.json';
+                    } else {
+                        var url = $rootScope.apiUrl + '/getEvents';
+                    }
+                } else {
+                    var url = 'data/JSON/getEvents.json';
+                }
+
+                $http.get(url).success(function(data) {
                     callback(data);
                 });
+               
             }
       }
     }])

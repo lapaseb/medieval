@@ -1,6 +1,12 @@
 {
   "name": "medieval",
   "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://medievales.visitapp.ch/API"
+    }
+  ],
   "gulpStartupTasks": [
     "sass",
     "watch"
