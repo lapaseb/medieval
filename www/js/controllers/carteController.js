@@ -16,9 +16,59 @@ angular.module('starter.controllers')
         maxBounds: bounds
     });
 
+    // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
+    var onSuccess = function(position) {
+
+        if (position.coords.latitude > 47.369743926768784 || position.coords.longitude < 47.360589810163582 || position.coords.longitude > 7.174824539917747 || position.coords.longitude < 7.1379860116837257){
+          var alertPopup = $ionicPopup.alert({
+            title: 'Erreur de localisation',
+            template: 'La localisation ne fonctionne pas en dehors de la ville de St-Ursanne.'
+          });
+        } else {
+          L.marker([position.coords.latitude, position.coords.longitude]).addTo(map).bindPopup('Vous êtes ici');
+        }
+
+
+    };
+
+    // onError Callback receives a PositionError object
+    //
+    function onError(error) {
+        alert('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+    }
+
+
+
+    var ourCustomControl = L.Control.extend({
+
+      options: {
+        position: 'topright'
+      },
+
+      onAdd: function (map) {
+        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
+
+        container.style.backgroundColor = 'white';
+        container.style.backgroundImage = "url('data/img/localisationicon.png')";
+        container.style.backgroundSize = "30px 30px";
+        container.style.width = '30px';
+        container.style.height = '30px';
+
+        container.onclick = function(){
+          navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        }
+
+        return container;
+      },
+
+    });
+
 	  L.tileLayer('data/img/MapQuest/{z}/{x}/{y}.png', {
 		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	  }).addTo(map);
+
+    map.addControl(new ourCustomControl());
 
 
 
@@ -106,23 +156,6 @@ angular.module('starter.controllers')
 
 
 
-    // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
-    var onSuccess = function(position) {
-        var alertPopup = $ionicPopup.alert({
-          title: 'Confirmation de localisation',
-          template: position.coords.latitude + ' ' + position.coords.longitude
-        });
-        L.marker([position.coords.latitude, position.coords.longitude]).addTo(map).bindPopup('Vous êtes ici');
-    };
-
-    // onError Callback receives a PositionError object
-    //
-    function onError(error) {
-        alert('code: '    + error.code    + '\n' +
-              'message: ' + error.message + '\n');
-    }
-
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
     }
 ]);
