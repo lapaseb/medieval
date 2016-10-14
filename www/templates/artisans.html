@@ -2,7 +2,8 @@
   <ion-content >
     <ion-list>
 
-      <ion-item class="item" ng-repeat="artisan in artisans" href="#/app/artisan/{{artisan.id}}">
+      <ion-item class="item item-thumbnail-left" ng-repeat="artisan in artisans" href="#/app/artisan/{{artisan.id}}">
+        <img src="data/img/blacksmith.png"/>
         <h2>{{artisan.name}}</h2>
     		<p>{{artisan.description}}</p>
       </ion-item>

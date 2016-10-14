@@ -1,8 +1,17 @@
 <ion-view view-title="Programme"  id="page_programme">
   <ion-content>
-    <h2>{{programme.name}}</h2>
-	<p>Description de l'événement</p>
-	<p>{{programme.start}}</p>
-	<p>Statut: <span style="color:green;">En cours</span></p>
+    <img src="data/img/event-test.jpg"/>
+    <div id="pageContent">
+      <h2>{{programme.name}}</h2>
+    	<p>{{programme.description}}</p>
+      <h5>Heure de début</h5>
+    	<p>{{programme.start}}</p>
+      <h5>Heure de fin</h5>
+      <p>{{programme.end}}</p>
+    	<p>Statut: <span style="color:green;">À venir</span></p>
+      <button class="button button-positive showMap">
+        Afficher sur la carte
+      </button>
+    </div>
   </ion-content>
 </ion-view>
