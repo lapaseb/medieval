@@ -12,10 +12,11 @@
 
 2. Executer les commandes suivantes dans le terminal. Controlez que vous travaillez dans le dossier de l'application.
 
-<pre>$ npm install bower gulp gulp-concat gulp-minify-css gulp-rename gulp-sass gulp-util shelljs
-$ ionic setup sass
-$ bower update
-$ ionic serve --lab</pre>
+<pre>npm install bower gulp gulp-concat gulp-minify-css gulp-rename gulp-sass gulp-util shelljs
+cordova plugin add cordova-plugin-screen-orientation
+ionic setup sass
+bower update
+ionic serve --lab</pre>
 
 Un onglet dans votre navigateur devrait s'ouvrir avec votre application.
 
