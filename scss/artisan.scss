@@ -1,30 +1,32 @@
 #mapArtisan {
   width: 100%;
-  height: 94vh;
+  height: 96vh;
   position: fixed;
   bottom: 0;
-}
 
-.leaflet-top + .leaflet-right{
-  .leaflet-bar, .leaflet-control, .leaflet-control-custom {
-    background: url('../data/img/localisationicon.png') center center;
-    background-color: white;
-    background-size: 30px 30px;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    background-repeat: no-repeat;
+  .leaflet-top + .leaflet-right{
+    .leaflet-bar, .leaflet-control, .leaflet-control-custom {
+      background: url('../data/img/localisationicon.png') center center;
+      background-color: white;
+      background-size: 30px 30px;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      background-repeat: no-repeat;
+    }
   }
+
+  .leaflet-popup-content-wrapper {
+    border-radius: 0px !important;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .artisanDescription {
+    font-size: 1.15em;
+  }
+
 }
 
-.leaflet-popup-content-wrapper {
-  border-radius: 0px !important;
-}
-
-h3 {
-  font-weight: bold;
-}
-
-.artisanDescription {
-  font-size: 1.15em;
-}
