@@ -23,7 +23,7 @@ Un onglet dans votre navigateur devrait s'ouvrir avec votre application.
 
 1. Exécuter la commande suivante
 
-<pre>ionic platform add android<pre>
+<pre>ionic platform add android</pre>
 
 2. Modifier le fichier AndroidManifest.xml situé dans platforms/android/AndroidManifest.xml
 <pre>
