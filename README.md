@@ -18,3 +18,15 @@ $ bower update
 $ ionic serve --lab</pre>
 
 Un onglet dans votre navigateur devrait s'ouvrir avec votre application.
+
+##Build de l'application sur Android
+
+1. Exécuter la commande suivante
+
+ionic platform add android
+
+2. Modifier le fichier AndroidManifest.xml situé dans platforms/android/AndroidManifest.xml
+
+<uses-permissionandroid android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
