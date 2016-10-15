@@ -14,7 +14,7 @@ angular.module('starter.controllers')
 	        }
 	    });
 
-       programmesService.get(function (data) {
+      programmesService.get(function (data) {
 			$scope.programmesRow = data;
 			$scope.programmes = [];
 			for (var i = 0; i < $scope.programmesRow.length; i++) {

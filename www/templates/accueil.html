@@ -1,33 +1,52 @@
 <ion-view view-title="Accueil" id="page_accueil">
   <ion-content scroll="false">
-  	<img class="full-image logo_accueil" src="data/img/accueil_background.jpg" />
-  	
+  	<!-- <img class="full-image logo_accueil" src="data/img/accueil_background.jpg" /> -->
+
   	<div class="accueil_timer">
 		<div class="accueil_timer_title">
-			Début des festivités dans :
+      L'édition 2017 des Médiévales débutera dans :
 	  	</div>
 
 	  	<div class="accueil_timer_container row">
-			<div class="col accueil_timer_box">
-				Jours
-				<span class="font-bold">54</span>
+			  <div class="col col-50 accueil_timer_box">
+				<span class="font-bold">154</span>
+  				Jours
 		  	</div>
-		  	<div class="col accueil_timer_box">
+		  	<div class="col col-50 accueil_timer_box">
+				<span class="font-bold">16</span>
 				Heures
-				<span class="font-bold">6</span>
 		  	</div>
-		  	<div class="col accueil_timer_box">
-				Minutes
-				<span class="font-bold">34</span>
-		  	</div>
-	  	</div>
-  	</div>
 
+      </div>
+      <div class="accueil_timer_container row">
+		  	<div class="col col-50 accueil_timer_box">
+				<span class="font-bold">34</span>
+				Minutes
+		  	</div>
+		  	<div class="col col-50 accueil_timer_box">
+				<span class="font-bold">34</span>
+				Secondes
+		  	</div>
+      </div>
+  	</div>
+    <div id="quickmenu">
+      <div class="divider"></div>
+        <i class="icon ion-calendar"></i>
+      </a>
+        <i class="icon ion-map"></i>
+      </a>
+        <i class="icon ion-android-restaurant"></i>
+      </a>
+        <i class="icon ion-ios-bookmarks"></i>
+      </a>
+      <div class="divider"></div>
+    </div>
+    <!--
   	<div class="accueil_events">
 		<div class="accueil_events_title">
 			Évenements à venir
 	  	</div>
-	  	
+
 		<ion-list>
 			<ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes" href="#/app/programme/{{programme.id}}">
 			 <img src="data/img/image-test.jpg" />
@@ -39,6 +58,6 @@
 		</ion-list>
 
   	</div>
-
+    -->
   </ion-content>
 </ion-view>
