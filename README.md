@@ -27,6 +27,7 @@ Un onglet dans votre navigateur devrait s'ouvrir avec votre application.
 
 2. Modifier le fichier AndroidManifest.xml situé dans platforms/android/AndroidManifest.xml
 <pre>
-<uses-permissionandroid android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /></pre>
+`<uses-permissionandroid android:name="android.permission.ACCESS_COARSE_LOCATION" />`
+`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
+`<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />`
+</pre>
