@@ -1,76 +1,75 @@
-{
-    "events": [
-        {
-            "name" : "NOM DE L'ETABLISSEMENT : ∞",
-            "description" : "DESCRIPTION : ∞",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Taverne",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-        {
-            "name" : "Hotel de la Couronne",
-            "description" : "L'Hôtel de la Couronne est situé dans le centre du village médiéval de Saint-Ursanne, à seulement 800 mètres de la gare.",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Hôtel",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-        {
-            "name" : "Hotel la Cigogne",
-            "description" : "Raffiné, jovial et chaleureux. Situé près du Doubs et à côté de la Collégiale.",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Hôtel",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-       {
-            "name" : "Restaurant du Jura",
-            "description" : "",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Restaurant",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-        {
-            "name" : "Restaurant des Deux-Clefs",
-            "description" : "",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Restaurant",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-        {
-            "name" : "Hotel du Boeuf",
-            "description" : "Situé dans un cadre idyllique, dans le centre médiéval de St-Ursanne, l'Hotel Du Boeuf propose des chambres confortables avec salle de bains privative et connexion Wi-Fi gratuite.",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Hôtel",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-        {
-            "name" : "Hotel Demie-Lune",
-            "description" : "Situé à Saint-Ursanne dans le canton du Jura, l'Hotel Demi-Lune propose une terrasse bien exposée, des installations de sports nautiques et un restaurant sur place.",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Hôtel",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-        {
-            "name" : "Le Chandelier",
-            "description" : "L'auberge de jeunesse Le Chandelier est située au bord de la rivière Doubs, à 800 mètres du centre de Saint-Ursanne. Elle dispose d'une grande terrasse avec barbecue et d'une aire de jeux pour enfants.",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Taverne",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        },
-        {
-            "name" : "Taverne",
-            "description" : "Taverne médiévale spécialement aménagée pour les Médiévales",
-            "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
-            "type" : "Taverne",
-            "latitude" : "47.365714",
-            "longitude" : " 7.155803"
-        }
-    ]
-}
+[
+    {
+        "name" : "NOM DE L'ETABLISSEMENT : ∞",
+        "description" : "DESCRIPTION : ∞",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Taverne",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+    {
+        "name" : "Hotel de la Couronne",
+        "description" : "L'Hôtel de la Couronne est situé dans le centre du village médiéval de Saint-Ursanne, à seulement 800 mètres de la gare.",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Hôtel",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+    {
+        "name" : "Hotel la Cigogne",
+        "description" : "Raffiné, jovial et chaleureux. Situé près du Doubs et à côté de la Collégiale.",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Hôtel",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+   {
+        "name" : "Restaurant du Jura",
+        "description" : "",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Restaurant",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+    {
+        "name" : "Restaurant des Deux-Clefs",
+        "description" : "",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Restaurant",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+    {
+        "name" : "Hotel du Boeuf",
+        "description" : "Situé dans un cadre idyllique, dans le centre médiéval de St-Ursanne, l'Hotel Du Boeuf propose des chambres confortables avec salle de bains privative et connexion Wi-Fi gratuite.",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Hôtel",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+    {
+        "name" : "Hotel Demie-Lune",
+        "description" : "Situé à Saint-Ursanne dans le canton du Jura, l'Hotel Demi-Lune propose une terrasse bien exposée, des installations de sports nautiques et un restaurant sur place.",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Hôtel",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+    {
+        "name" : "Le Chandelier",
+        "description" : "L'auberge de jeunesse Le Chandelier est située au bord de la rivière Doubs, à 800 mètres du centre de Saint-Ursanne. Elle dispose d'une grande terrasse avec barbecue et d'une aire de jeux pour enfants.",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Taverne",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    },
+    {
+        "name" : "Taverne",
+        "description" : "Taverne médiévale spécialement aménagée pour les Médiévales",
+        "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
+        "type" : "Taverne",
+        "latitude" : "47.365714",
+        "longitude" : " 7.155803"
+    }
+]
+

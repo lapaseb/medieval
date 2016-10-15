@@ -4,12 +4,12 @@ angular.module('starter.controllers')
 		etablissementsService.get(function (data) {
 			$scope.etablissementsRow = data;
 			$scope.etablissements = [];
-			for (var i = 0; i < $scope.etablissementsRow.events.length; i++) {
+			for (var i = 0; i < $scope.etablissementsRow.length; i++) {
 				$scope.etablissements[i] = {
 					id: i,
-					name: $scope.etablissementsRow.events[i].name,
-					description: $scope.etablissementsRow.events[i].description,
-          type: $scope.etablissementsRow.events[i].type
+					name: $scope.etablissementsRow[i].name,
+					description: $scope.etablissementsRow[i].description,
+         			type: $scope.etablissementsRow[i].type
 				};
 			}
 		});
