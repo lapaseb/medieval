@@ -6,13 +6,13 @@ angular.module('starter.controllers')
   		etablissementsService.get(function (data) {
   			$scope.etablissementsRow = data;
   			$scope.etablissement = [];
-  			for (var i = 0; i < $scope.etablissementsRow.events.length; i++) {
+  			for (var i = 0; i < $scope.etablissementsRow.length; i++) {
   				if(i == etaid) {
   					$scope.etablissement = {
   						id: i,
-  						name: $scope.etablissementsRow.events[i].name,
-  						description: $scope.etablissementsRow.events[i].description,
-              menu: $scope.etablissementsRow.events[i].menu
+  						name: $scope.etablissementsRow[i].name,
+  						description: $scope.etablissementsRow[i].description,
+              menu: $scope.etablissementsRow[i].menu
   					};
   				}
   			}
