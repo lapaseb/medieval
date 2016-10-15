@@ -1,11 +1,11 @@
-<ion-view view-title="Artisans" id="page_artisants">
+<ion-view view-title="{{ 'ARTISANS_TITLE' | translate }}" id="page_artisants">
   <ion-content >
     <ion-list>
 
       <ion-item class="item item-thumbnail-left" ng-repeat="artisan in artisans" href="#/app/artisan/{{artisan.id}}">
         <img src="data/img/blacksmith.png"/>
         <h2>{{artisan.name}}</h2>
-    		<p>{{artisan.description}}</p>
+		<p>{{artisan.description}}</p>
       </ion-item>
 
     </ion-list>

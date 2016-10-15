@@ -1,17 +1,17 @@
-<ion-view view-title="Programme"  id="page_programme">
+<ion-view view-title="{{ 'PROGRAMME_TITLE' | translate }}"  id="page_programme">
   <ion-content>
     <img src="data/img/event-test.jpg"/>
     <div id="pageContent">
       <h2>{{programme.name}}</h2>
     	<p>{{programme.description}}</p>
-      <h5>Heure de début</h5>
+      <h5>{{ 'PROGRAMME_TEXTE_DEBUT' | translate }}</h5>
     	<p>{{programme.start}}</p>
-      <h5>Heure de fin</h5>
+      <h5>{{ 'PROGRAMME_TEXTE_FIN' | translate }}</h5>
       <p>{{programme.end}}</p>
-    	<p>Statut: <span style="color:green;">À venir</span></p>
+    	<p>{{ 'PROGRAMME_TEXTE_STATUT' | translate }} <span style="color:green;">{{ 'PROGRAMME_TEXTE_STATUT1' | translate }}</span></p>
       <a href="#/app/programme-map/{{programme.id}}">
         <button class="button button-positive showMap" >
-          Afficher sur la carte
+          {{ 'PROGRAMME_TEXTE_AFFICHER_CARTE' | translate }}
         </button>
       </a>
     </div>

@@ -1,25 +1,25 @@
-<ion-view view-title="Etablissement" id="page_etablissement">
+<ion-view view-title="{{ 'RESTAURANT_TITLE' | translate }}" id="page_etablissement">
   <ion-content>
   <img src="data/img/taverne.jpg" />
     <div id="pageContent">
     <h2>{{etablissement.name}}</h2>
   	<p>{{etablissement.description}}</p>
-    <h5>Au menu : </h5>
+    <h5>{{ 'RESTAURANT_TEXTE_AUMENU' | translate }}</h5>
     <p>{{etablissement.menu}}</p>
     <button class="button button-positive showMap">
-      Afficher sur la carte
+      {{ 'RESTAURANT_TEXTE_AFFICHER_CARTE' | translate }}
     </button>
-    <h5>Votez pour le concours de la meilleure taverne !</h5>
+    <h5>{{ 'RESTAURANT_TEXTE_VOTER' | translate }}</h5>
     <div class="rating-system">
-      <h5>Notez votre repas</h5>
+      <h5>{{ 'RESTAURANT_TEXTE_NOTE1' | translate }}</h5>
       <div ng-init="rating = star.rating + 1"></div>
       <div class="star-rating" star-rating rating-value="rating"
       data-max="5" on-rating-selected="rateFunction(rating)"></div>
-      <h5>Notez l'ambiance</h5>
+      <h5>{{ 'RESTAURANT_TEXTE_NOTE2' | translate }}</h5>
       <div ng-init="rating = star.rating + 1"></div>
       <div class="star-rating" star-rating rating-value="rating"
       data-max="5" on-rating-selected="rateFunction(rating)"></div>
-      <h5>Notez la décoration</h5>
+      <h5>{{ 'RESTAURANT_TEXTE_NOTE3' | translate }}</h5>
       <div ng-init="rating = star.rating + 1"></div>
       <div class="star-rating" star-rating rating-value="rating"
       data-max="5" on-rating-selected="rateFunction(rating)"></div>

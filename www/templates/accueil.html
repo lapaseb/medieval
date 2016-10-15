@@ -1,27 +1,27 @@
-<ion-view view-title="Accueil" id="page_accueil">
+<ion-view view-title="{{ 'ACCUEIL_TITLE' | translate }}" id="page_accueil">
   <ion-content scroll="false">
-  	<img class="full-image logo_accueil" src="data/img/logo_medievales.png" />
+  	<img class="full-image logo_accueil" src="data/img/{{ 'ACCUEIL_IMG_LINK' | translate }}" />
 
   	<div class="accueil_timer">
 	  	<div class="accueil_timer_container row">
 			  <div class="col col-50 accueil_timer_box">
 				<span class="font-bold accueil_jours">0</span>
-  				Jours
+  				{{ 'ACCUEIL_TEXTE_JOURS' | translate }}
 		  	</div>
 		  	<div class="col col-50 accueil_timer_box">
 				<span class="font-bold accueil_heures">0</span>
-				Heures
+				{{ 'ACCUEIL_TEXTE_HEURES' | translate }}
 		  	</div>
 
       </div>
       <div class="accueil_timer_container row">
 		  	<div class="col col-50 accueil_timer_box">
 				<span class="font-bold accueil_minutes">0</span>
-				Minutes
+				{{ 'ACCUEIL_TEXTE_MINUTES' | translate }}
 		  	</div>
 		  	<div class="col col-50 accueil_timer_box">
 				<span class="font-bold accueil_secondes">0</span>
-				Secondes
+				{{ 'ACCUEIL_TEXTE_SECONDES' | translate }}
 		  	</div>
       </div>
   	</div>

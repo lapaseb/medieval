@@ -1,0 +1,83 @@
+{
+
+    "MENU_TITLE": "Menu",
+
+
+
+    "ACCUEIL_TITLE": "Accueil",
+    "ACCUEIL_IMG_LINK": "logo_medievales_fr.png",
+    "ACCUEIL_TEXTE_JOURS": "Jours",
+    "ACCUEIL_TEXTE_HEURES": "Heures",
+    "ACCUEIL_TEXTE_MINUTES": "Minutes",
+    "ACCUEIL_TEXTE_SECONDES": "Secondes",
+    "ACCUEIL_TEXTE_SECONDES": "Secondes",
+
+
+
+    "ARTISANS_TITLE": "Artisans",
+
+
+
+    "ARTISAN_TITLE": "Artisan",
+
+
+
+    "CARTE_TITLE": "Carte",
+
+
+
+    "PROGRAMME_CARTE_TITLE": "Carte",
+
+
+
+    "PROGRAMMES_TITLE": "Programme",
+    "PROGRAMMES_TEXTE_STATUT": "Statut:",
+    "PROGRAMMES_TEXTE_STATUT1": "À venir",
+
+
+
+    "PROGRAMME_TITLE": "Programme",
+    "PROGRAMME_TEXTE_DEBUT": "Heure de début",
+    "PROGRAMME_TEXTE_FIN": "Heure de fin",
+    "PROGRAMME_TEXTE_STATUT": "Statut:",
+    "PROGRAMME_TEXTE_STATUT1": "À venir",
+    "PROGRAMME_TEXTE_AFFICHER_CARTE": "Afficher sur la carte",
+
+    
+   
+
+    "RESTAURANTS_TITLE": "Restaurants, Hôtels, Tavernes",
+    "RESTAURANTS_SUBTITLE": "Etablissement",
+
+
+
+    "RESTAURANT_TITLE": "Etablissement",
+    "RESTAURANT_TEXTE_AUMENU": "Au menu : ",
+    "RESTAURANT_TEXTE_AFFICHER_CARTE": "Afficher sur la carte",
+    "RESTAURANT_TEXTE_VOTER": "Votez pour le concours de la meilleure taverne !",
+    "RESTAURANT_TEXTE_NOTE1": "Notez votre repas",
+    "RESTAURANT_TEXTE_NOTE2": "Notez l'ambiance",
+    "RESTAURANT_TEXTE_NOTE3": "Notez la décoration",
+
+
+
+    "SECURITE_TITLE": "Sécurité  & Informations",
+    "SECURITE_TEXTE_TITLE": "Sécurité  & Informations",
+
+
+
+
+
+    "CONCOURS_COSTUMES_TITLE": "Concours des costumes",
+    "CONCOURS_COSTUMES_TEXTE_TITLE": "Concours des costumes",
+
+
+
+    "SPONSORS_TITLE": "Sponsors",
+    "SPONSORS_TEXTE_TITLE": "Sponsors",
+
+
+
+    "CONTACTS_TITLE": "Contacts",
+    "CONTACTS_TEXTE_TITLE": "Contacts"
+}

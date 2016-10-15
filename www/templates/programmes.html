@@ -1,4 +1,4 @@
-<ion-view view-title="Programmes" id="page_programmes">
+<ion-view view-title="{{ 'PROGRAMMES_TITLE' | translate }}" id="page_programmes">
   <ion-content>
     <ion-list>
 
@@ -7,7 +7,7 @@
         <h2>{{programme.name}}</h2>
         <p>{{programme.description}}</p>
         <p>{{programme.start}} - {{programme.end}}</p>
-        <p>Statut: <span style="color:green;">À venir</span></p>
+        <p>{{ 'PROGRAMMES_TEXTE_STATUT' | translate }} <span style="color:green;">{{ 'PROGRAMMES_TEXTE_STATUT1' | translate }}</span></p>
       </ion-item>
 
     </ion-list>
