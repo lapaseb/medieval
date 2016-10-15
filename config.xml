@@ -7,7 +7,7 @@
   <author email="webmaster@visitapp.ch" href="http://www.visitapp.ch/">&#xD;&#xD;&#xD;
       Visitapp.ch&#xD;&#xD;&#xD;
     </author>
-  <content src="http://192.168.0.220:8100" original-src="index.html"/>
+  <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
