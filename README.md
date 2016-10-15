@@ -23,10 +23,10 @@ Un onglet dans votre navigateur devrait s'ouvrir avec votre application.
 
 1. Exécuter la commande suivante
 
-ionic platform add android
+<pre>ionic platform add android<pre>
 
 2. Modifier le fichier AndroidManifest.xml situé dans platforms/android/AndroidManifest.xml
-
+<pre>
 <uses-permissionandroid android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /></pre>
