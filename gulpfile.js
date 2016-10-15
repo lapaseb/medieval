@@ -51,3 +51,4 @@ gulp.task('git-check', function(done) {
 });
 
 gulp.task('serve:before', ['sass', 'watch']);
+gulp.task('run:before', ['sass', 'watch']);
