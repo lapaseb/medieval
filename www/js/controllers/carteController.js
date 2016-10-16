@@ -80,10 +80,30 @@ angular.module('starter.controllers')
 
     map.addControl(new ourCustomControl());
 
-	  L.marker([47.365714, 7.155803]).addTo(map);
-	  L.marker([47.365660, 7.155120]).addTo(map);
-	  L.marker([47.365002, 7.155689]).addTo(map);
-	  L.marker([47.364907, 7.154937]).addTo(map);
+    var icon12 = L.icon({
+      iconUrl: 'data/img/icons/icon12.png',
+      iconAnchor: [17, 36]
+    });
+
+    var parkingIcon = L.icon({
+      iconUrl: 'data/img/icons/parkingIcon.png',
+      iconAnchor: [17, 36]
+    });
+
+    var medicIcon = L.icon({
+      iconUrl: 'data/img/icons/medicIcon.png',
+      iconAnchor: [17, 36]
+    });
+
+    var zooIcon = L.icon({
+      iconUrl: 'data/img/icons/zooIcon.png',
+      iconAnchor: [17, 36]
+    });
+
+	  L.marker([47.365714, 7.155803], {icon: icon12}).addTo(map);
+	  L.marker([47.365660, 7.155120], {icon: parkingIcon}).addTo(map);
+	  L.marker([47.365002, 7.155689], {icon: medicIcon}).addTo(map);
+	  L.marker([47.364907, 7.154937], {icon: zooIcon}).addTo(map);
     L.marker([47.364814, 7.154437]).addTo(map);
     L.marker([47.366814, 7.152437]).addTo(map);
     L.marker([47.366514, 7.152237]).addTo(map);
