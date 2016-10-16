@@ -6,9 +6,11 @@
   	<p>{{etablissement.description}}</p>
     <h5>{{ 'RESTAURANT_TEXTE_AUMENU' | translate }}</h5>
     <p>{{etablissement.menu}}</p>
-    <button class="button button-positive showMap">
-      {{ 'RESTAURANT_TEXTE_AFFICHER_CARTE' | translate }}
-    </button>
+    <a href="#/app/etablissement-map/{{etablissement.id}}">
+      <button class="button button-positive showMap" >
+        {{ 'PROGRAMME_TEXTE_AFFICHER_CARTE' | translate }}
+      </button>
+    </a>
     <h5>{{ 'RESTAURANT_TEXTE_VOTER' | translate }}</h5>
     <div class="rating-system">
       <h5>{{ 'RESTAURANT_TEXTE_NOTE1' | translate }}</h5>

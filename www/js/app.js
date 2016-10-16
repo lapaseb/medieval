@@ -124,6 +124,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+
+  .state('app.etablissement-map', {
+    url: '/etablissement-map/:etablissementId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/etablissement-map.html',
+        controller: 'EtablissementMapCtrl'
+      }
+    }
+  })
+
   .state('app.securite', {
     url: '/securite',
     views: {

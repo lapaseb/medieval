@@ -1,14 +1,13 @@
-
-
 angular.module('starter.controllers')
-.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup',
-    function($scope, $http, $rootScope, $ionicPopup) {
+.controller('EtablissementMapCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'etablissementsService', '$ionicPopup',
+    function($scope, $http, $rootScope, $stateParams, etablissementsService, $ionicPopup) {
+
 
     var southWest = L.latLng(47.369743926768784, 7.174824539917747),
     northEast = L.latLng(47.360589810163582, 7.1379860116837257),
     bounds = L.latLngBounds(southWest, northEast);
 
-    var map = L.map('mapid', {
+    var map = L.map('mapEtablissement', {
         center: [47.364965, 7.154498],
         zoom: 18,
         minZoom: 15,
@@ -16,6 +15,40 @@ angular.module('starter.controllers')
         maxBounds: bounds,
         zoomControl:false
     });
+
+
+	  L.tileLayer('data/img/MapQuest/{z}/{x}/{y}.png', {
+		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	  }).addTo(map);
+
+
+
+    var etaid = $stateParams.etablissementId;
+
+		etablissementsService.get(function (data) {
+			$scope.etablissementsRow = data;
+			$scope.etablissement = [];
+			for (var i = 0; i < $scope.etablissementsRow.length; i++) {
+				if(i == etaid) {
+					$scope.etablissement = {
+						id: i,
+						name: $scope.etablissementsRow[i].name,
+            description: $scope.etablissementsRow[i].description,
+            latitude: $scope.etablissementsRow[i].latitude,
+            longitude: $scope.etablissementsRow[i].longitude
+					};
+				}
+			}
+
+      var progid = $stateParams.etablissementId;
+
+
+      $scope.latLngEtablissement = L.latLng($scope.etablissement.latitude, $scope.etablissement.longitude);
+
+      L.marker($scope.latLngEtablissement).addTo(map).bindPopup($scope.etablissement.name).openPopup();
+      map.panTo($scope.latLngEtablissement);
+
+		});
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
@@ -27,7 +60,7 @@ angular.module('starter.controllers')
 
 
         if (userLat < 47.369743926768784 && userLat > 47.360589810163582 && userLng > 7.174824539917747 && userLng < 7.1379860116837257){
-
+          
           L.marker(userLatLng).addTo(map).bindPopup('Vous êtes ici').openPopup();
           map.panTo(userLatLng);
 
@@ -38,7 +71,7 @@ angular.module('starter.controllers')
             template: 'La localisation ne fonctionne pas en dehors de la ville de St-Ursanne.'
           });
 
-          map.panTo([47.364965, 7.154498]);
+          map.panTo($scope.latLngEtablissement);
 
         }
 
@@ -74,23 +107,7 @@ angular.module('starter.controllers')
 
     });
 
-	  L.tileLayer('data/img/MapQuest/{z}/{x}/{y}.png', {
-		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	  }).addTo(map);
-
     map.addControl(new ourCustomControl());
-
-	  L.marker([47.365714, 7.155803]).addTo(map);
-	  L.marker([47.365660, 7.155120]).addTo(map);
-	  L.marker([47.365002, 7.155689]).addTo(map);
-	  L.marker([47.364907, 7.154937]).addTo(map);
-    L.marker([47.364814, 7.154437]).addTo(map);
-    L.marker([47.366814, 7.152437]).addTo(map);
-    L.marker([47.366514, 7.152237]).addTo(map);
-    L.marker([47.366614, 7.152337]).addTo(map);
-    L.marker([47.364424, 7.153161]).addTo(map);
-    L.marker([47.365969, 7.155872]).addTo(map);
-
 
     }
 ]);
