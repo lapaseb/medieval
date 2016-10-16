@@ -22,7 +22,8 @@ angular.module('starter.controllers')
         // Ajouter rating dans la base de donnée
       };
     }
-]).directive('starRating',
+])
+.directive('starRating',
 	function() {
 		return {
 			restrict : 'A',
