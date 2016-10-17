@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "Raiffeisen",
+        "description" : "Le forgeron est une personne importante du village : il s'occupe de tout ce qui est en fer (socs de charrue, lames de faux et de faucilles, etc. ; il est également maréchal et ferre les chevaux."
+    },
+    {
+        "name" : "Tête de moine",
+        "description" : "Taillandier est un métier traditionnel consistant à fabriquer des outils tranchants tels que ciseaux, cisailles, haches pour les artisans. Il en reste très peu en France, la majorité ayant disparu au début des années 1900, lorsque l'industrie a pris à sa charge la fabrication des outils."
+
+    },
+    {
+        "name" : "BCJ",
+        "description" : "Serrurier est un métier qui englobe certaines activités liées à la sécurité et la construction métallique, en particulier les serrures."
+
+    },
+   {
+        "name" : "Visitapp",
+        "description" : "Chaudronnier est un métier désignant à l'origine celui qui réalise des chaudrons, puis par extension les personnes qui réalisent des enveloppes de corps creux, en métal, et/ou en matière plastique, de toutes natures et toutes destinations."
+    },
+    {
+        "name" : "Test",
+        "description" : "Un meunier est une personne qui moud le blé à l’aide de moulin soit à eau, soit à vent pour en faire de la farine. Les graines sont écrasées entre les meules en pierre."
+
+    },
+    {
+        "name" : "Test",
+        "description" : "Situé dans un cadre idyllique, dans le centre médiéval de St-Ursanne, l'Hotel Du Boeuf propose des chambres confortables avec salle de bains privative et connexion Wi-Fi gratuite."
+
+    }
+]
