@@ -33,7 +33,6 @@ angular.module('starter.controllers')
 					$scope.artisan = {
 						id: i,
 						name: $scope.artisansRow[i].name,
-						description: $scope.artisansRow[i].description,
             latitude: $scope.artisansRow[i].latitude,
             longitude: $scope.artisansRow[i].longitude
 					};
@@ -43,7 +42,7 @@ angular.module('starter.controllers')
 
       $scope.latLngArtisan = L.latLng($scope.artisan.latitude, $scope.artisan.longitude);
 
-      L.marker($scope.latLngArtisan).addTo(map).bindPopup('<h3>'+$scope.artisan.name+'</h3>' +  '<p class="artisanDescription">' + $scope.artisan.description + '</p>').openPopup();
+      L.marker($scope.latLngArtisan).addTo(map).bindPopup('<h3>'+$scope.artisan.name+'</h3>' + '</p>').openPopup();
       map.panTo($scope.latLngArtisan);
 
 		});
