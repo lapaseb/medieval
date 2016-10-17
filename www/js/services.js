@@ -41,3 +41,13 @@ angular.module('starter.services', [])
             }
       }
     }])
+
+    .factory('sponsorsService', ['$http',function($http){
+        return {
+            get:function(callback) {
+                $http.get('data/JSON/sponsors.json').success(function(data) {
+                    callback(data);
+                });
+            }
+      }
+    }])
