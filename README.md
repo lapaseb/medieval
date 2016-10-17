@@ -14,6 +14,7 @@
 
 <pre>npm install bower gulp gulp-concat gulp-minify-css gulp-rename gulp-sass gulp-util shelljs
 cordova plugin add cordova-plugin-screen-orientation
+cordova plugin add cordova-plugin-network-information
 ionic setup sass
 bower update
 ionic serve --lab</pre>
