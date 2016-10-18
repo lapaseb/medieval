@@ -41,8 +41,11 @@ angular.module('starter.controllers')
 			}
 
       $scope.latLngArtisan = L.latLng($scope.artisan.latitude, $scope.artisan.longitude);
+      var pageID = $('#page_artisan');
 
-      L.marker($scope.latLngArtisan).addTo(map).bindPopup('<h3>'+$scope.artisan.name+'</h3>' + '</p>').openPopup();
+
+      L.marker($scope.latLngArtisan).addTo(map);
+      setMapPopup(pageID, $scope.artisan.name, "");
       map.panTo($scope.latLngArtisan);
 
 		});
