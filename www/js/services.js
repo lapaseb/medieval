@@ -3,20 +3,48 @@ angular.module('starter.services', [])
     .factory('programmesService', ['$http', '$rootScope', function($http, $rootScope){
         return {
             get:function(callback) {
-                if(window.Connection) {
-                    console.log($rootScope.apiUrl);
-                    if(navigator.connection.type == Connection.NONE) {
-                        var url = 'data/JSON/events.json';
-                    } else {
-                        var url = $rootScope.apiUrl + '/getEvents';
-                    }
+
+
+                if(window.Connection && navigator.connection.type != Connection.NONE) {
+                    //si il a de la co
+                    $http.get($rootScope.apiUrl + '/getEvents').success(function(data) {
+                        window.localStorage.setItem('programmes-json', JSON.stringify(data));
+                        callback(data);
+                    });
                 } else {
-                    var url = 'data/JSON/events.json';
+                    //si il a pas de co
+                    if(window.localStorage.getItem('programmes-json')){
+                        callback(JSON.parse(window.localStorage.getItem('programmes-json')));
+                    } else {
+                        $http.get('data/JSON/events.json').success(function(data) {
+                            callback(data);
+                        });
+                    }
                 }
 
-                $http.get(url).success(function(data) {
-                    callback(data);
-                });
+                /*
+
+                var online = false;
+                if(window.localStorage.getItem('programmes-json')){
+                    if(window.Connection && navigator.connection.type != Connection.NONE) {
+                        $http.get($rootScope.apiUrl + '/getEvents').success(function(data) {
+                            callback(window.localStorage.setItem('programmes-json', data));
+                        });
+                    }
+                  
+                    callback(window.localStorage.getItem('programmes-json'));
+                } else {
+                    if(window.Connection && navigator.connection.type != Connection.NONE)) {
+                        var url = $rootScope.apiUrl + '/getEvents';
+                    } else {
+                        var url = 'data/JSON/events.json';
+                    }
+
+                    $http.get(url).success(function(data) {
+                        callback(data);
+                    });
+                }
+                */
 
             }
       }
