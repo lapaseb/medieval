@@ -79,5 +79,11 @@
 
 
     "CONTACTS_TITLE": "Contacts",
-    "CONTACTS_TEXTE_TITLE": "Contacts"
+    "CONTACTS_TEXTE_TITLE": "Contacts",
+
+
+
+    "PARAMETRES_TITLE": "Paramètres",
+    "PARAMETRES_TEXTE_TITLE": "Paramètres",
+    "PARAMETRES_TEXTE_SUBTITLE_1": "Choix de la langue"
 }

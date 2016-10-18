@@ -21,31 +21,6 @@ angular.module('starter.services', [])
                         });
                     }
                 }
-
-                /*
-
-                var online = false;
-                if(window.localStorage.getItem('programmes-json')){
-                    if(window.Connection && navigator.connection.type != Connection.NONE) {
-                        $http.get($rootScope.apiUrl + '/getEvents').success(function(data) {
-                            callback(window.localStorage.setItem('programmes-json', data));
-                        });
-                    }
-                  
-                    callback(window.localStorage.getItem('programmes-json'));
-                } else {
-                    if(window.Connection && navigator.connection.type != Connection.NONE)) {
-                        var url = $rootScope.apiUrl + '/getEvents';
-                    } else {
-                        var url = 'data/JSON/events.json';
-                    }
-
-                    $http.get(url).success(function(data) {
-                        callback(data);
-                    });
-                }
-                */
-
             }
       }
     }])
