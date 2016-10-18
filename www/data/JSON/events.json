@@ -1,13 +1,5 @@
 [
     {
-        "name" : "NOM DE L'EVENEMENT : ∞",
-        "description" : "DESCRIPTION : ∞",
-        "start" : "DEBUT : date et heure",
-        "end" : "FIN : date et heure",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
         "name" : "Ouverture des caisses",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/18.00",
@@ -136,4 +128,3 @@
         "longitude" : " 7.155803"
     }
 ]
-
