@@ -100,18 +100,18 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
-	  L.marker([47.365714, 7.155803], {icon: icon12}).addTo(map).on('click', function(){setMapPopup("Mark1", "desc1")});
-	  L.marker([47.365660, 7.155120], {icon: parkingIcon}).addTo(map).on('click', function(){setMapPopup("Mark2", "desc2")});
-	  L.marker([47.365002, 7.155689], {icon: medicIcon}).addTo(map).on('click', function(){setMapPopup("Mark3", "desc3")});
-	  L.marker([47.364907, 7.154937], {icon: zooIcon}).addTo(map).on('click', function(){setMapPopup("Mark4", "desc4")});
-    L.marker([47.364814, 7.154437]).addTo(map).on('click', function(){setMapPopup("Mark5", "desc5")});
-    L.marker([47.366814, 7.152437]).addTo(map).on('click', function(){setMapPopup("Mark6", "desc6")});
-    L.marker([47.366514, 7.152237]).addTo(map).on('click', function(){setMapPopup("Mark7", "desc7")});
-    L.marker([47.366614, 7.152337]).addTo(map).on('click', function(){setMapPopup("Mark8", "desc8")});
-    L.marker([47.364424, 7.153161]).addTo(map).on('click', function(){setMapPopup("Mark9", "desc9")});
-    L.marker([47.365969, 7.155872]).addTo(map).on('click', function(){setMapPopup("Mark0", "desc0")});
-    map.on('click', function(){closeMapPopup()}); 
+    var pageID = $('#page_carte');
 
-
-    }
+    L.marker([47.365714, 7.155803], {icon: icon12}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark1", "desc1")});
+    L.marker([47.365660, 7.155120], {icon: parkingIcon}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark2", "desc2")});
+    L.marker([47.365002, 7.155689], {icon: medicIcon}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark3", "desc3")});
+    L.marker([47.364907, 7.154937], {icon: zooIcon}).addTo(map).on('click', function(){setMapPopup('pageID', "Mark4", "desc4")});
+    L.marker([47.364814, 7.154437]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark5", "desc5")});
+    L.marker([47.366814, 7.152437]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
+    L.marker([47.366514, 7.152237]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark7", "desc7")});
+    L.marker([47.366614, 7.152337]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark8", "desc8")});
+    L.marker([47.364424, 7.153161]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark9", "desc9")});
+    L.marker([47.365969, 7.155872]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark0", "desc0")});
+    map.on('click', function(){closeMapPopup(pageID)});
+  }
 ]);

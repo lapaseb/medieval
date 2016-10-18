@@ -40,5 +40,14 @@ angular.module('starter.controllers')
 			compteARebours();
 		},1000);
 
+/*
+		$('ionic-header>.ion-navicon').on('click', function() {
+			$(this).animate({
+					tranlate3d:rotate(720deg)
+				},100
+				,"swing"
+			);
+		});
+*/
 	}
 	]);

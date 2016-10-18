@@ -44,8 +44,10 @@ angular.module('starter.controllers')
 
 
       $scope.latLngEtablissement = L.latLng($scope.etablissement.latitude, $scope.etablissement.longitude);
+      var pageID = $('#page_etablissement_carte');
 
-      L.marker($scope.latLngEtablissement).addTo(map).bindPopup($scope.etablissement.name).openPopup();
+      L.marker($scope.latLngEtablissement).addTo(map);
+      setMapPopup(pageID, $scope.etablissement.name, $scope.etablissement.description);
       map.panTo($scope.latLngEtablissement);
 
 		});
@@ -60,7 +62,7 @@ angular.module('starter.controllers')
 
 
         if (userLat < 47.369743926768784 && userLat > 47.360589810163582 && userLng > 7.174824539917747 && userLng < 7.1379860116837257){
-          
+
           L.marker(userLatLng).addTo(map).bindPopup('Vous êtes ici').openPopup();
           map.panTo(userLatLng);
 

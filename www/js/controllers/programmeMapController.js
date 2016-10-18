@@ -43,7 +43,12 @@ angular.module('starter.controllers')
 			}
 
       $scope.latLngProgramme = L.latLng($scope.programme.latitude, $scope.programme.longitude);
-      L.marker($scope.latLngProgramme).addTo(map).bindPopup($scope.programme.name).openPopup();
+
+      var pageID = $('#page_programme_carte');
+
+      L.marker($scope.latLngProgramme).addTo(map);
+      setMapPopup(pageID, $scope.programme.name, $scope.programme.description);
+
       map.panTo($scope.latLngProgramme);
 
 		});
