@@ -37,12 +37,16 @@
 			.row{
 				padding:0;
 			}
+
+			.accueil_timer_container:last-child{
+				font-size:0.8em;
+			}
 		}
 
 		#quickmenu {
 			color: white;
 			font-size: 16vw;
-		    padding: 30px;
+		    padding: 40px;
 		    position: absolute;
 		    bottom: 0;
 		    width:100%;
