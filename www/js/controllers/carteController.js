@@ -115,7 +115,10 @@ angular.module('starter.controllers')
           longitude: $scope.etablissementsRow[i].longitude
 			  };
 
-        L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
+        var tempNameEtablissement = $scope.etablissements[i].name;
+        var tempTypeEtablissement = $scope.etablissements[i].type;
+
+        L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameEtablissement, tempTypeEtablissement)});
 
 			}
 		});
@@ -133,7 +136,9 @@ angular.module('starter.controllers')
 					longitude: $scope.artisansRow[i].longitude
 				};
 
-        L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
+        var tempNameArtisan = $scope.artisans[i].name;
+
+        L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameArtisan, "")});
 			}
 		});
 
@@ -152,7 +157,11 @@ angular.module('starter.controllers')
 					longitude: $scope.programmesRow[i].longitude
 
 				};
-        L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
+
+        var tempNameProgramme = $scope.programmes[i].name;
+        var tempHorairesProgramme = $scope.programmes[i].start + " - " + $scope.programmes[i].end;
+
+        L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameProgramme, tempHorairesProgramme)});
 			}
 		});
 
