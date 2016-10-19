@@ -27,7 +27,6 @@ angular.module('starter.controllers')
 			var minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
 			var secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
 
-
 			$(".accueil_jours").text(String(jours));
 			$(".accueil_heures").text(String(heures));
 			$(".accueil_minutes").text(String(minutes));
@@ -40,14 +39,21 @@ angular.module('starter.controllers')
 			compteARebours();
 		},1000);
 
-/*
-		$('ionic-header>.ion-navicon').on('click', function() {
-			$(this).animate({
-					tranlate3d:rotate(720deg)
-				},100
-				,"swing"
-			);
-		});
-*/
+		$scope.rotation = 0;
+
+		$('ion-header-bar .ion-navicon').on('click', function() {
+			if($scope.rotation == 900) {
+				$scope.rotation = 0;
+			} else {
+				$scope.rotation = 900;
+			}
+			$(this).css(
+				{'-ms-transform':'rotate('+$scope.rotation+'deg)',
+				'-webkit-transform':'rotate('+$scope.rotation+'deg)',
+				'transform':'rotate('+$scope.rotation+'deg)',
+				'transition':'transform 300ms'}
+    		);
+    	});
+
 	}
 	]);
