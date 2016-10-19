@@ -4,16 +4,16 @@
         "description" : "Situé dans un cadre idyllique, dans le centre médiéval de St-Ursanne, l'Hotel Du Boeuf propose des chambres confortables avec salle de bains privative et connexion Wi-Fi gratuite.",
         "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "type" : "Hôtel",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.365560",
+        "longitude" : "7.154737"
     },
     {
         "name" : "Taverne Volley",
         "description" : "Taverne du Volley club.",
         "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "type" : "Taverne",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.365050",
+        "longitude" : "7.152841"
     },
     {
         "name" : "Hôtel Demi-Lune",
@@ -28,31 +28,31 @@
         "description" : "Restaurant de l'Ours.",
         "menu" : "Mousseline d’aubergine sous son coulis de tomate et basilic et jambon cru",
         "type" : "Restaurant",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.364976",
+        "longitude" : "7.155665"
     },
     {
         "name" : "Auberge du Jura",
         "description" : "Raffiné, jovial et chaleureux. Situé près du Doubs et à côté de la Collégiale.",
         "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "type" : "Auberge",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.364236",
+        "longitude" : "7.153423"
     },
    {
         "name" : "La Couronne",
         "description" : " le Sot-l'y-laisse - une de nos spécialités. Nous vous servons aussi une cuisine traditionnelle et régionale dans 3 cadres différents (la brasserie - la salle - la terrasse)",
         "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "type" : "Hôtel - Restaurant",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.365790",
+        "longitude" : "7.155789"
     },
     {
         "name" : "Restaurant des Deux-Clefs",
         "description" : "En plein coeur de la vieille ville de Porrentruy, un ancien restaurant très chaleureux.",
         "menu" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "type" : "Restaurant",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.364595",
+        "longitude" : "7.154322"
     }
 ]
