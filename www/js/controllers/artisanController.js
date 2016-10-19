@@ -22,6 +22,10 @@ angular.module('starter.controllers')
 		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	  }).addTo(map);
 
+    var artisans = L.icon({
+      iconUrl: 'data/img/icons/artisanIcon.png',
+      iconAnchor: [17, 36]
+    });
 
 		var etaid = $stateParams.artisanId;
 
@@ -44,7 +48,7 @@ angular.module('starter.controllers')
       var pageID = $('#page_artisan');
 
 
-      L.marker($scope.latLngArtisan).addTo(map);
+      L.marker($scope.latLngArtisan, {icon: artisans}).addTo(map);
       setMapPopup(pageID, $scope.artisan.name, "");
       map.panTo($scope.latLngArtisan);
 
