@@ -14,8 +14,12 @@ angular.module('starter.controllers')
         minZoom: 15,
         maxNativeZoom: 20,
         maxBounds: bounds,
-        zoomControl:false
+        zoomControl:false,
+        tap: false
     });
+
+
+    var pageID = $('#page_carte');
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
@@ -111,7 +115,8 @@ angular.module('starter.controllers')
           longitude: $scope.etablissementsRow[i].longitude
 			  };
 
-        L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map);
+        L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
+
 			}
 		});
 
@@ -128,7 +133,7 @@ angular.module('starter.controllers')
 					longitude: $scope.artisansRow[i].longitude
 				};
 
-        L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map);
+        L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
 			}
 		});
 
@@ -147,11 +152,11 @@ angular.module('starter.controllers')
 					longitude: $scope.programmesRow[i].longitude
 
 				};
-        L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map);
+        L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
 			}
 		});
 
-
+    map.on('click', function(){closeMapPopup(pageID)});
 
   }
 ]);
