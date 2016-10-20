@@ -1,0 +1,9 @@
+<ion-view view-title="{{ 'PARAMETRES_TITLE' | translate }}" id="page_parametres">
+  <ion-content class="padding" scroll="false">
+  	<h3>{{ 'PARAMETRES_TEXTE_SUBTITLE_1' | translate }}</h3>
+    <ion-list ng-click="changeLang(currentLang)">
+      <ion-radio ng-model="currentLang" ng-value="'fr'"><img src="data/img/lang/fr.png" />Français</ion-radio>
+      <ion-radio ng-model="currentLang" ng-value="'de'"><img src="data/img/lang/de.png" />Deutsch</ion-radio>
+    </ion-list>
+  </ion-content>
+</ion-view>

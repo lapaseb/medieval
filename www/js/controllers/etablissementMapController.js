@@ -22,6 +22,10 @@ angular.module('starter.controllers')
 	  }).addTo(map);
 
 
+    var restaurant = L.icon({
+      iconUrl: 'data/img/icons/restaurantIcon.png',
+      iconAnchor: [17, 36]
+    });
 
     var etaid = $stateParams.etablissementId;
 
@@ -46,7 +50,7 @@ angular.module('starter.controllers')
       $scope.latLngEtablissement = L.latLng($scope.etablissement.latitude, $scope.etablissement.longitude);
       var pageID = $('#page_etablissement_carte');
 
-      L.marker($scope.latLngEtablissement).addTo(map);
+      L.marker($scope.latLngEtablissement, {icon: restaurant}).addTo(map);
       setMapPopup(pageID, $scope.etablissement.name, $scope.etablissement.description);
       map.panTo($scope.latLngEtablissement);
 

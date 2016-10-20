@@ -1,0 +1,89 @@
+{
+
+    "MENU_TITLE": "Menu",
+
+
+
+    "ACCUEIL_TITLE": "Willkommen",
+    "ACCUEIL_IMG_LINK": "logo_medievales_fr.png",
+    "ACCUEIL_TEXTE_JOURS": "Tage",
+    "ACCUEIL_TEXTE_HEURES": "Stunden",
+    "ACCUEIL_TEXTE_MINUTES": "Minuten",
+    "ACCUEIL_TEXTE_SECONDES": "Sekunden",
+    "ACCUEIL_TEXTE_SECONDES": "Sekunden",
+
+
+
+    "ARTISANS_TITLE": "Handwerker",
+
+
+
+    "ARTISAN_TITLE": "Handwerker",
+
+
+
+    "CARTE_TITLE": "Karte",
+
+
+
+    "PROGRAMME_CARTE_TITLE": "Karte",
+
+
+
+    "PROGRAMMES_TITLE": "Programm",
+    "PROGRAMMES_TEXTE_STATUT": "Status:",
+    "PROGRAMMES_TEXTE_STATUT1": "Bevorstehend",
+
+
+
+    "PROGRAMME_TITLE": "Programm",
+    "PROGRAMME_TEXTE_DEBUT": "Startzeit",
+    "PROGRAMME_TEXTE_FIN": "Endzeit",
+    "PROGRAMME_TEXTE_STATUT": "Status:",
+    "PROGRAMME_TEXTE_STATUT1": "Bevorstehend",
+    "PROGRAMME_TEXTE_AFFICHER_CARTE": "Auf der Karte anzeigen",
+
+
+
+
+    "RESTAURANTS_TITLE": "Restaurants, Hotels, Taverne",
+    "RESTAURANTS_SUBTITLE": "Institutionen",
+
+
+
+    "RESTAURANT_TITLE": "Institutionen",
+    "RESTAURANT_TEXTE_AUMENU": "Auf der Speisekarte : ",
+    "RESTAURANT_TEXTE_AFFICHER_CARTE": "Auf der Karte anzeigen",
+    "RESTAURANT_TEXTE_VOTER": "Wählen Sie den Wettbewerb um die beste Taverne !",
+    "RESTAURANT_TEXTE_NOTE1": "Notieren Sie sich Ihre Mahlzeit",
+    "RESTAURANT_TEXTE_NOTE2": "Beachten Sie die Atmosphäre",
+    "RESTAURANT_TEXTE_NOTE3": "Beachten Sie die Dekoration",
+
+
+
+    "SECURITE_TITLE": "Sicherheit & Informationen",
+    "SECURITE_TEXTE_TITLE": "Sicherheit & Informationen",
+
+
+
+
+
+    "CONCOURS_COSTUMES_TITLE": "Wettbewerb Kostüme",
+    "CONCOURS_COSTUMES_TEXTE_TITLE": "Wettbewerb Kostüme",
+
+
+
+    "SPONSORS_TITLE": "Sponsors",
+    "SPONSORS_TEXTE_TITLE": "Sponsors",
+
+
+
+    "CONTACTS_TITLE": "Kontakte",
+    "CONTACTS_TEXTE_TITLE": "Kontakte",
+
+
+
+    "PARAMETRES_TITLE": "Einstellungen",
+    "PARAMETRES_TEXTE_TITLE": "Einstellungen",
+    "PARAMETRES_TEXTE_SUBTITLE_1": "Sprachauswahl"
+}

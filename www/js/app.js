@@ -171,10 +171,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('app.parametres', {
+    url: '/parametres',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/parametres.html',
+        controller: 'ParametresCtrl'
+      }
+    }
+  })
 
   // if none of the above states are matched, use this as the fallback
   ;$urlRouterProvider.otherwise('/app/accueil');
-
 
 
   /* Traduction */
@@ -184,7 +192,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     suffix: '.json'
   });
 
-
-  $translateProvider.preferredLanguage('fr');
+  if(window.localStorage.getItem("lang") != undefined){
+    $translateProvider.preferredLanguage(window.localStorage.getItem("lang"));
+  } else {
+    $translateProvider.preferredLanguage("fr");
+  }
 
 });

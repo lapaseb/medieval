@@ -1,8 +1,8 @@
 
 
 angular.module('starter.controllers')
-.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup',
-    function($scope, $http, $rootScope, $ionicPopup) {
+.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService',
+    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService) {
 
     var southWest = L.latLng(47.369743926768784, 7.174824539917747),
     northEast = L.latLng(47.360589810163582, 7.1379860116837257),
@@ -14,8 +14,12 @@ angular.module('starter.controllers')
         minZoom: 15,
         maxNativeZoom: 20,
         maxBounds: bounds,
-        zoomControl:false
+        zoomControl:false,
+        tap: false
     });
+
+
+    var pageID = $('#page_carte');
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
@@ -74,44 +78,94 @@ angular.module('starter.controllers')
 
     });
 
+
 	  L.tileLayer('data/img/MapQuest/{z}/{x}/{y}.png', {
 		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	  }).addTo(map);
 
     map.addControl(new ourCustomControl());
 
-    var icon12 = L.icon({
-      iconUrl: 'data/img/icons/icon12.png',
+    var restaurant = L.icon({
+      iconUrl: 'data/img/icons/restaurantIcon.png',
       iconAnchor: [17, 36]
     });
 
-    var parkingIcon = L.icon({
-      iconUrl: 'data/img/icons/parkingIcon.png',
+    var artisans = L.icon({
+      iconUrl: 'data/img/icons/artisanIcon.png',
       iconAnchor: [17, 36]
     });
 
-    var medicIcon = L.icon({
-      iconUrl: 'data/img/icons/medicIcon.png',
+    var events = L.icon({
+      iconUrl: 'data/img/icons/eventIcon.png',
       iconAnchor: [17, 36]
     });
 
-    var zooIcon = L.icon({
-      iconUrl: 'data/img/icons/zooIcon.png',
-      iconAnchor: [17, 36]
-    });
 
-    var pageID = $('#page_carte');
+    // Affiche tous les marqueurs des établissements
+    etablissementsService.get(function (data) {
+			$scope.etablissementsRow = data;
+			$scope.etablissements = [];
+			for (var i = 0; i < $scope.etablissementsRow.length; i++) {
+				$scope.etablissements[i] = {
+					id: i,
+					name: $scope.etablissementsRow[i].name,
+					description: $scope.etablissementsRow[i].description,
+         	type: $scope.etablissementsRow[i].type,
+          latitude: $scope.etablissementsRow[i].latitude,
+          longitude: $scope.etablissementsRow[i].longitude
+			  };
 
-    L.marker([47.365714, 7.155803], {icon: icon12}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark1", "desc1")});
-    L.marker([47.365660, 7.155120], {icon: parkingIcon}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark2", "desc2")});
-    L.marker([47.365002, 7.155689], {icon: medicIcon}).addTo(map).on('click', function(){setMapPopup(pageID, "Mark3", "desc3")});
-    L.marker([47.364907, 7.154937], {icon: zooIcon}).addTo(map).on('click', function(){setMapPopup('pageID', "Mark4", "desc4")});
-    L.marker([47.364814, 7.154437]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark5", "desc5")});
-    L.marker([47.366814, 7.152437]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark6", "desc6")});
-    L.marker([47.366514, 7.152237]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark7", "desc7")});
-    L.marker([47.366614, 7.152337]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark8", "desc8")});
-    L.marker([47.364424, 7.153161]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark9", "desc9")});
-    L.marker([47.365969, 7.155872]).addTo(map).on('click', function(){setMapPopup(pageID, "Mark0", "desc0")});
+        var tempNameEtablissement = $scope.etablissements[i].name;
+        var tempTypeEtablissement = $scope.etablissements[i].type;
+
+        L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameEtablissement, tempTypeEtablissement)});
+
+			}
+		});
+
+
+    // Affiche tous les marqueurs des artisans
+    artisansService.get(function (data) {
+			$scope.artisansRow = data;
+			$scope.artisans = [];
+			for (var i = 0; i < $scope.artisansRow.length; i++) {
+				$scope.artisans[i] = {
+					id: i,
+					name: $scope.artisansRow[i].name,
+					latitude: $scope.artisansRow[i].latitude,
+					longitude: $scope.artisansRow[i].longitude
+				};
+
+        var tempNameArtisan = $scope.artisans[i].name;
+
+        L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameArtisan, "")});
+			}
+		});
+
+    // Affiche tous les marqueurs du programme (événements)
+    programmesService.get(function (data) {
+			$scope.programmesRow = data;
+			$scope.programmes = [];
+			for (var i = 0; i < $scope.programmesRow.length; i++) {
+				$scope.programmes[i] = {
+					id: i,
+					name: $scope.programmesRow[i].name,
+          description: $scope.programmesRow[i].description,
+					start: $scope.programmesRow[i].start,
+					end: $scope.programmesRow[i].end,
+					latitude: $scope.programmesRow[i].latitude,
+					longitude: $scope.programmesRow[i].longitude
+
+				};
+
+        var tempNameProgramme = $scope.programmes[i].name;
+        var tempHorairesProgramme = $scope.programmes[i].start + " - " + $scope.programmes[i].end;
+
+        L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameProgramme, tempHorairesProgramme)});
+			}
+		});
+
     map.on('click', function(){closeMapPopup(pageID)});
+
   }
 ]);

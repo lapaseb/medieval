@@ -22,6 +22,10 @@ angular.module('starter.controllers')
 	  }).addTo(map);
 
 
+    var events = L.icon({
+      iconUrl: 'data/img/icons/eventIcon.png',
+      iconAnchor: [17, 36]
+    });
 
     var progid = $stateParams.programmeId;
 
@@ -46,7 +50,7 @@ angular.module('starter.controllers')
 
       var pageID = $('#page_programme_carte');
 
-      L.marker($scope.latLngProgramme).addTo(map);
+      L.marker($scope.latLngProgramme, {icon: events}).addTo(map);
       setMapPopup(pageID, $scope.programme.name, $scope.programme.description);
 
       map.panTo($scope.latLngProgramme);
