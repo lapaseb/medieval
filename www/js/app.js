@@ -25,6 +25,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     } else {
        $rootScope.apiUrl = "http://medievales.visitapp.ch/API";
     }
+/*
+    // Schedule notification for tomorrow to remember about the meeting
+    cordova.plugins.notification.local.schedule({
+        text: "Wake up!",
+        sound: "file://data/seb.mp3",
+        every: 2 // every 30 minutes
+    });
+*/
 
   });
 })
