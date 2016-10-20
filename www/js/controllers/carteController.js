@@ -105,21 +105,21 @@ angular.module('starter.controllers')
     etablissementsService.get(function (data) {
 			$scope.etablissementsRow = data;
 			$scope.etablissements = [];
-			for (var i = 0; i < $scope.etablissementsRow.length; i++) {
-				$scope.etablissements[i] = {
-					id: i,
-					name: $scope.etablissementsRow[i].name,
-					description: $scope.etablissementsRow[i].description,
-         	type: $scope.etablissementsRow[i].type,
-          latitude: $scope.etablissementsRow[i].latitude,
-          longitude: $scope.etablissementsRow[i].longitude
+			for (var index = 0; index < $scope.etablissementsRow.length; index++) {
+				$scope.etablissements[index] = {
+					id: index,
+					name: $scope.etablissementsRow[index].name,
+					description: $scope.etablissementsRow[index].description,
+         	type: $scope.etablissementsRow[index].type,
+          latitude: $scope.etablissementsRow[index].latitude,
+          longitude: $scope.etablissementsRow[index].longitude
 			  };
 
-        var tempNameEtablissement = $scope.etablissements[i].name;
-        var tempTypeEtablissement = $scope.etablissements[i].type;
-
-        L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameEtablissement, tempTypeEtablissement)});
-
+        function setMarker(i){
+          L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map).on('click', function(){setMapPopup(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type)});
+        }
+        
+        setMarker(index);
 			}
 		});
 
@@ -128,17 +128,20 @@ angular.module('starter.controllers')
     artisansService.get(function (data) {
 			$scope.artisansRow = data;
 			$scope.artisans = [];
-			for (var i = 0; i < $scope.artisansRow.length; i++) {
-				$scope.artisans[i] = {
-					id: i,
-					name: $scope.artisansRow[i].name,
-					latitude: $scope.artisansRow[i].latitude,
-					longitude: $scope.artisansRow[i].longitude
+			for (var index = 0; index < $scope.artisansRow.length; index++) {
+				$scope.artisans[index] = {
+					id: index,
+					name: $scope.artisansRow[index].name,
+					latitude: $scope.artisansRow[index].latitude,
+					longitude: $scope.artisansRow[index].longitude
 				};
 
-        var tempNameArtisan = $scope.artisans[i].name;
-
-        L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameArtisan, "")});
+       
+        function setMarker(i){
+          L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map).on('click', function(){setMapPopup(pageID, $scope.artisans[i].name, "")});
+        }
+        
+        setMarker(index);
 			}
 		});
 
@@ -146,23 +149,24 @@ angular.module('starter.controllers')
     programmesService.get(function (data) {
 			$scope.programmesRow = data;
 			$scope.programmes = [];
-			for (var i = 0; i < $scope.programmesRow.length; i++) {
-				$scope.programmes[i] = {
-					id: i,
-					name: $scope.programmesRow[i].name,
-          description: $scope.programmesRow[i].description,
-					start: $scope.programmesRow[i].start,
-					end: $scope.programmesRow[i].end,
-					latitude: $scope.programmesRow[i].latitude,
-					longitude: $scope.programmesRow[i].longitude
+			for (var index = 0; index < $scope.programmesRow.length; index++) {
+				$scope.programmes[index] = {
+					id: index,
+					name: $scope.programmesRow[index].name,
+          description: $scope.programmesRow[index].description,
+					start: $scope.programmesRow[index].start,
+					end: $scope.programmesRow[index].end,
+					latitude: $scope.programmesRow[index].latitude,
+					longitude: $scope.programmesRow[index].longitude
 
 				};
-
-        var tempNameProgramme = $scope.programmes[i].name;
-        var tempHorairesProgramme = $scope.programmes[i].start + " - " + $scope.programmes[i].end;
-
-        L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map).on('click', function(){setMapPopup(pageID, tempNameProgramme, tempHorairesProgramme)});
-			}
+			
+        function setMarker(i){
+          L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map).on('click', function(){setMapPopup(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end)});
+        }
+        
+        setMarker(index);
+      }
 		});
 
     map.on('click', function(){closeMapPopup(pageID)});
