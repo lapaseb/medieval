@@ -12,23 +12,23 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/18.00",
         "end" : "11.11.16/05.00",
-        "latitude" : "47.364950",
-        "longitude" : " 7.153997"
+        "latitude" : "47.364067",
+        "longitude" : " 7.149071"
     },
     {
         "name" : "Animations dans toutes les rues de la ville, Chants et danses, ripaille en musique dans les tavernes et les restaurants",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/19.30",
         "end" : "11.11.16/05.00",
-        "latitude" : "47.364537",
-        "longitude" : "7.154110"
+        "latitude" : "47.361736",
+        "longitude" : "7.148623"
     },
     {
         "name" : "La Nuit de l'illumination avec l'artiste zurichois Gerry Hofstetter. Tout le centre de la cité médiévale sera illuminé",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/22.00",
         "end" : "11.11.16/01.00",
-        "latitude" : "47.365714",
+        "latitude" : "47.365614",
         "longitude" : " 7.155803"
     },
     {
@@ -36,7 +36,7 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/22.00",
         "end" : "10.11.16/23.00",
-        "latitude" : "47.365714",
+        "latitude" : "47.365414",
         "longitude" : " 7.155803"
     },
     {
@@ -44,7 +44,7 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/23.00",
         "end" : "10.11.16/24.00",
-        "latitude" : "47.365714",
+        "latitude" : "47.365314",
         "longitude" : " 7.155803"
     },
     {
@@ -52,7 +52,7 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/24.00",
         "end" : "11.11.16/01.00",
-        "latitude" : "47.365714",
+        "latitude" : "47.365214",
         "longitude" : " 7.155803"
     },
     {
@@ -60,7 +60,7 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "10.11.16/22.15",
         "end" : "11.11.16/00.15",
-        "latitude" : "47.365714",
+        "latitude" : "47.365914",
         "longitude" : " 7.155803"
     },
     {
@@ -68,8 +68,8 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "11.11.16/00.15",
         "end" : "11.11.16/02.15",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.365794",
+        "longitude" : " 7.155703"
     },
     {
         "name" : "Ouverture des caisses",
@@ -77,7 +77,7 @@
         "start" : "11.11.16/09.00",
         "end" : "12.11.16/05:00",
         "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "longitude" : " 7.155603"
     },
     {
         "name" : "Cérémonie d'ouverture officielle de la manifestation sur la place du Mai",
@@ -85,7 +85,7 @@
         "start" : "11.11.16/10.00",
         "end" : "11.11.16/12:00",
         "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "longitude" : " 7.155503"
     },
     {
         "name" : "Grand cortège aux flambeaux",
@@ -93,7 +93,7 @@
         "start" : "11.11.16/21.30",
         "end" : "11.11.16/23:00",
         "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "longitude" : " 7.155403"
     },
     {
         "name" : "Ouverture des caisses",
@@ -101,7 +101,7 @@
         "start" : "12.11.16/09.00",
         "end" : "12.11.16/22:00",
         "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "longitude" : " 7.155203"
     },
     {
         "name" : "Messe avec chants grégoriens à la Collégiale",
@@ -109,22 +109,22 @@
         "start" : "12.11.16/10.00",
         "end" : "12.11.16/11:00",
         "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "longitude" : " 7.155303"
     },
     {
         "name" : "Résultat du concours du plus beau costume",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "12.11.16/16.00",
         "end" : "12.11.16/17:00",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.365614",
+        "longitude" : " 7.155303"
     },
     {
         "name" : "Grand cortège final",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "start" : "12.11.16/17.00",
         "end" : "12.11.16/19:30",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
+        "latitude" : "47.365914",
+        "longitude" : " 7.155203"
     }
 ]

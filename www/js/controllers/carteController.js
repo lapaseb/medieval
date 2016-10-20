@@ -19,7 +19,15 @@ angular.module('starter.controllers')
     });
 
 
+
+    $scope.artisansMarkers = [];
+    $scope.programmesMarkers = [];
+    $scope.etablissementMarkers = [];
+
     var pageID = $('#page_carte');
+    $scope.EvenementLayer = L.layerGroup([]);
+    $scope.ArtisanLayer = L.layerGroup([]);
+    $scope.EtablissementLayer = L.layerGroup([]);
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
@@ -116,9 +124,11 @@ angular.module('starter.controllers')
 			  };
 
         function setMarker(i){
-          L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).addTo(map).on('click', function(){setMapPopup(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type)});
+          markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant});
+          $scope.EtablissementLayer.addLayer(markerEtablissement);
+          $scope.etablissementMarkers.push(markerEtablissement);
         }
-        
+
         setMarker(index);
 			}
 		});
@@ -136,11 +146,13 @@ angular.module('starter.controllers')
 					longitude: $scope.artisansRow[index].longitude
 				};
 
-       
+
         function setMarker(i){
-          L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).addTo(map).on('click', function(){setMapPopup(pageID, $scope.artisans[i].name, "")});
+          markerArtisan = new L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).on('click', function(){setMapPopup(pageID, $scope.artisans[i].name, "")});
+          $scope.ArtisanLayer.addLayer(markerArtisan);
+          $scope.artisansMarkers.push(markerArtisan);
         }
-        
+
         setMarker(index);
 			}
 		});
@@ -160,28 +172,39 @@ angular.module('starter.controllers')
 					longitude: $scope.programmesRow[index].longitude
 
 				};
-			
+
         function setMarker(i){
-          L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).addTo(map).on('click', function(){setMapPopup(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end)});
+          markerEvenement = new L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).on('click', function(){setMapPopup(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end)});
+          $scope.EvenementLayer.addLayer(markerEvenement);
+          $scope.programmesMarkers.push(markerEvenement);
         }
-        
+
         setMarker(index);
       }
 		});
 
     map.on('click', function(){closeMapPopup(pageID)});
 
+    $scope.showArtisan = true;
+    $scope.showRestaurant = true;
+    $scope.showEvenement = true;
 
-
+    $scope.EvenementLayer.addTo(map);
+    $scope.ArtisanLayer.addTo(map);
+    $scope.EtablissementLayer.addTo(map);
 
     $('#restaurant-filter').click(function() {
       if($( this ).hasClass("selected")){
         $( this ).removeClass("selected");
         $( this ).find(".img").removeClass("selected");
+        $scope.showRestaurant = false;
+        map.removeLayer($scope.EtablissementLayer);
 
       } else {
         $( this ).addClass("selected");
         $( this ).find(".img").addClass("selected");
+        $scope.showRestaurant = true;
+        map.addLayer($scope.EtablissementLayer);
       }
     });
 
@@ -189,10 +212,14 @@ angular.module('starter.controllers')
       if($( this ).hasClass("selected")){
         $( this ).removeClass("selected");
         $( this ).find(".img").removeClass("selected");
+        $scope.showEvenement = false;
+        map.removeLayer($scope.EvenementLayer);
 
       } else {
         $( this ).addClass("selected");
         $( this ).find(".img").addClass("selected");
+        $scope.showEvenement = true;
+        map.addLayer($scope.EvenementLayer);
       }
 
     });
@@ -201,10 +228,14 @@ angular.module('starter.controllers')
       if($( this ).hasClass("selected")){
         $( this ).removeClass("selected");
         $( this ).find(".img").removeClass("selected");
+        $scope.showArtisan = false;
+        map.removeLayer($scope.ArtisanLayer);
 
       } else {
         $( this ).addClass("selected");
         $( this ).find(".img").addClass("selected");
+        $scope.showArtisan = true;
+        map.addLayer($scope.ArtisanLayer);
       }
     });
 
