@@ -10,9 +10,9 @@ angular.module('starter.controllers')
 
     var map = L.map('mapid', {
         center: [47.364965, 7.154498],
-        zoom: 19,
+        zoom: 18,
         minZoom: 15,
-        maxZoom: 20,
+        maxZoom: 19,
         maxBounds: bounds,
         zoomControl:false,
         tap: false
@@ -93,7 +93,7 @@ angular.module('starter.controllers')
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
 
-	
+
     map.addControl(new ourCustomControl());
 
     var restaurant = L.icon({
