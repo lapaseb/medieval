@@ -171,5 +171,42 @@ angular.module('starter.controllers')
 
     map.on('click', function(){closeMapPopup(pageID)});
 
+
+
+
+    $('#restaurant-filter').click(function() {
+      if($( this ).hasClass("selected")){
+        $( this ).removeClass("selected");
+        $( this ).find(".img").removeClass("selected");
+
+      } else {
+        $( this ).addClass("selected");
+        $( this ).find(".img").addClass("selected");
+      }
+    });
+
+    $('#events-filter').click(function() {
+      if($( this ).hasClass("selected")){
+        $( this ).removeClass("selected");
+        $( this ).find(".img").removeClass("selected");
+
+      } else {
+        $( this ).addClass("selected");
+        $( this ).find(".img").addClass("selected");
+      }
+
+    });
+
+    $('#artisans-filter').click(function() {
+      if($( this ).hasClass("selected")){
+        $( this ).removeClass("selected");
+        $( this ).find(".img").removeClass("selected");
+
+      } else {
+        $( this ).addClass("selected");
+        $( this ).find(".img").addClass("selected");
+      }
+    });
+
   }
 ]);

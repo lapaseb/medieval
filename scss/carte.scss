@@ -3,6 +3,7 @@
 	  width: 100%;
 	  height: 93.5vh;
 	}
+
 	.leaflet-top + .leaflet-right{
 		.leaflet-bar, .leaflet-control, .leaflet-control-custom {
 			background: url('../data/img/localisationicon.png') center center;
@@ -14,6 +15,60 @@
 			background-repeat: no-repeat;
 		}
 	}
+
+	.filter{
+		position: absolute;
+	    top: 0;
+	    z-index: 1000;
+	    margin: 10px;
+
+	    .filter-button{
+	    	background-color: white;
+		    padding: 5px;
+		    width: 40px;
+		    height: 40px;
+		    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+		    border-radius: 4px;
+		    margin-right:10px;
+		    display:inline-block;
+
+		    .img{
+		    	background-size:cover;
+		    	height: 100%;
+		    }
+	    }
+
+	    .selected{
+	    	background-color: #e3221b;
+	    }
+
+
+	    #restaurant-filter{
+	    	.img{
+	    		background-image: url(../data/img/icons/restaurant-filter.png);
+    		}
+	    	.selected{
+		    	background-image: url(../data/img/icons/restaurant-filter-white.png);
+		    }
+	    }
+    	#artisans-filter{
+    		.img{
+    			background-image: url(../data/img/icons/artisans-filter.png);
+			}
+    		.selected{
+		    	background-image: url(../data/img/icons/artisans-filter-white.png);
+		    }
+    	}
+    	#events-filter{
+    		.img{
+    			background-image: url(../data/img/icons/events-filter.png);
+			}
+    		.selected{
+		    	background-image: url(../data/img/icons/events-filter-white.png);
+		    }
+    	}
+
+	}
 }
 
 .map-popup {
@@ -23,9 +78,11 @@
 	bottom: -1000px;
 	z-index: 1000;
 	margin: 0;
+
 	h2 {
 		font-weight: bold;
 	}
+
 	#description-popup {
 
 	}
