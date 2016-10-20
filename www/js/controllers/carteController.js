@@ -10,9 +10,9 @@ angular.module('starter.controllers')
 
     var map = L.map('mapid', {
         center: [47.364965, 7.154498],
-        zoom: 18,
+        zoom: 19,
         minZoom: 15,
-        maxNativeZoom: 20,
+        maxZoom: 20,
         maxBounds: bounds,
         zoomControl:false,
         tap: false
@@ -86,11 +86,14 @@ angular.module('starter.controllers')
 
     });
 
+    var tileLayer = L.tileLayer(
+      'data/img/MapQuest/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        minZoom: 15,
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
 
-	  L.tileLayer('data/img/MapQuest/{z}/{x}/{y}.png', {
-		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	  }).addTo(map);
-
+	
     map.addControl(new ourCustomControl());
 
     var restaurant = L.icon({
