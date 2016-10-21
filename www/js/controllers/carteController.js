@@ -1,8 +1,8 @@
 
 
 angular.module('starter.controllers')
-.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService',
-    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService) {
+.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$location',
+    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $location) {
 
     var southWest = L.latLng(47.369743926768784, 7.174824539917747),
     northEast = L.latLng(47.360589810163582, 7.1379860116837257),
@@ -19,15 +19,20 @@ angular.module('starter.controllers')
     });
 
 
-
+    // Déclaration des tableaux de markers
     $scope.artisansMarkers = [];
     $scope.programmesMarkers = [];
     $scope.etablissementMarkers = [];
 
+    // On stock l'ID de la pageID
     var pageID = $('#page_carte');
+
+    // On créé des layerGroup pour grouper les marqueurs sur la carte afin de les gérer plus facilement
     $scope.EvenementLayer = L.layerGroup([]);
     $scope.ArtisanLayer = L.layerGroup([]);
     $scope.EtablissementLayer = L.layerGroup([]);
+
+
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
@@ -91,7 +96,7 @@ angular.module('starter.controllers')
         maxZoom: 19,
         minZoom: 15,
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
+    }).addTo(map);
 
 
     map.addControl(new ourCustomControl());
@@ -127,7 +132,7 @@ angular.module('starter.controllers')
 			  };
 
         function setMarker(i){
-          markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant});
+          markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopup(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, '#/app/etablissement/' + i)});
           $scope.EtablissementLayer.addLayer(markerEtablissement);
           $scope.etablissementMarkers.push(markerEtablissement);
         }
@@ -151,7 +156,7 @@ angular.module('starter.controllers')
 
 
         function setMarker(i){
-          markerArtisan = new L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).on('click', function(){setMapPopup(pageID, $scope.artisans[i].name, "")});
+          markerArtisan = new L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).on('click', function(){setMapPopup(pageID, $scope.artisans[i].name, "", '#/app/artisan/' + i)});
           $scope.ArtisanLayer.addLayer(markerArtisan);
           $scope.artisansMarkers.push(markerArtisan);
         }
@@ -177,24 +182,33 @@ angular.module('starter.controllers')
 				};
 
         function setMarker(i){
-          markerEvenement = new L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events}).on('click', function(){setMapPopup(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end)});
-          $scope.EvenementLayer.addLayer(markerEvenement);
+          markerEvenement = new L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events});
           $scope.programmesMarkers.push(markerEvenement);
+          markerEvenement.on('click', function(){setMapPopup(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end, '#/app/programme/' + i)});
+          $scope.EvenementLayer.addLayer(markerEvenement);
         }
 
         setMarker(index);
       }
 		});
 
+
+
+
     map.on('click', function(){closeMapPopup(pageID)});
 
+    // Variable permettant de tester si les marqueurs sont affichés ou non
     $scope.showArtisan = true;
     $scope.showRestaurant = true;
     $scope.showEvenement = true;
 
+
+    // On ajoute tous les layers de marqueurs précédemment créés à la carte
     $scope.EvenementLayer.addTo(map);
     $scope.ArtisanLayer.addTo(map);
     $scope.EtablissementLayer.addTo(map);
+
+
 
     $('#restaurant-filter').click(function() {
       if($( this ).hasClass("selected")){

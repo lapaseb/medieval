@@ -9899,7 +9899,7 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   #page_accueil ion-content #quickmenu {
     color: white;
     font-size: 16vw;
-    padding: 30px;
+    padding: 40px;
     position: absolute;
     bottom: 0;
     width: 100%; }
@@ -9921,9 +9921,7 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 
 #mapArtisan {
   width: 100%;
-  height: 96vh;
-  position: fixed;
-  bottom: 0; }
+  height: 96vh; }
   #mapArtisan .leaflet-top + .leaflet-right .leaflet-bar, #mapArtisan .leaflet-top + .leaflet-right .leaflet-control, #mapArtisan .leaflet-top + .leaflet-right .leaflet-control-custom {
     background: url("../data/img/localisationicon.png") center center;
     background-color: white;
@@ -9941,7 +9939,7 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 
 #page_carte #mapid {
   width: 100%;
-  height: 96vh; }
+  height: 100%; }
 
 #page_carte .leaflet-top + .leaflet-right .leaflet-bar, #page_carte .leaflet-top + .leaflet-right .leaflet-control, #page_carte .leaflet-top + .leaflet-right .leaflet-control-custom {
   background: url("../data/img/localisationicon.png") center center;
@@ -9951,6 +9949,52 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   height: 40px;
   padding: 10px;
   background-repeat: no-repeat; }
+
+#page_carte .filter {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  margin: 10px; }
+  #page_carte .filter .filter-button {
+    background-color: white;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block; }
+    #page_carte .filter .filter-button .img {
+      background-size: cover;
+      height: 100%; }
+  #page_carte .filter .selected {
+    background-color: #e3221b; }
+  #page_carte .filter #restaurant-filter .img {
+    background-image: url(../data/img/icons/restaurant-filter.png); }
+  #page_carte .filter #restaurant-filter .selected {
+    background-image: url(../data/img/icons/restaurant-filter-white.png); }
+  #page_carte .filter #artisans-filter .img {
+    background-image: url(../data/img/icons/artisans-filter.png); }
+  #page_carte .filter #artisans-filter .selected {
+    background-image: url(../data/img/icons/artisans-filter-white.png); }
+  #page_carte .filter #events-filter .img {
+    background-image: url(../data/img/icons/events-filter.png); }
+  #page_carte .filter #events-filter .selected {
+    background-image: url(../data/img/icons/events-filter-white.png); }
+
+.map-popup {
+  width: 100%;
+  max-height: 1000px;
+  position: absolute;
+  bottom: -1000px;
+  z-index: 1000;
+  margin: 0; }
+  .map-popup h2 {
+    font-weight: bold; }
+  .map-popup #linkToSingle {
+    color: #b51b16; }
+  .map-popup #linkToSingle:hover {
+    cursor: pointer; }
 
 #page_etablissement .rating {
   color: #a9a9a9;
@@ -9987,9 +10031,28 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 #page_etablissement .showMap {
   width: 100%; }
 
-#page_programme_carte #mapProgramme {
+#page_etablissement_carte #mapEtablissement {
   width: 100%;
   height: 94vh; }
+
+#page_etablissement_carte .leaflet-top + .leaflet-right .leaflet-bar, #page_etablissement_carte .leaflet-top + .leaflet-right .leaflet-control, #page_etablissement_carte .leaflet-top + .leaflet-right .leaflet-control-custom {
+  background: url("../data/img/localisationicon.png") center center;
+  background-color: white;
+  background-size: 30px 30px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-repeat: no-repeat; }
+
+#page_programme #pageContent {
+  padding: 15px; }
+
+#page_programme .showMap {
+  width: 100%; }
+
+#page_programme_carte #mapProgramme {
+  width: 100%;
+  height: 100%; }
 
 #page_programme_carte .leaflet-top + .leaflet-right .leaflet-bar, #page_programme_carte .leaflet-top + .leaflet-right .leaflet-control, #page_programme_carte .leaflet-top + .leaflet-right .leaflet-control-custom {
   background: url("../data/img/localisationicon.png") center center;
@@ -10004,6 +10067,17 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   list-style-type: disc;
   margin: 15px; }
 
+#page_securite h4 {
+  font-weight: bold; }
+
 #page_contacts ul {
   list-style-type: disc;
   margin: 15px; }
+
+#page_parametres .item-content {
+  padding: 5px; }
+  #page_parametres .item-content img {
+    vertical-align: middle;
+    margin: 10px; }
+  #page_parametres .item-content span {
+    vertical-align: middle; }

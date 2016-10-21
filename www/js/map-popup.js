@@ -6,11 +6,15 @@ function openMapPopup(pageID) {
 	);
 }
 
-function setMapPopup(pageID, titre, description) {
+function setMapPopup(pageID, titre, description, url) {
 	var popup = pageID.find(".map-popup");
 	popup.find('h2').text(titre);
 	popup.find('#description-popup').text(description);
 	openMapPopup(pageID);
+
+	popup.find('#linkToSingle').click(function() {
+		window.location.href = url;
+	})
 }
 
 function closeMapPopup(pageID) {
