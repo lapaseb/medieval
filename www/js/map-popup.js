@@ -6,8 +6,13 @@ function openMapPopup(pageID) {
 	);
 }
 
-function setMapPopup(pageID, titre, description, url) {
+function setMapPopup(pageID, titre, description, url, showButton) {
 	var popup = pageID.find(".map-popup");
+
+	if (showButton == false){
+		$('#linkToSingle').hide();
+	}
+
 	popup.find('h2').text(titre);
 	popup.find('#description-popup').text(description);
 	openMapPopup(pageID);

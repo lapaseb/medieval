@@ -31,6 +31,7 @@ angular.module('starter.controllers')
     $scope.EvenementLayer = L.layerGroup([]);
     $scope.ArtisanLayer = L.layerGroup([]);
     $scope.EtablissementLayer = L.layerGroup([]);
+    $scope.AutreLayer = L.layerGroup([]);
 
 
 
@@ -116,6 +117,27 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
+    var doors = L.icon({
+      iconUrl: 'data/img/icons/doors.png',
+      iconAnchor: [17, 36]
+    });
+
+    var medical = L.icon({
+      iconUrl: 'data/img/icons/medicIcon.png',
+      iconAnchor: [17, 36]
+    })
+
+
+    markerEntree1 = new L.marker([47.364435, 7.153132], {icon: doors}).on('click', function(){setMapPopup(pageID, 'Entrée', '', '', false)});
+    markerEntree2 = new L.marker([47.364182, 7.154497], {icon: doors}).on('click', function(){setMapPopup(pageID, 'Entrée', '', '', false)});
+    markerEntree3 = new L.marker([47.365954, 7.155788], {icon: doors}).on('click', function(){setMapPopup(pageID, 'Entrée', '', '', false)});
+    markerMedical = new L.marker([47.364970, 7.155246], {icon: medical}).on('click', function(){setMapPopup(pageID, 'Premiers secours', '', '', false)});
+
+    $scope.AutreLayer.addLayer(markerEntree1);
+    $scope.AutreLayer.addLayer(markerEntree2);
+    $scope.AutreLayer.addLayer(markerEntree3);
+    $scope.AutreLayer.addLayer(markerMedical);
+    $scope.AutreLayer.addTo(map);
 
     // Affiche tous les marqueurs des établissements
     etablissementsService.get(function (data) {
@@ -204,9 +226,6 @@ angular.module('starter.controllers')
 
 
     // On ajoute tous les layers de marqueurs précédemment créés à la carte
-    $scope.EvenementLayer.addTo(map);
-    $scope.ArtisanLayer.addTo(map);
-    $scope.EtablissementLayer.addTo(map);
 
 
 
