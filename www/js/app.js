@@ -6,7 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'pascalprecht.translate'])
 
-.run(function($ionicPlatform, $rootScope) {
+.run(function($ionicPlatform, $rootScope, programmesService) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -25,22 +25,56 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     } else {
        $rootScope.apiUrl = "http://medievales.visitapp.ch/API";
     }
-/*
-    // Schedule notification for tomorrow to remember about the meeting
+
+    /*
     cordova.plugins.notification.local.schedule({
-        text: "Wake up!",
-        sound: "file://data/seb.mp3",
-        every: 2 // every 30 minutes
-    });
-*/
+          id: i,
+          title: "Evenement dans 1 heure",
+          text: data[i].name,
+          at: data[i].start,
+          icon: "res://icon.png"
+        });
+        */
+
+    if (window.cordova){
+
+      cordova.plugins.notification.local.cancelAll(function() {}, this);
+
+      programmesService.get(function (data) {
+        var events = [];
+        for (var i = 0; i < data.length; i++) {
+          
+           // Split timestamp into [ Y, M, D, h, m, s ]
+          var t = data[i].start.split(/[- :]/);
+          // Apply each element to the Date function
+          var d = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
+
+          var now = new Date().getTime();
+          if(d > now){
+            events.push({
+              id: i,
+              title: "Événement dans 1 heure",
+              text: data[i].name,
+              at: d - (60*60*1000),
+              icon: "res://icon.png"
+            });
+          }
+        }
+
+        cordova.plugins.notification.local.schedule(events);
+      });
+           
+    }
+    
+  
+
 
   });
 })
 
 .config(function($stateProvider, $urlRouterProvider, $translateProvider) {
   $stateProvider
-
-    .state('app', {
+  .state('app', {
     url: '/app',
     abstract: true,
     templateUrl: 'templates/menu.html',
