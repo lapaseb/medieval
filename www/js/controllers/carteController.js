@@ -10,7 +10,7 @@ angular.module('starter.controllers')
 
     var map = L.map('mapid', {
         center: [47.364965, 7.154498],
-        zoom: 18,
+        zoom: 17,
         minZoom: 15,
         maxZoom: 19,
         maxBounds: bounds,

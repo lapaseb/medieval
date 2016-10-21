@@ -11,6 +11,8 @@ function setMapPopup(pageID, titre, description, url, showButton) {
 
 	if (showButton == false){
 		$('#linkToSingle').hide();
+	}else {
+		$('#linkToSingle').show();
 	}
 
 	popup.find('h2').text(titre);
