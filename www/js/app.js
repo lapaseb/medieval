@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       StatusBar.styleDefault();
     }
 
-    if(ionic.Platform.device().platform != undefined){
+    if(ionic.Platform.device().platform == undefined){
        $rootScope.apiUrl = "/api";
     } else {
        $rootScope.apiUrl = "http://medievales.visitapp.ch/API";
