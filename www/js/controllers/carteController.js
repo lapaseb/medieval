@@ -84,13 +84,16 @@ angular.module('starter.controllers')
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
 
         container.onclick = function(){
-          navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
+          navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 3000});
         }
 
         return container;
       },
 
     });
+
+    map.addControl(new ourCustomControl());
 
     var tileLayer = L.tileLayer(
       'data/img/MapQuest/{z}/{x}/{y}.png', {
@@ -99,8 +102,6 @@ angular.module('starter.controllers')
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-
-    map.addControl(new ourCustomControl());
 
     var restaurant = L.icon({
       iconUrl: 'data/img/icons/restaurantIcon.png',
@@ -274,6 +275,8 @@ angular.module('starter.controllers')
         map.addLayer($scope.ArtisanLayer);
       }
     });
+
+
 
   }
 ]);

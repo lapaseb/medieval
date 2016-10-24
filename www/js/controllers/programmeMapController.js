@@ -106,7 +106,7 @@ angular.module('starter.controllers')
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
 
         container.onclick = function(){
-          navigator.geolocation.getCurrentPosition(onSuccess, onError);
+          navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 3000});
         }
 
         return container;

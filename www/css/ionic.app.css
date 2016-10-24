@@ -9932,10 +9932,6 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
     background-repeat: no-repeat; }
   #mapArtisan .leaflet-popup-content-wrapper {
     border-radius: 0px !important; }
-  #mapArtisan h3 {
-    font-weight: bold; }
-  #mapArtisan .artisanDescription {
-    font-size: 1.15em; }
 
 #page_carte #mapid {
   width: 100%;
