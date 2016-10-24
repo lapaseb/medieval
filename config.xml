@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.medieval673946" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Les Médiévales</name>
-  <description>&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
-        Application officielle des médiévales de Saint-Ursannes&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
+  <description>&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
+        Application officielle des médiévales de Saint-Ursannes&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
     </description>
-  <author email="webmaster@visitapp.ch" href="http://www.visitapp.ch/">&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
-      Visitapp.ch&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
+  <author email="webmaster@visitapp.ch" href="http://www.visitapp.ch/">&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
+      Visitapp.ch&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;
     </author>
   <content src="index.html"/>
   <access origin="*"/>
