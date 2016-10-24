@@ -1,7 +1,7 @@
 
 {
-  "name": "My Ionic App",
-  "short_name": "My Ionic App",
+  "name": "medievales",
+  "short_name": "medievales",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

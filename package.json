@@ -1,7 +1,7 @@
 {
-  "name": "medieval",
+  "name": "medievales",
   "version": "1.1.1",
-  "description": "Application officiele des médiévales de Saint-Ursannes",
+  "description": "Application officielle des médiévales de Saint-Ursanne",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
