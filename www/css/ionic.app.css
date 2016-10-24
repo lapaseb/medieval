@@ -9992,7 +9992,7 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   .map-popup h2 {
     font-weight: bold; }
   .map-popup #linkToSingle {
-    color: #b51b16; }
+    width: 100%; }
   .map-popup #linkToSingle:hover {
     cursor: pointer; }
 

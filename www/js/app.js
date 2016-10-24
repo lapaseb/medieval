@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       StatusBar.styleDefault();
     }
 
-    if(ionic.Platform.device().platform == undefined){
+    if(ionic.Platform.device().platform != undefined){
        $rootScope.apiUrl = "/api";
     } else {
        $rootScope.apiUrl = "http://medievales.visitapp.ch/API";
@@ -36,8 +36,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         });
         */
 
-    if (window.cordova){
-
+    if(window.localStorage.getItem("areSetNotif") == undefined){
+      window.localStorage.setItem("areSetNotif", false);
+    }
+     
+    if (window.cordova && window.localStorage.getItem("areSetNotif") == "false"){
       cordova.plugins.notification.local.cancelAll(function() {}, this);
 
       programmesService.get(function (data) {
@@ -53,22 +56,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           if(d > now){
             events.push({
               id: i,
-              title: "Événement dans 1 heure",
+              title: "Événement dans 30 minutes",
               text: data[i].name,
-              at: d - (60*60*1000),
+              at: d - (30*60*1000),
+              icon: "res://icon.png"
+            },
+            {
+              id: i + data.length,
+              title: "L'événement commence maintenant",
+              text: data[i].name,
+              at: d,
               icon: "res://icon.png"
             });
           }
         }
-
         cordova.plugins.notification.local.schedule(events);
+        window.localStorage.setItem("areSetNotif", true);
       });
-           
     }
     
-  
-
-
   });
 })
 
