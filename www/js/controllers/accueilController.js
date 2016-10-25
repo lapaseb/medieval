@@ -35,7 +35,7 @@ angular.module('starter.controllers')
 			} else {
 				$(".accueil_timer").css("display","none");
 				$("#quickmenu").css("position","initial");
-				$(".accueil_event_list").css("display","initial");
+				$(".accueil_event_list").css("display","block");
 				$(".accueil_event_list ion-content").css("top", $("#quickmenu").offset().top + $("#quickmenu").outerHeight(true) + $(".accueil_event_list h1").outerHeight(true));
 			}
 		}
