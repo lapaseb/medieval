@@ -18,9 +18,12 @@ angular.module('starter.controllers')
     });
 
 
-	  L.tileLayer('data/img/MapQuest/{z}/{x}/{y}.png', {
-		  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	  }).addTo(map);
+    var tileLayer = L.tileLayer(
+      'data/img/MapQuest/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        minZoom: 15,
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
     var artisans = L.icon({
       iconUrl: 'data/img/icons/artisanIcon.png',
