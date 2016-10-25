@@ -40,6 +40,7 @@
 
 		}
 
+
 		#quickmenu {
 			color: white;
 			font-size: 16vw;
@@ -53,8 +54,10 @@
 			}
 
 			a {
-				all: unset;
+				color: white !important;
+				padding: 0px !important;
 			}
+
 
 			.quickmenu_container{
 				border: solid white 1px;

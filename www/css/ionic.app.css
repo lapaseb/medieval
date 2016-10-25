@@ -9859,10 +9859,8 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   font-weight: normal;
   font-style: normal; }
 
-#sidebar_menu ion-side-menu ion-content {
-  overflow: hidden; }
-  #sidebar_menu ion-side-menu ion-content ion-item i {
-    color: #5d5d5d; }
+#sidebar_menu ion-side-menu ion-content ion-item i {
+  color: #5d5d5d; }
 
 #sidebar_menu ion-side-menu ion-header-bar i {
   cursor: pointer; }
@@ -9906,7 +9904,8 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
     #page_accueil ion-content #quickmenu .col {
       text-align: center; }
     #page_accueil ion-content #quickmenu a {
-      all: unset; }
+      color: white !important;
+      padding: 0px !important; }
     #page_accueil ion-content #quickmenu .quickmenu_container {
       border: solid white 1px;
       border-left: none;
