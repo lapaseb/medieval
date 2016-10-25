@@ -39,22 +39,17 @@ angular.module('starter.controllers')
 
     $scope.GeolocationLayer = L.layerGroup([]);
 
-		var etaid = $stateParams.artisanId;
+
+		var etaid = $stateParams.id;
+
 
 		artisansService.get(function (data) {
-			$scope.artisansRow = data;
-			$scope.artisan = [];
-			for (var i = 0; i < $scope.artisansRow.length; i++) {
-				if(i == etaid) {
-					$scope.artisan = {
-						id: i,
-						name: $scope.artisansRow[i].name,
-            latitude: $scope.artisansRow[i].latitude,
-            longitude: $scope.artisansRow[i].longitude
-					};
-
-				}
-			}
+			$scope.artisan = {
+				id: etaid,
+				name: data[etaid].name,
+        latitude: data[etaid].latitude,
+        longitude: data[etaid].longitude
+			};
 
       $scope.latLngArtisan = L.latLng($scope.artisan.latitude, $scope.artisan.longitude);
       var pageID = $('#page_artisan');

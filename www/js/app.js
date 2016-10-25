@@ -106,7 +106,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
   .state('app.artisan', {
-      url: '/artisan/:artisanId',
+      url: '/artisan/:id',
     views: {
       'menuContent': {
         templateUrl: 'templates/artisan.html',
@@ -134,7 +134,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     })
 
   .state('app.programme', {
-    url: '/programme/:programmeId',
+    url: '/programme/:id',
     views: {
       'menuContent': {
         templateUrl: 'templates/programme.html',
@@ -144,7 +144,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   .state('app.programme-map', {
-    url: '/programme-map/:programmeId',
+    url: '/programme-map/:id',
     views: {
       'menuContent': {
         templateUrl: 'templates/programme-map.html',
@@ -164,7 +164,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   .state('app.etablissement', {
-    url: '/etablissement/:etablissementId',
+    url: '/etablissement/:id',
     views: {
       'menuContent': {
         templateUrl: 'templates/etablissement.html',
@@ -174,7 +174,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   .state('app.etablissement-map', {
-    url: '/etablissement-map/:etablissementId',
+    url: '/etablissement-map/:id',
     views: {
       'menuContent': {
         templateUrl: 'templates/etablissement-map.html',

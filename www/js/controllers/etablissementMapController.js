@@ -38,24 +38,18 @@ angular.module('starter.controllers')
 
 
     $scope.GeolocationLayer = L.layerGroup([]);
-    var etaid = $stateParams.etablissementId;
+
+    var progid = $stateParams.id;
 
 		etablissementsService.get(function (data) {
-			$scope.etablissementsRow = data;
-			$scope.etablissement = [];
-			for (var i = 0; i < $scope.etablissementsRow.length; i++) {
-				if(i == etaid) {
-					$scope.etablissement = {
-						id: i,
-						name: $scope.etablissementsRow[i].name,
-            description: $scope.etablissementsRow[i].description,
-            latitude: $scope.etablissementsRow[i].latitude,
-            longitude: $scope.etablissementsRow[i].longitude
-					};
-				}
-			}
 
-      var progid = $stateParams.etablissementId;
+					$scope.etablissement = {
+						id: progid,
+						name: data[progid].name,
+            description: data[progid].description,
+            latitude: data[progid].latitude,
+            longitude: data[progid].longitude
+					};
 
 
       $scope.latLngEtablissement = L.latLng($scope.etablissement.latitude, $scope.etablissement.longitude);
