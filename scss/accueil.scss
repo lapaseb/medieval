@@ -5,10 +5,9 @@
 		background-size: cover;
 
 		.logo_accueil {
-		    vertical-align: middle;
-		    margin-top: 50px;
-		    padding: 20px;
-
+			vertical-align: middle;
+			margin-top: 50px;
+			padding: 20px;
 		}
 
 		.accueil_timer{
@@ -40,16 +39,35 @@
 
 		}
 
+		.accueil_event_list{
+			font-size: 1.5em;
+			text-align: center;
+			display: none;
+			
+			h1 {
+				color: black;
+				padding: 15px;
+				background-color: white;
+				margin: 0;
+				font-size: 24px;
+			}
+
+			ion-content {
+				position: absolute;
+				bottom: 0px;
+				background: white !important;
+			}
+		}
 
 		#quickmenu {
 			color: white;
 			font-size: 16vw;
-		    padding: 40px;
-		    position: absolute;
-		    bottom: 0;
-		    width:100%;
+			padding: 40px;
+			position: absolute;
+			bottom: 0;
+			width:100%;
 
-		    .col{
+			.col{
 				text-align:center;
 			}
 
@@ -58,14 +76,12 @@
 				padding: 0px !important;
 			}
 
-
 			.quickmenu_container{
 				border: solid white 1px;
 				border-left: none;
 				border-right: none;
 			}
 		}
-
 	}
 	.has-header {
 		top: 0;

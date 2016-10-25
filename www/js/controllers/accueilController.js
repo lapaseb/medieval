@@ -1,6 +1,6 @@
 angular.module('starter.controllers')
-.controller('AccueilCtrl', ['$scope', '$http','$rootScope',
-	function($scope, $http, $rootScope) {
+.controller('AccueilCtrl', ['$scope', '$http','$rootScope', 'programmesService',
+	function($scope, $http, $rootScope, programmesService) {
 
 		$rootScope.$on("$ionicView.leave", function(scopes, states) {
 			if (states.stateName == "app.accueil") {
@@ -22,15 +22,22 @@ angular.module('starter.controllers')
 
 			var total_secondes = (date_evenement - date_actuelle) / 1000;
 
-			var jours = Math.floor(total_secondes / (60 * 60 * 24));
-			var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
-			var minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
-			var secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
+			if(total_secondes > 0){
+				var jours = Math.floor(total_secondes / (60 * 60 * 24));
+				var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+				var minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
+				var secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
 
-			$(".accueil_jours").text(String(jours));
-			$(".accueil_heures").text(String(heures));
-			$(".accueil_minutes").text(String(minutes));
-			$(".accueil_secondes").text(String(secondes));
+				$(".accueil_jours").text(String(jours));
+				$(".accueil_heures").text(String(heures));
+				$(".accueil_minutes").text(String(minutes));
+				$(".accueil_secondes").text(String(secondes));
+			} else {
+				$(".accueil_timer").css("display","none");
+				$("#quickmenu").css("position","initial");
+				$(".accueil_event_list").css("display","initial");
+				$(".accueil_event_list ion-content").css("top", $("#quickmenu").offset().top + $("#quickmenu").outerHeight(true) + $(".accueil_event_list h1").outerHeight(true));
+			}
 		}
 
 		compteARebours();
@@ -55,5 +62,18 @@ angular.module('starter.controllers')
     		);
     	});
 
+    	programmesService.get(function (data) {
+			$scope.programmesRow = data;
+			$scope.programmes = [];
+			for (var i = 0; i < $scope.programmesRow.length; i++) {
+				$scope.programmes[i] = {
+					id: i,
+					name: $scope.programmesRow[i].name,
+          			description: $scope.programmesRow[i].description,
+					start: $scope.programmesRow[i].start,
+					end: $scope.programmesRow[i].end
+				};
+			}
+		});
 	}
-	]);
+]);

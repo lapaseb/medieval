@@ -1,71 +1,66 @@
 <ion-view view-title="{{ 'ACCUEIL_TITLE' | translate }}" id="page_accueil">
-  <ion-content scroll="false">
-  	<img class="full-image logo_accueil" src="data/img/{{ 'ACCUEIL_IMG_LINK' | translate }}" />
+	<ion-content scroll="false">
+	<img class="full-image logo_accueil" src="data/img/{{ 'ACCUEIL_IMG_LINK' | translate }}" />
 
-  	<div class="accueil_timer">
-	  	<div class="accueil_timer_container row">
-			  <div class="col col-50 accueil_timer_box">
+	<div class="accueil_timer">
+		<div class="accueil_timer_container row">
+			<div class="col col-50 accueil_timer_box">
 				<span class="font-bold accueil_jours">0</span>
-  				{{ 'ACCUEIL_TEXTE_JOURS' | translate }}
-		  	</div>
-      	<div class="col col-50 accueil_timer_box">
-  				<span class="font-bold accueil_heures">0</span>
-  				{{ 'ACCUEIL_TEXTE_HEURES' | translate }}
-		  	</div>
-      </div>
-        <div class="accueil_timer_container row">
-		  	<div class="col col-50 accueil_timer_box">
-  				<span class="font-bold accueil_minutes">0</span>
-  				{{ 'ACCUEIL_TEXTE_MINUTES' | translate }}
-		  	</div>
-		  	<div class="col col-50 accueil_timer_box">
-  				<span class="font-bold accueil_secondes">0</span>
-  				{{ 'ACCUEIL_TEXTE_SECONDES' | translate }}
-		  	</div>
-      </div>
-  	</div>
-
-    <div id="quickmenu">
-    	<div class="quickmenu_container row">
-	    	<div class="col">
-		      <a href="#/app/programmes">
-		        <i class="icon ion-calendar"></i>
-		      </a>
-		    </div>
-		    <div class="col">
-		      <a href="#/app/carte" class="col">
-		        <i class="icon ion-map"></i>
-		      </a>
-		    </div>
-		    <div class="col">
-		      <a href="#/app/etablissements" class="col">
-		        <i class="icon ion-android-restaurant"></i>
-		      </a>
-		    </div>
-		    <div class="col">
-		      <a href="#/app/sponsors" class="col">
-		        <i class="icon ion-ios-bookmarks"></i>
-		      </a>
-		    </div>
-	    </div>
-    </div>
-    <!--
-  	<div class="accueil_events">
-		<div class="accueil_events_title">
-			Évenements à venir
-	  	</div>
-
+				{{ 'ACCUEIL_TEXTE_JOURS' | translate }}
+			</div>
+			<div class="col col-50 accueil_timer_box">
+				<span class="font-bold accueil_heures">0</span>
+				{{ 'ACCUEIL_TEXTE_HEURES' | translate }}
+			</div>
+		</div>
+		<div class="accueil_timer_container row">
+			<div class="col col-50 accueil_timer_box">
+				<span class="font-bold accueil_minutes">0</span>
+				{{ 'ACCUEIL_TEXTE_MINUTES' | translate }}
+			</div>
+			<div class="col col-50 accueil_timer_box">
+				<span class="font-bold accueil_secondes">0</span>
+				{{ 'ACCUEIL_TEXTE_SECONDES' | translate }}
+			</div>
+		</div>
+	</div>
+	<div id="quickmenu">
+		<div class="quickmenu_container row">
+			<div class="col">
+				<a href="#/app/programmes">
+					<i class="icon ion-calendar"></i>
+				</a>
+			</div>
+			<div class="col">
+				<a href="#/app/carte" class="col">
+					<i class="icon ion-map"></i>
+				</a>
+			</div>
+			<div class="col">
+				<a href="#/app/etablissements" class="col">
+					<i class="icon ion-android-restaurant"></i>
+				</a>
+			</div>
+			<div class="col">
+				<a href="#/app/sponsors" class="col">
+					<i class="icon ion-ios-bookmarks"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="accueil_event_list">
+		<h1>Événements à venir</h1>
+		<ion-content>
 		<ion-list>
 			<ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes" href="#/app/programme/{{programme.id}}">
-			 <img src="data/img/image-test.jpg" />
-			<h2>{{programme.name}}</h2>
-			<p>{{programme.description}}</p>
-			<p>{{programme.start}} - {{programme.end}}</p>
-			<p>Statut: <span style="color:green;">À venir</span></p>
+				<img src="data/img/image-test.jpg" />
+				<h2>{{programme.name}}</h2>
+				<p>{{programme.description}}</p>
+				<p>{{programme.start}} - {{programme.end}}</p>
+				<p>Statut: <span style="color:green;">À venir</span></p>
 			</ion-item>
 		</ion-list>
-
-  	</div>
-    -->
-  </ion-content>
+		</ion-content>
+	</div>
+	</ion-content>
 </ion-view>
