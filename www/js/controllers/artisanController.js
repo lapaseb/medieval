@@ -61,13 +61,25 @@ angular.module('starter.controllers')
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
 
-        if (position.coords.latitude > 47.369743926768784 || position.coords.longitude < 47.360589810163582 || position.coords.longitude > 7.174824539917747 || position.coords.longitude < 7.1379860116837257){
+
+        userLat = position.coords.latitude;
+        userLng = position.coords.longitude;
+        userLatLng = L.latLng(userLat, userLng);
+
+        if (userLat < 47.369743926768784 && userLat > 47.360589810163582 && userLng < 7.174824539917747 && userLng > 7.1379860116837257){
+
+          L.marker(userLatLng).addTo(map).bindPopup('Vous êtes ici').openPopup();
+          map.panTo(userLatLng);
+
+        } else {
+
           var alertPopup = $ionicPopup.alert({
             title: 'Erreur de localisation',
             template: 'La localisation ne fonctionne pas en dehors de la ville de St-Ursanne.'
           });
-        } else {
-          L.marker([position.coords.latitude, position.coords.longitude]).addTo(map).bindPopup('Vous êtes ici');
+
+          map.panTo([47.364965, 7.154498]);
+
         }
 
     };
@@ -75,6 +87,11 @@ angular.module('starter.controllers')
     // onError Callback receives a PositionError object
     //
     function onError(error) {
+      var alertPopup = $ionicPopup.alert({
+        title: 'Erreur de localisation',
+        template: 'La localisation ne fonctionne pas. Vérifiez que le GPS soit correctement activé puis réessayez.'
+      });
+
     }
 
 
