@@ -1,6 +1,7 @@
 angular.module('starter.controllers')
 .controller('EtablissementCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'etablissementsService',
     function($scope, $http, $rootScope, $stateParams, etablissementsService) {
+
   		var etaid = $stateParams.etablissementId;
 
   		etablissementsService.get(function (data) {

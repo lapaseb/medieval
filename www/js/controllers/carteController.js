@@ -1,8 +1,37 @@
 
 
 angular.module('starter.controllers')
-.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$location',
-    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $location) {
+.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$location', '$state',
+    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $location, $state) {
+
+    // -------------------------------------------------------------------------------------------------------------
+    //                         Fonctons utiles pour la map
+    // -------------------------------------------------------------------------------------------------------------
+
+
+    function setMapPopupFullMap(pageID, titre, description, url, id, showButton) {
+      var popup = pageID.find(".map-popup");
+
+      if (showButton == false){
+        $('#linkToSingle').hide();
+      }else {
+        $('#linkToSingle').show();
+      }
+
+      popup.find('h2').text(titre);
+      popup.find('#description-popup').text(description);
+      openMapPopup(pageID);
+
+      popup.find('#linkToSingle').click(function() {
+        //window.location.href = url;
+        //$state.go(url)
+        $state.go("app." + url, { url: '/' + url + '/:' + id});
+
+      })
+    }
+    // -------------------------------------------------------------------------------------------------------------
+
+
 
     var southWest = L.latLng(47.369743926768784, 7.174824539917747),
     northEast = L.latLng(47.360589810163582, 7.1379860116837257),
@@ -154,7 +183,9 @@ angular.module('starter.controllers')
 			  };
 
         function setMarker(i){
-          markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopup(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, '#/app/etablissement/' + i)});
+          markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
+          //markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){$state.go("app.etablissement", { url: '/etablissement/' + i})});
+
           $scope.EtablissementLayer.addLayer(markerEtablissement);
           $scope.etablissementMarkers.push(markerEtablissement);
         }
@@ -178,7 +209,7 @@ angular.module('starter.controllers')
 
 
         function setMarker(i){
-          markerArtisan = new L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).on('click', function(){setMapPopup(pageID, $scope.artisans[i].name, "", '#/app/artisan/' + i)});
+          markerArtisan = new L.marker([$scope.artisans[i].latitude, $scope.artisans[i].longitude], {icon: artisans}).on('click', function(){setMapPopupFullMap(pageID, $scope.artisans[i].name, "", 'artisan', i)});
           $scope.ArtisanLayer.addLayer(markerArtisan);
           $scope.artisansMarkers.push(markerArtisan);
         }
@@ -206,7 +237,7 @@ angular.module('starter.controllers')
         function setMarker(i){
           markerEvenement = new L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events});
           $scope.programmesMarkers.push(markerEvenement);
-          markerEvenement.on('click', function(){setMapPopup(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end, '#/app/programme/' + i)});
+          markerEvenement.on('click', function(){setMapPopupFullMap(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end, 'programme', i)});
           $scope.EvenementLayer.addLayer(markerEvenement);
         }
 
@@ -274,7 +305,6 @@ angular.module('starter.controllers')
         map.addLayer($scope.ArtisanLayer);
       }
     });
-
 
 
   }
