@@ -1,9 +1,7 @@
 angular.module('starter.services', [])
-
     .factory('programmesService', ['$http', '$rootScope', function($http, $rootScope){
         return {
             get:function(callback) {
-
 
                 if(window.Connection && navigator.connection.type != Connection.NONE) {
                     //si il a de la co

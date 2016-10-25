@@ -30,24 +30,17 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
-    var etaid = $stateParams.etablissementId;
+    var progid = $stateParams.id;
 
 		etablissementsService.get(function (data) {
-			$scope.etablissementsRow = data;
-			$scope.etablissement = [];
-			for (var i = 0; i < $scope.etablissementsRow.length; i++) {
-				if(i == etaid) {
+			
 					$scope.etablissement = {
-						id: i,
-						name: $scope.etablissementsRow[i].name,
-            description: $scope.etablissementsRow[i].description,
-            latitude: $scope.etablissementsRow[i].latitude,
-            longitude: $scope.etablissementsRow[i].longitude
+						id: progid,
+						name: data[progid].name,
+            description: data[progid].description,
+            latitude: data[progid].latitude,
+            longitude: data[progid].longitude
 					};
-				}
-			}
-
-      var progid = $stateParams.etablissementId;
 
 
       $scope.latLngEtablissement = L.latLng($scope.etablissement.latitude, $scope.etablissement.longitude);

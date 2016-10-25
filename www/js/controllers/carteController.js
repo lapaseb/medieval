@@ -25,7 +25,7 @@ angular.module('starter.controllers')
       popup.find('#linkToSingle').click(function() {
         //window.location.href = url;
         //$state.go(url)
-        $state.go("app." + url, { url: '/' + url + '/:' + id});
+        $state.go("app." + url, { "id": id});
 
       })
     }
