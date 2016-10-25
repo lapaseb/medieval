@@ -1,8 +1,8 @@
 
 
 angular.module('starter.controllers')
-.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$location', '$state',
-    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $location, $state) {
+.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$state',
+    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $state) {
 
     // -------------------------------------------------------------------------------------------------------------
     //                         Fonctons utiles pour la map
@@ -23,10 +23,7 @@ angular.module('starter.controllers')
       openMapPopup(pageID);
 
       popup.find('#linkToSingle').click(function() {
-        //window.location.href = url;
-        //$state.go(url)
         $state.go("app." + url, { "id": id});
-
       })
     }
     // -------------------------------------------------------------------------------------------------------------

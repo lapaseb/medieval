@@ -1,9 +1,9 @@
 angular.module('starter.controllers')
-.controller('ProgrammeCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'programmesService', '$location',
-    function($scope, $http, $rootScope, $stateParams, programmesService, $location) {
+.controller('ProgrammeCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'programmesService', '$state',
+    function($scope, $http, $rootScope, $stateParams, programmesService, $state) {
 
 	    $scope.go = function () {
-	      $location.path('#/app/programme-map/' + $stateParams.id);
+	    	$state.go("app.programme-map", { "id": $stateParams.id});
 	    };
 
 	    var progid = $stateParams.id;

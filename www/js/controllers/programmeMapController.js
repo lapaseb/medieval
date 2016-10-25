@@ -30,7 +30,7 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
-    var progid = $stateParams.programmeId;
+    var progid = $stateParams.id;
 
 		programmesService.get(function (data) {
 					$scope.programme = {
