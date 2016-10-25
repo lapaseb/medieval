@@ -30,6 +30,14 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
+    var userPosition = L.icon({
+      iconUrl: 'data/img/icons/BlueDot.png',
+      iconAnchor: [12, 15],
+      iconSize: [25,25]
+    });
+
+
+    $scope.GeolocationLayer = L.layerGroup([]);
     var etaid = $stateParams.etablissementId;
 
 		etablissementsService.get(function (data) {
@@ -59,6 +67,8 @@ angular.module('starter.controllers')
 
 		});
 
+
+
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
 
@@ -70,8 +80,19 @@ angular.module('starter.controllers')
 
         if (userLat < 47.369743926768784 && userLat > 47.360589810163582 && userLng < 7.174824539917747 && userLng > 7.1379860116837257){
 
-          L.marker(userLatLng).addTo(map).bindPopup('Vous êtes ici').openPopup();
-          map.panTo(userLatLng);
+          if ($scope.GeolocationLayer.getLayers().length > 0){
+            map.removeLayer($scope.GeolocationLayer.getLayers()[0]);
+            $scope.GeolocationLayer = L.layerGroup([]);
+            markerPosition = new L.marker(userLatLng, {icon: userPosition});
+            $scope.GeolocationLayer.addLayer(markerPosition);
+            map.addLayer($scope.GeolocationLayer);
+            map.panTo(userLatLng);
+          } else {
+            markerPosition = new L.marker(userLatLng, {icon: userPosition});
+            $scope.GeolocationLayer.addLayer(markerPosition);
+            map.addLayer($scope.GeolocationLayer);
+            map.panTo(userLatLng);
+          }
 
         } else {
 

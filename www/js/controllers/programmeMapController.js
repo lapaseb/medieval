@@ -30,6 +30,14 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
+    var userPosition = L.icon({
+      iconUrl: 'data/img/icons/BlueDot.png',
+      iconAnchor: [12, 15],
+      iconSize: [25,25]
+    });
+
+
+    $scope.GeolocationLayer = L.layerGroup([]);
     var progid = $stateParams.programmeId;
 
 		programmesService.get(function (data) {
@@ -71,8 +79,19 @@ angular.module('starter.controllers')
 
         if (userLat < 47.369743926768784 && userLat > 47.360589810163582 && userLng < 7.174824539917747 && userLng > 7.1379860116837257){
 
-          L.marker(userLatLng).addTo(map).bindPopup('Vous êtes ici').openPopup();
-          map.panTo(userLatLng);
+          if ($scope.GeolocationLayer.getLayers().length > 0){
+            map.removeLayer($scope.GeolocationLayer.getLayers()[0]);
+            $scope.GeolocationLayer = L.layerGroup([]);
+            markerPosition = new L.marker(userLatLng, {icon: userPosition});
+            $scope.GeolocationLayer.addLayer(markerPosition);
+            map.addLayer($scope.GeolocationLayer);
+            map.panTo(userLatLng);
+          } else {
+            markerPosition = new L.marker(userLatLng, {icon: userPosition});
+            $scope.GeolocationLayer.addLayer(markerPosition);
+            map.addLayer($scope.GeolocationLayer);
+            map.panTo(userLatLng);
+          }
 
         } else {
 
@@ -92,7 +111,7 @@ angular.module('starter.controllers')
     function onError(error) {
       var alertPopup = $ionicPopup.alert({
         title: 'Erreur de localisation',
-        template: 'La localisation ne fonctionne pas. Vérifiez que le GPS soit correctement activé puis réessayez.'
+        template: 'La localisation ne fonctionne pas. Vérifiez que le GPS soit correctement activé puis redémarrez votre application.'
       });
 
     }
@@ -109,7 +128,7 @@ angular.module('starter.controllers')
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
 
         container.onclick = function(){
-          navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 3000});
+          navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 3000, enableHighAccuracy: true });
         }
 
         return container;
