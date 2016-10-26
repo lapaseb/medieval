@@ -151,6 +151,11 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
+    var taverne = L.icon({
+      iconUrl: 'data/img/icons/taverne.png',
+      iconAnchor: [17, 36]
+    });
+
     var artisans = L.icon({
       iconUrl: 'data/img/icons/artisanIcon.png',
       iconAnchor: [17, 36]
@@ -275,8 +280,15 @@ angular.module('starter.controllers')
 			  };
 
         function setMarker(i){
-          markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
-          //markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){$state.go("app.etablissement", { url: '/etablissement/' + i})});
+
+          if ($scope.etablissements[i].type == 'Taverne'){
+            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: taverne}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
+
+          } else {
+            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
+            //markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){$state.go("app.etablissement", { url: '/etablissement/' + i})});
+          }
+
 
           $scope.EtablissementLayer.addLayer(markerEtablissement);
           $scope.etablissementMarkers.push(markerEtablissement);
