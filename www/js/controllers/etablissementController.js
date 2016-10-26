@@ -13,7 +13,7 @@ angular.module('starter.controllers')
 				type: data[etaid].type
 			};
 
-			if(window.Connection && navigator.connection.type != Connection.NONE) {
+			//if(window.Connection && navigator.connection.type != Connection.NONE) {
 				if(data[etaid].type == "Restaurant" || data[etaid].type == "Taverne"){
 					$('.ratingSystemTitle').show();
 					if($scope.rating.noteRep == -1 && $scope.rating.noteAmbiance == -1 && $scope.rating.noteDeco == -1) {
@@ -22,7 +22,7 @@ angular.module('starter.controllers')
 						$('.editVote').show();
 					}
 				}
-			}
+			//}
   		});
 
 		if(window.localStorage.getItem('ratingEta') != undefined){
@@ -38,10 +38,12 @@ angular.module('starter.controllers')
 		if($scope.rating == undefined) {
         	$scope.rating = {"noteRep" : -1,
 			                "noteAmbiance" : -1,
-			                "noteDeco" : -1};   
+			                "noteDeco" : -1};
         }
         
-
+        $scope.rating1 = $scope.rating.noteRep;
+        $scope.rating2 = $scope.rating.noteAmbiance;
+        $scope.rating3 = $scope.rating.noteDeco;
 
         $scope.rateRepas = function(rating) {
 			$scope.rating1 = rating;
