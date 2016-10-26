@@ -1,31 +1,53 @@
 <ion-view view-title="{{ 'RESTAURANT_TITLE' | translate }}" id="page_etablissement">
   <ion-content>
-  <img class="full-image" src="data/img/taverne.jpg" />
-  <div id="pageContent">
-    <h2>{{etablissement.name}}</h2>
-  	<p>{{etablissement.description}}</p>
-    <h5>{{ 'RESTAURANT_TEXTE_AUMENU' | translate }}</h5>
-    <p>{{etablissement.menu}}</p>
-    <a href="#/app/etablissement-map/{{etablissement.id}}">
-      <button class="button button-positive showMap" >
-        {{ 'PROGRAMME_TEXTE_AFFICHER_CARTE' | translate }}
-      </button>
-    </a>
-    <h5>{{ 'RESTAURANT_TEXTE_VOTER' | translate }}</h5>
-    <div class="rating-system">
-      <h5>{{ 'RESTAURANT_TEXTE_NOTE1' | translate }}</h5>
-      <div ng-init="rating = star.rating + 1"></div>
-      <div class="star-rating" star-rating rating-value="rating"
-      data-max="5" on-rating-selected="rateFunction(rating)"></div>
-      <h5>{{ 'RESTAURANT_TEXTE_NOTE2' | translate }}</h5>
-      <div ng-init="rating1 = star.rating + 1"></div>
-      <div class="star-rating" star-rating rating-value="rating1"
-      data-max="5" on-rating-selected="rateFunction(rating1)"></div>
-      <h5>{{ 'RESTAURANT_TEXTE_NOTE3' | translate }}</h5>
-      <div ng-init="rating2 = star.rating + 1"></div>
-      <div class="star-rating" star-rating rating-value="rating2"
-      data-max="5" on-rating-selected="rateFunction(rating2)"></div>
+    <img class="full-image" src="data/img/taverne.jpg" />
+    <div id="pageContent" class="">
+      <h2>{{etablissement.name}}</h2>
+    	<p>{{etablissement.description}}</p>
+      <h4>{{ 'RESTAURANT_TEXTE_AUMENU' | translate }}</h5>
+      <p>{{etablissement.menu}}</p>
+      <a href="#/app/etablissement-map/{{etablissement.id}}">
+        <button class="button button-positive showMap" >
+          {{ 'PROGRAMME_TEXTE_AFFICHER_CARTE' | translate }}
+        </button>
+      </a>
+
+      <h4 class="ratingSystemTitle">{{ 'RESTAURANT_TEXTE_VOTER' | translate }}</h5>
+
+      <div class="ratingSystem">
+        <div class="row">
+          <div class="rating-system col-50">
+            <h5>{{ 'RESTAURANT_TEXTE_NOTE1' | translate }}</h5>
+            <div ng-init="rating1 = rating.noteRep"></div>
+            <div class="star-rating" star-rating rating-value="rating1"
+            data-max="5" on-rating-selected="rateRepas(rating)"></div>
+
+            <h5>{{ 'RESTAURANT_TEXTE_NOTE2' | translate }}</h5>
+            <div ng-init="rating2 = rating.noteAmbiance"></div>
+            <div class="star-rating" star-rating rating-value="rating2"
+            data-max="5" on-rating-selected="rateAmbiance(rating)"></div>
+
+            <h5>{{ 'RESTAURANT_TEXTE_NOTE3' | translate }}</h5>
+            <div ng-init="rating3 = rating.noteDeco"></div>
+            <div class="star-rating" star-rating rating-value="rating3"
+            data-max="5" on-rating-selected="rateDeco(rating)"></div>
+
+          </div>
+          <div class="col-50 rateButton">
+            <button id="rateButton" class="button" ng-click="rateFunction()">
+              <i class="icon ion-checkmark-round"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="editVote">
+        <div id="thanks-vote">Merci d'avoir voté !</div>
+
+        <button id="rateEdit" class="button button-stable" ng-click="rateEdit()">
+          Changer mon vote
+        </button>
+      </div>
+
     </div>
-  </div>
   </ion-content>
 </ion-view>

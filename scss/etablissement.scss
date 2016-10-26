@@ -1,47 +1,85 @@
 #page_etablissement{
-  .rating{
-    color: #a9a9a9;
-    margin: 0;
-    padding: 0;
-  }
-
-  ul.rating {
-    display: inline-block;
-  }
-
-  .rating li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 1px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 2em;
-  }
-
-  .rating .filled {
-    color: yellow;
-  }
-
-  .rating-system {
-    padding: 10px;
-  }
-
-  .star {
-    size: 40px;
-  }
-
-  h5 {
-    font-weight: bold;
-  }
 
   #pageContent {
     padding: 15px;
-  }
 
-  .showMap {
-    width: 100%;
+    h4 {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .showMap {
+      width: 100%;
+    }
+
+    .ratingSystem {
+      display: none;
+    }
+    
+    .ratingSystemTitle{
+      display: none;
+    }
+
+    .rating-system {
+      .star {
+        size: 40px;
+      }
+    }
+
+    .rateButton{
+      display: flex;
+    }
+    #rateButton{
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      border: solid 2px #47c147;
+      color: #47c147;
+      margin:auto;
+    }
+
+    .rating{
+      color: #a9a9a9;
+      margin: 0;
+      padding: 0;
+
+      .filled {
+        color: yellow;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 1px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 2em;
+      }
+    }
+
+    ul.rating {
+      display: inline-block;
+    }
+
+    .editVote{
+      text-align:center;
+      display: none;
+
+      #thanks-vote{
+        margin: 20px;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      #rateEdit{
+        border: solid #bfbfbf 1px;
+        margin: 10px 0 35px 0;
+      }
+    }
+
   }
+  
 }
 
 

@@ -52,3 +52,43 @@ angular.module('starter.services', [])
             }
       }
     }])
+
+    .factory('votesService', ['$http', '$rootScope', function($http, $rootScope){
+        return {
+            post:function(etablissement, noteRepas, noteAmbiance, noteDeco) {
+
+                var ratingArray = [];
+                var sendSql = true;
+
+                if(window.localStorage.getItem('ratingEta') != undefined){
+                    var ratingArray = JSON.parse(window.localStorage.getItem('ratingEta'));
+
+                    for(var i = 0; i < ratingArray.length; i++){
+                        if(ratingArray[i].eta == etablissement){
+                            ratingArray.splice(i, 1);
+                            sendSql = false;
+                        }
+                    }
+                }
+
+                ratingArray.push({
+                    "eta" : etablissement,
+                    "noteRep" : noteRepas,
+                    "noteAmbiance" : noteAmbiance,
+                    "noteDeco" : noteDeco
+                });
+
+                window.localStorage.setItem('ratingEta', JSON.stringify(ratingArray));
+
+                if(sendSql){
+                    $http.post($rootScope.apiUrl + '/setRates', {
+                        "etablissement" : etablissement,
+                        "noteRepas" : noteRepas,
+                        "noteAmbiance" : noteAmbiance,
+                        "noteDeco" : noteDeco,
+                    });
+                }
+
+            }
+      }
+    }])
