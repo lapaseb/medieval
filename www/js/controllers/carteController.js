@@ -151,6 +151,11 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
+    var taverne = L.icon({
+      iconUrl: 'data/img/icons/taverne.png',
+      iconAnchor: [17, 36]
+    });
+
     var artisans = L.icon({
       iconUrl: 'data/img/icons/artisanIcon.png',
       iconAnchor: [17, 36]
@@ -171,16 +176,93 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     })
 
+    var informations = L.icon({
+      iconUrl: 'data/img/icons/info.png',
+      iconAnchor: [17, 36]
+    });
+
+    var atm = L.icon({
+      iconUrl: 'data/img/icons/atm.png',
+      iconAnchor: [17, 36]
+    });
+
+    var parkingIcon = L.icon({
+      iconUrl: 'data/img/icons/parking.png',
+      iconAnchor: [17, 36]
+    });
+
+    var wcmixtes = L.icon({
+      iconUrl: 'data/img/icons/wcmixte.png',
+      iconAnchor: [17, 36]
+    });
+
+    var wchomme = L.icon({
+      iconUrl: 'data/img/icons/wchomme.png',
+      iconAnchor: [17, 36]
+    });
+
+    var wchandic = L.icon({
+      iconUrl: 'data/img/icons/wchandic.png',
+      iconAnchor: [17, 36]
+    });
+
+    var market = L.icon({
+      iconUrl: 'data/img/icons/market.png',
+      iconAnchor: [17, 36]
+    });
+
+    var tourisme = L.icon({
+      iconUrl: 'data/img/icons/tourisme.png',
+      iconAnchor: [17, 36]
+    });
+
 
     markerEntree1 = new L.marker([47.364435, 7.153132], {icon: doors}).on('click', function(){setMapPopup(pageID, 'Entrée', '', '', false)});
     markerEntree2 = new L.marker([47.364182, 7.154497], {icon: doors}).on('click', function(){setMapPopup(pageID, 'Entrée', '', '', false)});
     markerEntree3 = new L.marker([47.365954, 7.155788], {icon: doors}).on('click', function(){setMapPopup(pageID, 'Entrée', '', '', false)});
     markerMedical = new L.marker([47.364970, 7.155246], {icon: medical}).on('click', function(){setMapPopup(pageID, 'Premiers secours', '', '', false)});
+    markerInformations = new L.marker([47.365735, 7.155225], {icon: informations}).on('click', function(){setMapPopup(pageID, 'Informations', '', '', false)});
+    markerAtm1 = new L.marker([47.365776, 7.155331], {icon: atm}).on('click', function(){setMapPopup(pageID, 'Bancomats', '', '', false)});
+    markerAtm2 = new L.marker([47.365072, 7.155697], {icon: atm}).on('click', function(){setMapPopup(pageID, 'Bancomats', '', '', false)});
+    markerParking = new L.marker([47.366482, 7.156818], {icon: parkingIcon}).on('click', function(){setMapPopup(pageID, 'Parking', '', '', false)});
+    markerWcMixtes1 = new L.marker([47.364257, 7.153441], {icon: wcmixtes}).on('click', function(){setMapPopup(pageID, 'Toilettes mixtes', '', '', false)});
+    markerWcMixtes2 = new L.marker([47.364438, 7.154478], {icon: wcmixtes}).on('click', function(){setMapPopup(pageID, 'Toilettes mixtes', '', '', false)});
+    markerWcMixtes3 = new L.marker([47.365241, 7.154742], {icon: wcmixtes}).on('click', function(){setMapPopup(pageID, 'Toilettes mixtes', '', '', false)});
+    markerWcHomme = new L.marker([47.365169, 7.154310], {icon: wchomme}).on('click', function(){setMapPopup(pageID, 'Toilettes hommes', '', '', false)});
+    markerWcHandic = new L.marker([47.365213, 7.155855], {icon: wchandic}).on('click', function(){setMapPopup(pageID, 'Toilettes handicapés', '', '', false)});
+    markerCommerce1 = new L.marker([47.364529, 7.154189], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerCommerce2 = new L.marker([47.364904, 7.154206], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerCommerce3 = new L.marker([47.364996, 7.154413], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerCommerce4 = new L.marker([47.365502, 7.155137], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerCommerce5 = new L.marker([47.365543, 7.155350], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerCommerce6 = new L.marker([47.365418, 7.155424], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerCommerce7 = new L.marker([47.365849, 7.155511], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerCommerce8 = new L.marker([47.364216, 7.154004], {icon: market}).on('click', function(){setMapPopup(pageID, 'Commerce', '', '', false)});
+    markerTourisme = new L.marker([47.364212, 7.154325], {icon: tourisme}).on('click', function(){setMapPopup(pageID, 'Office du tourisme', '', '', false)});
+
 
     $scope.AutreLayer.addLayer(markerEntree1);
     $scope.AutreLayer.addLayer(markerEntree2);
     $scope.AutreLayer.addLayer(markerEntree3);
     $scope.AutreLayer.addLayer(markerMedical);
+    $scope.AutreLayer.addLayer(markerAtm1);
+    $scope.AutreLayer.addLayer(markerAtm2);
+    $scope.AutreLayer.addLayer(markerInformations);
+    $scope.AutreLayer.addLayer(markerParking);
+    $scope.AutreLayer.addLayer(markerWcMixtes1);
+    $scope.AutreLayer.addLayer(markerWcMixtes2);
+    $scope.AutreLayer.addLayer(markerWcMixtes3);
+    $scope.AutreLayer.addLayer(markerWcHomme);
+    $scope.AutreLayer.addLayer(markerWcHandic);
+    $scope.AutreLayer.addLayer(markerCommerce1);
+    $scope.AutreLayer.addLayer(markerCommerce2);
+    $scope.AutreLayer.addLayer(markerCommerce3);
+    $scope.AutreLayer.addLayer(markerCommerce4);
+    $scope.AutreLayer.addLayer(markerCommerce5);
+    $scope.AutreLayer.addLayer(markerCommerce6);
+    $scope.AutreLayer.addLayer(markerCommerce7);
+    $scope.AutreLayer.addLayer(markerCommerce8);
+    $scope.AutreLayer.addLayer(markerTourisme);
     $scope.AutreLayer.addTo(map);
 
     // Affiche tous les marqueurs des établissements
@@ -198,8 +280,15 @@ angular.module('starter.controllers')
 			  };
 
         function setMarker(i){
-          markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
-          //markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){$state.go("app.etablissement", { url: '/etablissement/' + i})});
+
+          if ($scope.etablissements[i].type == 'Taverne'){
+            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: taverne}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
+
+          } else {
+            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
+            //markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){$state.go("app.etablissement", { url: '/etablissement/' + i})});
+          }
+
 
           $scope.EtablissementLayer.addLayer(markerEtablissement);
           $scope.etablissementMarkers.push(markerEtablissement);
@@ -266,10 +355,10 @@ angular.module('starter.controllers')
     map.on('click', function(){closeMapPopup(pageID)});
 
     // Variable permettant de tester si les marqueurs sont affichés ou non
-    $scope.showArtisan = true;
-    $scope.showRestaurant = true;
-    $scope.showEvenement = true;
-
+    $scope.showArtisan = false;
+    $scope.showRestaurant = false;
+    $scope.showEvenement = false;
+    $scope.showDefault = true;
 
     // On ajoute tous les layers de marqueurs précédemment créés à la carte
 
@@ -318,6 +407,21 @@ angular.module('starter.controllers')
         $( this ).find(".img").addClass("selected");
         $scope.showArtisan = true;
         map.addLayer($scope.ArtisanLayer);
+      }
+    });
+
+    $('#default-filter').click(function() {
+      if($( this ).hasClass("selected")){
+        $( this ).removeClass("selected");
+        $( this ).find(".img").removeClass("selected");
+        $scope.showDefault = false;
+        map.removeLayer($scope.AutreLayer);
+
+      } else {
+        $( this ).addClass("selected");
+        $( this ).find(".img").addClass("selected");
+        $scope.showDefault = true;
+        map.addLayer($scope.AutreLayer);
       }
     });
 

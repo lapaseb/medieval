@@ -69,6 +69,14 @@
 		    	background-image: url(../data/img/icons/events-filter-white.png);
 		    }
     	}
+			#default-filter{
+    		.img{
+    			background-image: url(../data/img/icons/default-filter.png);
+			}
+    		.selected{
+		    	background-image: url(../data/img/icons/default-filter-white.png);
+		    }
+    	}
 
 	}
 }
