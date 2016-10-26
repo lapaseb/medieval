@@ -30,6 +30,8 @@ angular.module('starter.controllers')
       iconAnchor: [17, 36]
     });
 
+  
+
     var userPosition = L.icon({
       iconUrl: 'data/img/icons/BlueDot.png',
       iconAnchor: [12, 15],
@@ -65,7 +67,6 @@ angular.module('starter.controllers')
 
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
-
 
         userLat = position.coords.latitude;
         userLng =  position.coords.longitude;
