@@ -2,128 +2,128 @@
     {
         "name" : "Ouverture des caisses",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/18.00",
-        "end" : "11.11.16/05.00",
+        "start" : "2016-11-10 18:00:00",
+        "end" : "2016-11-11 05:00:00",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     },
     {
         "name" : "Vernissage des expositions au Cloître",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/18.00",
-        "end" : "11.11.16/05.00",
+        "start" : "2016-11-10 18:00:00",
+        "end" : "2016-11-11 05:00:00",
         "latitude" : "47.365107",
         "longitude" : "7.153478"
     },
     {
         "name" : "Animations dans toutes les rues de la ville, Chants et danses, ripaille en musique dans les tavernes et les restaurants",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/19.30",
-        "end" : "11.11.16/05.00",
+        "start" : "2016-11-10 19:30:00",
+        "end" : "2016-11-11 05:00:00",
         "latitude" : "47.364182",
         "longitude" : "7.153844"
     },
     {
         "name" : "La Nuit de l'illumination avec l'artiste zurichois Gerry Hofstetter. Tout le centre de la cité médiévale sera illuminé",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/22.00",
-        "end" : "11.11.16/01.00",
+        "start" : "2016-11-10 22:00:00",
+        "end" : "2016-11-11 01:00:00",
         "latitude" : "47.364843",
         "longitude" : " 7.154007"
     },
     {
         "name" : "Contes médiévaux",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/22.00",
-        "end" : "10.11.16/23.00",
+        "start" : "2016-11-10 22:00:00",
+        "end" : "2016-11-10 23:00:00",
         "latitude" : "47.365414",
         "longitude" : " 7.155803"
     },
     {
         "name" : "Contes médiévaux",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/23.00",
-        "end" : "10.11.16/24.00",
+        "start" : "2016-11-10 23:00:00",
+        "end" : "2016-11-10 24:00:00",
         "latitude" : "47.365435",
         "longitude" : "7.153980"
     },
     {
         "name" : "Contes médiévaux",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/24.00",
-        "end" : "11.11.16/01.00",
+        "start" : "2016-11-10 24:00:00",
+        "end" : "2016-11-11 01:00:00",
         "latitude" : "47.364701",
         "longitude" : "7.154715"
     },
     {
         "name" : "Musique sur la scène de la place du Mai avec Delienn (delienn.ch)",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "10.11.16/22.15",
-        "end" : "11.11.16/00.15",
+        "start" : "2016-11-10 22:15:00",
+        "end" : "2016-11-11 00:15:00",
         "latitude" : "47.363779",
         "longitude" : "7.152594"
     },
     {
         "name" : "Musique sur la scène de la place du Mai avec Slane (snale.ch)",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "11.11.16/00.15",
-        "end" : "11.11.16/02.15",
+        "start" : "2016-11-11 00:15:00",
+        "end" : "2016-11-11 02:15:00",
         "latitude" : "47.365230",
         "longitude" : "7.156204"
     },
     {
         "name" : "Ouverture des caisses",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "11.11.16/09.00",
-        "end" : "12.11.16/05:00",
+        "start" : "2016-11-11 09:00:00",
+        "end" : "2016-11-12 05:00:00",
         "latitude" : "47.365621",
         "longitude" : " 7.152726"
     },
     {
         "name" : "Cérémonie d'ouverture officielle de la manifestation sur la place du Mai",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "11.11.16/10.00",
-        "end" : "11.11.16/12:00",
+        "start" : "2016-11-11 10:00:00",
+        "end" : "2016-11-11 12:00:00",
         "latitude" : "47.365333",
         "longitude" : "7.154746"
     },
     {
         "name" : "Grand cortège aux flambeaux",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "11.11.16/21.30",
-        "end" : "11.11.16/23:00",
+        "start" : "2016-11-11 21:30:00",
+        "end" : "2016-11-11 23:00:00",
         "latitude" : "47.365716",
         "longitude" : "7.155179"
     },
     {
         "name" : "Ouverture des caisses",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "12.11.16/09.00",
-        "end" : "12.11.16/22:00",
+        "start" : "2016-11-12 09:00:00",
+        "end" : "2016-11-12 22:00:00",
         "latitude" : "47.365280",
         "longitude" : "7.155628"
     },
     {
         "name" : "Messe avec chants grégoriens à la Collégiale",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "12.11.16/10.00",
-        "end" : "12.11.16/11:00",
+        "start" : "2016-11-12 10:00:00",
+        "end" : "2016-11-12 11:00:00",
         "latitude" : "47.365085",
         "longitude" : "7.155303"
     },
     {
         "name" : "Résultat du concours du plus beau costume",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "12.11.16/16.00",
-        "end" : "12.11.16/17:00",
+        "start" : "2016-11-12 16:00:00",
+        "end" : "2016-11-12 17:00:00",
         "latitude" : "47.365614",
         "longitude" : " 7.155303"
     },
     {
         "name" : "Grand cortège final",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "start" : "12.11.16/17.00",
-        "end" : "12.11.16/19:30",
+        "start" : "2016-11-12 17:00:00",
+        "end" : "2016-11-12 19:30:00",
         "latitude" : "47.365914",
         "longitude" : " 7.155203"
     }
