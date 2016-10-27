@@ -39,14 +39,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     if(window.localStorage.getItem("areSetNotif") == undefined){
       window.localStorage.setItem("areSetNotif", false);
     }
-     
+
     if (window.cordova && window.localStorage.getItem("areSetNotif") == "false"){
       cordova.plugins.notification.local.cancelAll(function() {}, this);
 
       programmesService.get(function (data) {
         var events = [];
         for (var i = 0; i < data.length; i++) {
-          
+
            // Split timestamp into [ Y, M, D, h, m, s ]
           var t = data[i].start.split(/[- :]/);
           // Apply each element to the Date function
@@ -74,7 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         window.localStorage.setItem("areSetNotif", true);
       });
     }
-    
+
   });
 })
 
@@ -225,6 +225,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       'menuContent': {
         templateUrl: 'templates/parametres.html',
         controller: 'ParametresCtrl'
+      }
+    }
+  })
+  .state('app.toutweekend', {
+    url: '/toutweekend',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/toutweekend.html',
+        controller: 'ToutweekendCtrl'
       }
     }
   })
