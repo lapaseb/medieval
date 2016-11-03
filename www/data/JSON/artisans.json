@@ -1,291 +1,100 @@
 [
     {
-        "name" : "Cuir-bijoux-pierres",
+        "name_fr" : "Cuir-bijoux-pierres",
+        "name_de" : "Leder-Schmuck-Steine",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     },
     {
-        "name" : "Forge",
+        "name_fr" : "Forge",
+        "name_de" : "Schmiede",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     },
     {
-        "name" : "Hydromel",
+        "name_fr" : "Hydromel",
+        "name_de" : "Honigwein",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.364907",
         "longitude" : " 7.154937"
     },
-   {
-        "name" : "Livre en cuir",
+    {
+        "name_fr" : "Livre en cuir",
+        "name_de" : "Lederbuch",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365614",
         "longitude" : " 7.155803"
     },
     {
-        "name" : "Cordier",
+        "name_fr" : "Cordier",
+        "name_de" : "Tailpiece",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365414",
         "longitude" : " 7.155803"
     },
     {
-        "name" : "Facteur d'arcs (H)",
+        "name_fr" : "Facteur d'arcs (H)",
+        "name_de" : "Faktor arc (H)",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365214",
         "longitude" : " 7.155803"
     },
     {
-        "name" : "Chausses en cuir",
+        "name_fr" : "Chausses en cuir",
+        "name_de" : "Lederhose",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365014",
         "longitude" : " 7.155803"
     },
     {
-        "name" : "Chapelier",
+        "name_fr" : "Chapelier",
+        "name_de" : "Hutmacherin",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365714",
         "longitude" : " 7.155603"
     },
     {
-        "name" : "Perles en verre",
+        "name_fr" : "Perles en verre",
+        "name_de" : "Beads",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365237",
         "longitude" : "7.154140"
     },
     {
-        "name" : "Costumes et accessoires enfants",
+        "name_fr" : "Costumes et accessoires enfants",
+        "name_de" : "Kostüme und Accessoires Kinder",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.364746",
         "longitude" : "7.153252"
     },
     {
-        "name" : "Tailleur de poutres",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Ecodoubs, Bergers de Froidevaux",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Cuir-fer-os",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "La forge trankil (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Herbes potagères (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Broderie de Bayeux (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Médecine",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Fondeur de cloches (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Cuir - bijoux - costumes",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Facteur d'arcs (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Le nombre d'Or (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Epices (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Poterie médiévale",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Musée du Papier",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Lutier (H)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Pierre à feu",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Lapidaire",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Scierie",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Ocarina (H) itinérant",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Rites funéraires viking (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Dragons",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Bières artisanales",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Musée du Bois (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Cuir - bijoux - accessoires",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Tissage aux cartons",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Sculpteurs",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Poterie de Bonfol",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Objets en os, cornes, bois de cerfs et buis (NL)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Artisans de Gueberschwihr (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Tuilier",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Epées déco hydromèles",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Tampons - bijoux (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Girouettes",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Cuir",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Tourneur sur bois, atelier du fil (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Forge",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Tailleur d'ardoises, bijoux en bois",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Tailleur de pierres (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Dentelières",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Laine feutrée",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Epées-armures (CZ)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Meubles",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Minéraux",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Habillements médiévaux (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Tannerie (D)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Pains et gâteaux médiévaux (F)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Verre historique (B)",
-        "latitude" : "47.365714",
-        "longitude" : " 7.155803"
-    },
-    {
-        "name" : "Vannerie",
+        "name_fr" : "Tailleur de poutres",
+        "name_de" : "Tailor Balken",
+        "description_fr" : "Lorem ipsum c'est super",
+        "description_de" : "Lorem ipsum ist zupper",
+        "img" : "artisan.jpg",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     }
