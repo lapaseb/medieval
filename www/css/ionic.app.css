@@ -9894,6 +9894,21 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
       display: block; }
     #page_accueil ion-content .accueil_timer .row {
       padding: 0; }
+  #page_accueil ion-content .accueil_event_list {
+    font-size: 1.5em;
+    text-align: center;
+    display: none; }
+    #page_accueil ion-content .accueil_event_list h1 {
+      padding: 12px;
+      margin: 0;
+      font-size: 24px;
+      border-color: #b51b16;
+      background-color: #e3221b;
+      color: #fff; }
+    #page_accueil ion-content .accueil_event_list ion-content {
+      position: absolute;
+      bottom: 0px;
+      background: white !important; }
   #page_accueil ion-content #quickmenu {
     color: white;
     font-size: 16vw;
@@ -9976,6 +9991,10 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
     background-image: url(../data/img/icons/events-filter.png); }
   #page_carte .filter #events-filter .selected {
     background-image: url(../data/img/icons/events-filter-white.png); }
+  #page_carte .filter #default-filter .img {
+    background-image: url(../data/img/icons/default-filter.png); }
+  #page_carte .filter #default-filter .selected {
+    background-image: url(../data/img/icons/default-filter-white.png); }
 
 .map-popup {
   width: 100%;
@@ -9991,40 +10010,54 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   .map-popup #linkToSingle:hover {
     cursor: pointer; }
 
-#page_etablissement .rating {
-  color: #a9a9a9;
-  margin: 0;
-  padding: 0; }
-
-#page_etablissement ul.rating {
-  display: inline-block; }
-
-#page_etablissement .rating li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 1px;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 2em; }
-
-#page_etablissement .rating .filled {
-  color: yellow; }
-
-#page_etablissement .rating-system {
-  padding: 10px; }
-
-#page_etablissement .star {
-  size: 40px; }
-
-#page_etablissement h5 {
-  font-weight: bold; }
-
 #page_etablissement #pageContent {
   padding: 15px; }
-
-#page_etablissement .showMap {
-  width: 100%; }
+  #page_etablissement #pageContent h4 {
+    margin-top: 20px;
+    font-weight: bold; }
+  #page_etablissement #pageContent .showMap {
+    width: 100%; }
+  #page_etablissement #pageContent .ratingSystem {
+    display: none; }
+  #page_etablissement #pageContent .ratingSystemTitle {
+    display: none; }
+  #page_etablissement #pageContent .rating-system .star {
+    size: 40px; }
+  #page_etablissement #pageContent .rateButton {
+    display: flex; }
+  #page_etablissement #pageContent #rateButton {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: solid 2px #47c147;
+    color: #47c147;
+    margin: auto; }
+  #page_etablissement #pageContent .rating {
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0; }
+    #page_etablissement #pageContent .rating .filled {
+      color: yellow; }
+    #page_etablissement #pageContent .rating li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 1px;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 2em; }
+  #page_etablissement #pageContent ul.rating {
+    display: inline-block; }
+  #page_etablissement #pageContent .editVote {
+    text-align: center;
+    display: none; }
+    #page_etablissement #pageContent .editVote #thanks-vote {
+      margin: 20px;
+      font-weight: bold;
+      font-size: 1.5em; }
+    #page_etablissement #pageContent .editVote #rateEdit {
+      border: solid #bfbfbf 1px;
+      margin: 10px 0 35px 0; }
 
 #page_etablissement_carte #mapEtablissement {
   width: 100%;
@@ -10044,6 +10077,12 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 
 #page_programme .showMap {
   width: 100%; }
+
+#page_programme h4 {
+  font-weight: bold; }
+
+#page_programme h5 {
+  font-weight: bold; }
 
 #page_programme_carte #mapProgramme {
   width: 100%;
@@ -10069,6 +10108,12 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   list-style-type: disc;
   margin: 15px; }
 
+#page_contacts h4 {
+  font-weight: bold; }
+
+#page_contacts img {
+  width: 100%; }
+
 #page_parametres .item-content {
   padding: 5px; }
   #page_parametres .item-content img {
@@ -10076,3 +10121,9 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
     margin: 10px; }
   #page_parametres .item-content span {
     vertical-align: middle; }
+
+#page_weekend .showMap {
+  width: 100%; }
+
+#page_weekend h4 {
+  font-weight: bold; }
