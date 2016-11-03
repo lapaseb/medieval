@@ -45,8 +45,8 @@ angular.module('starter.controllers')
 
 					$scope.etablissement = {
 						id: progid,
-						name: data[progid].name,
-            description: data[progid].description,
+						name: data[progid]["name_" + window.localStorage.getItem("lang")],
+            description: data[progid]["description_" + window.localStorage.getItem("lang")],
             latitude: data[progid].latitude,
             longitude: data[progid].longitude
 					};

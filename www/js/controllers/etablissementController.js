@@ -7,9 +7,9 @@ angular.module('starter.controllers')
   		etablissementsService.get(function (data) {
 			$scope.etablissement = {
 				id: etaid,
-				name: data[etaid].name,
-				description: data[etaid].description,
-				menu: data[etaid].menu,
+				name: data[etaid]["name_" + window.localStorage.getItem("lang")],
+				description: data[etaid]["description_" + window.localStorage.getItem("lang")],
+				menu: data[etaid]["menu_" + window.localStorage.getItem("lang")],
 				type: data[etaid].type
 			};
 

@@ -46,7 +46,7 @@ angular.module('starter.controllers')
 		artisansService.get(function (data) {
 			$scope.artisan = {
 				id: etaid,
-				name: data[etaid].name,
+				name: data[etaid]["name_" + window.localStorage.getItem("lang")],
         latitude: data[etaid].latitude,
         longitude: data[etaid].longitude
 			};

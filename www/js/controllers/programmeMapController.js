@@ -46,8 +46,8 @@ angular.module('starter.controllers')
 		programmesService.get(function (data) {
 					$scope.programme = {
 						id: progid,
-						name: data[progid].name,
-            description: data[progid].description,
+						name: data[progid]["name_" + window.localStorage.getItem("lang")],
+            description: data[progid]["description_" + window.localStorage.getItem("lang")],
 						start: data[progid].start,
 						end: data[progid].end,
             latitude: data[progid].latitude,

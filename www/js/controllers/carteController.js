@@ -272,8 +272,8 @@ angular.module('starter.controllers')
 			for (var index = 0; index < $scope.etablissementsRow.length; index++) {
 				$scope.etablissements[index] = {
 					id: index,
-					name: $scope.etablissementsRow[index].name,
-					description: $scope.etablissementsRow[index].description,
+					name: $scope.etablissementsRow[index]["name_" + window.localStorage.getItem("lang")],
+					description: $scope.etablissementsRow[index]["description_" + window.localStorage.getItem("lang")],
          	type: $scope.etablissementsRow[index].type,
           latitude: $scope.etablissementsRow[index].latitude,
           longitude: $scope.etablissementsRow[index].longitude
@@ -306,7 +306,7 @@ angular.module('starter.controllers')
 			for (var index = 0; index < $scope.artisansRow.length; index++) {
 				$scope.artisans[index] = {
 					id: index,
-					name: $scope.artisansRow[index].name,
+					name: $scope.artisansRow[index]["name_" + window.localStorage.getItem("lang")],
 					latitude: $scope.artisansRow[index].latitude,
 					longitude: $scope.artisansRow[index].longitude
 				};
@@ -329,8 +329,8 @@ angular.module('starter.controllers')
 			for (var index = 0; index < $scope.programmesRow.length; index++) {
 				$scope.programmes[index] = {
 					id: index,
-					name: $scope.programmesRow[index].name,
-          description: $scope.programmesRow[index].description,
+					name: $scope.programmesRow[index]["name_" + window.localStorage.getItem("lang")],
+          description: $scope.programmesRow[index]["description_" + window.localStorage.getItem("lang")],
 					start: $scope.programmesRow[index].start,
 					end: $scope.programmesRow[index].end,
 					latitude: $scope.programmesRow[index].latitude,
