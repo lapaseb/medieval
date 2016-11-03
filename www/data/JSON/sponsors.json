@@ -1,98 +1,258 @@
 [
     {
-        "name" : "Raiffeisen"
+        "name_fr" : "Raiffeisen",
+        "name_de" : "Raiffeisen",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Tête de moine"
+        "name_fr" : "Tête de moine",
+        "name_de" : "Tête de moine",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 3
     },
     {
-        "name" : "Landi"
+        "name_fr" : "Jura-gîtes",
+        "name_de" : "Jura-gîtes",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 2
     },
     {
-        "name" : "Jura-gîtes"
+        "name_fr" : "Landi",
+        "name_de" : "Landi",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Quotidien Pressor"
+        "name_fr" : "Quotidien Pressor",
+        "name_de" : "Quotidien Pressor",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Yerly"
+        "name_fr" : "Yerly",
+        "name_de" : "Yerly",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Loisirs Casino"
+        "name_fr" : "Loisirs Casino",
+        "name_de" : "Loisirs Casino",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Quiquerez"
+        "name_fr" : "Quiquerez",
+        "name_de" : "Quiquerez",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Gravosig"
+        "name_fr" : "Gravosig",
+        "name_de" : "Gravosig",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Maison du tourisme restaurant"
+        "name_fr" : "Maison du tourisme restaurant",
+        "name_de" : "Maison du tourisme restaurant",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "BKW"
+        "name_fr" : "BKW",
+        "name_de" : "BKW",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "BNJ"
+        "name_fr" : "BNJ",
+        "name_de" : "BNJ",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Beuchat"
+        "name_fr" : "Beuchat",
+        "name_de" : "Beuchat",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Commune"
+        "name_fr" : "Commune",
+        "name_de" : "Commune",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "J.-M. Maître"
+        "name_fr" : "J.-M. Maître",
+        "name_de" : "J.-M. Maître",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Pierre Roy"
+        "name_fr" : "Pierre Roy",
+        "name_de" : "Pierre Roy",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Canal Alpha"
+        "name_fr" : "Canal Alpha",
+        "name_de" : "Canal Alpha",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Tariche"
+        "name_fr" : "Tariche",
+        "name_de" : "Tariche",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Aldibois"
+        "name_fr" : "Aldibois",
+        "name_de" : "Aldibois",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Brandschutz"
+        "name_fr" : "Brandschutz",
+        "name_de" : "Brandschutz",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "La Cigogne"
+        "name_fr" : "La Cigogne",
+        "name_de" : "La Cigogne",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 4
     },
     {
-        "name" : "Julien Wuillemin"
+        "name_fr" : "Julien Wuillemin",
+        "name_de" : "Julien Wuillemin",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Mont-Terri"
+        "name_fr" : "Mont-Terri",
+        "name_de" : "Mont-Terri",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Wenger"
+        "name_fr" : "Wenger",
+        "name_de" : "Wenger",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 3
     },
     {
-        "name" : "Auberge de la Fontaine"
+        "name_fr" : "Auberge de la Fontaine",
+        "name_de" : "Auberge de la Fontaine",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 2
     },
     {
-        "name" : "Shnoebelen"
+        "name_fr" : "Shnoebelen",
+        "name_de" : "Shnoebelen",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Marc Joliat"
+        "name_fr" : "Marc Joliat",
+        "name_de" : "Marc Joliat",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Loterie Romande"
+        "name_fr" : "Loterie Romande",
+        "name_de" : "Loterie Romande",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     },
     {
-        "name" : "Top-Net-Vigo"
+        "name_fr" : "Top-Net-Vigo",
+        "name_de" : "Top-Net-Vigo",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 2
     },
     {
-        "name" : "Laury Migy"
+        "name_fr" : "Laury Migy",
+        "name_de" : "Laury Migy",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 3
     },
     {
-        "name" : "Demotec"
+        "name_fr" : "Demotec",
+        "name_de" : "Demotec",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 2
     },
     {
-        "name" : "Allianz"
+        "name_fr" : "Allianz",
+        "name_de" : "Allianz",
+        "description_fr" : "Lorem ipsum description française",
+        "description_de" : "Lorem ipsum description allemande",
+        "img" : "sponsor.jpg",
+        "importance" : 1
     }
 ]
