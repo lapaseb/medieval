@@ -1,5 +1,10 @@
 <ion-view view-title="{{ 'SPONSORS_TITLE' | translate }}" id="page_sponsors">
   <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    
     <ion-list>
       <ion-item class="item item-thumbnail-left" ng-repeat="sponsor in sponsors" >
       	 <img src="data/img/raiffeisen.png" />

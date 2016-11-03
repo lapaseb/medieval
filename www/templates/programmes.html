@@ -1,7 +1,11 @@
 <ion-view view-title="{{ 'PROGRAMMES_TITLE' | translate }}" id="page_programmes">
   <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    
     <ion-list>
-
       <ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes" href="#/app/programme/{{programme.id}}">
       	 <img src="data/img/image-test.jpg" />
         <h2>{{programme.name}}</h2>
@@ -9,7 +13,6 @@
         <p>{{programme.start}} - {{programme.end}}</p>
         <p>{{ 'PROGRAMMES_TEXTE_STATUT' | translate }} <span style="color:green;">{{ 'PROGRAMMES_TEXTE_STATUT1' | translate }}</span></p>
       </ion-item>
-
     </ion-list>
   </ion-content>
 </ion-view>
