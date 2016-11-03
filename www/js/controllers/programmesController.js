@@ -1,7 +1,6 @@
 angular.module('starter.controllers')
 .controller('ProgrammesCtrl', ['$scope', '$http','$rootScope', 'programmesService',
     function($scope, $http, $rootScope, programmesService) {
-
 		$scope.doRefresh = function() {
 			programmesService.get(function (data) {
 				$scope.programmesRow = data;
@@ -20,6 +19,5 @@ angular.module('starter.controllers')
 	  	};
 
 	  	$scope.doRefresh();
-
     }
 ]);

@@ -1,12 +1,11 @@
 <ion-view view-title="{{ 'PROGRAMMES_TITLE' | translate }}" id="page_programmes">
   <ion-content>
-    <ion-refresher
+  <ion-refresher
       pulling-text="Pull to refresh..."
       on-refresh="doRefresh()">
     </ion-refresher>
-    
     <ion-list>
-      <ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes" href="#/app/programme/{{programme.id}}">
+      <ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes | orderBy:getFilter('app.programmes')" href="#/app/programme/{{programme.id}}">
       	 <img src="data/img/image-test.jpg" />
         <h2>{{programme.name}}</h2>
         <p>{{programme.description}}</p>
@@ -15,4 +14,28 @@
       </ion-item>
     </ion-list>
   </ion-content>
+  
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-android-funnel" ng-click="openFilter('app.programmes')"></button>
+    <div id="filtres" class="hidden">
+      <ion-list>
+        <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','+name')">
+          <i class="icon ion-arrow-down-c"></i>
+          A-Z
+        </ion-item>
+        <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','-name')">
+          <i class="icon ion-arrow-down-c"></i>
+          Z-A
+        </ion-item>
+        <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','+start')">
+          <i class="icon ion-arrow-down-c"></i>
+          Date+
+        </ion-item>
+        <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','-start')">
+          <i class="icon ion-arrow-down-c"></i>
+          Date-
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-nav-buttons>
 </ion-view>

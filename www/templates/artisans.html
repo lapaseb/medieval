@@ -4,13 +4,28 @@
       pulling-text="Pull to refresh..."
       on-refresh="doRefresh()">
     </ion-refresher>
-
     <ion-list>
-      <ion-item class="item item-thumbnail-left" ng-repeat="artisan in artisans" href="#/app/artisan/{{artisan.id}}">
+      <ion-item class="item item-thumbnail-left" ng-repeat="artisan in artisans | orderBy:getFilter('app.artisans')" href="#/app/artisan/{{artisan.id}}">
         <img src="data/img/blacksmith.png"/>
         <h2>{{artisan.name}}</h2>
-		<p>{{artisan.description}}</p>
+        <p>{{artisan.description}}</p>
       </ion-item>
     </ion-list>
   </ion-content>
+
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-android-funnel" ng-click="openFilter('app.artisans')"></button>
+    <div id="filtres" class="hidden">
+      <ion-list>
+        <ion-item class="item item-icon-left" ng-click="changeFilter('app.artisans','+name')">
+          <i class="icon ion-arrow-down-c"></i>
+          A-Z
+        </ion-item>
+        <ion-item class="item item-icon-left" ng-click="changeFilter('app.artisans','-name')">
+          <i class="icon ion-arrow-down-c"></i>
+          Z-A
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-nav-buttons>
 </ion-view>
