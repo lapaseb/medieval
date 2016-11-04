@@ -40,7 +40,9 @@
     "PROGRAMME_TEXTE_DEBUT": "Startzeit",
     "PROGRAMME_TEXTE_FIN": "Endzeit",
     "PROGRAMME_TEXTE_STATUT": "Status:",
-    "PROGRAMME_TEXTE_STATUT1": "Bevorstehend",
+    "PROGRAMME_TEXTE_STATUT1": "laufend",
+    "PROGRAMME_TEXTE_STATUT2": "fertig",
+    "PROGRAMME_TEXTE_STATUT3": "Bevorstehend",
     "PROGRAMME_TEXTE_AFFICHER_CARTE": "Auf der Karte anzeigen",
 
 

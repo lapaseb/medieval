@@ -40,7 +40,9 @@
     "PROGRAMME_TEXTE_DEBUT": "Heure de début",
     "PROGRAMME_TEXTE_FIN": "Heure de fin",
     "PROGRAMME_TEXTE_STATUT": "Statut:",
-    "PROGRAMME_TEXTE_STATUT1": "À venir",
+    "PROGRAMME_TEXTE_STATUT1": "En cours",
+    "PROGRAMME_TEXTE_STATUT2": "Terminé",
+    "PROGRAMME_TEXTE_STATUT3": "À venir",
     "PROGRAMME_TEXTE_AFFICHER_CARTE": "Afficher sur la carte",
 
 
