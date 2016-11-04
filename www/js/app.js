@@ -253,6 +253,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     $translateProvider.preferredLanguage(window.localStorage.getItem("lang"));
   } else {
     $translateProvider.preferredLanguage("fr");
+    window.localStorage.setItem("lang", "fr");
   }
 
 });
