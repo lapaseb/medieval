@@ -219,6 +219,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('app.sponsor', {
+    url: '/sponsor/:id',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/sponsor.html',
+        controller: 'SponsorCtrl'
+      }
+    }
+  })
   .state('app.parametres', {
     url: '/parametres',
     views: {
