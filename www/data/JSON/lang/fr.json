@@ -64,6 +64,11 @@
     "RESTAURANT_TEXTE_NOTE3": "Notez la décoration",
     "RESTAURANT_TEXTE_MERCI": "Merci d'avoir voté !",
     "RESTAURANT_TEXTE_CHANGERVOTE": "Changer mon vote",
+    "RESTAURANT_TYPE_1": "Restaurant",
+    "RESTAURANT_TYPE_2": "Hôtel",
+    "RESTAURANT_TYPE_3": "Hôtel-Restaurant",
+    "RESTAURANT_TYPE_4": "Taverne",
+    "RESTAURANT_TYPE_5": "Auberge",
 
 
 
