@@ -50,8 +50,8 @@
 
 
 
-    "RESTAURANTS_TITLE": "Restaurants, Hôtels, Tavernes",
-    "RESTAURANTS_SUBTITLE": "Etablissement",
+    "RESTAURANTS_TITLE": "Nourriture",
+    "RESTAURANTS_SUBTITLE": "Nourriture",
 
 
 
@@ -64,6 +64,11 @@
     "RESTAURANT_TEXTE_NOTE3": "Notez la décoration",
     "RESTAURANT_TEXTE_MERCI": "Merci d'avoir voté !",
     "RESTAURANT_TEXTE_CHANGERVOTE": "Changer mon vote",
+    "RESTAURANT_TYPE_1": "Restaurant",
+    "RESTAURANT_TYPE_2": "Hôtel",
+    "RESTAURANT_TYPE_3": "Hôtel-Restaurant",
+    "RESTAURANT_TYPE_4": "Taverne",
+    "RESTAURANT_TYPE_5": "Auberge",
 
 
 
@@ -77,7 +82,8 @@
     "CONCOURS_COSTUMES_TITLE": "Concours des costumes",
     "CONCOURS_COSTUMES_TEXTE_TITLE": "Concours des costumes",
 
-
+    "CONCOURS_TAVERNE_TITLE" : "Concours de tavernes et restaurants",
+    "CONCOURS_TAVERNE_TEXTE" : "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
 
     "SPONSORS_TITLE": "Sponsors",
     "SPONSORS_TEXTE_TITLE": "Sponsors",

@@ -16,7 +16,7 @@ angular.module('starter.controllers')
 				var now = new Date().getTime();
 
 				for (var i = 0; i < $scope.programmesRow.length; i++) {
-					
+
 					var start = $scope.programmesRow[i].start.split(/[- :]/);
 					var date_start = new Date(start[0], start[1]-1, start[2], start[3], start[4], start[5]);
 
@@ -40,7 +40,7 @@ angular.module('starter.controllers')
 					$scope.programmes[i] = {
 						id: i,
 						name: $scope.programmesRow[i]["name_" + window.localStorage.getItem("lang")],
-	          			description: $scope.programmesRow[i]["description_" + window.localStorage.getItem("lang")],
+	          description: $scope.programmesRow[i]["description_" + window.localStorage.getItem("lang")],
 						start: $scope.programmesRow[i].start,
 						end: $scope.programmesRow[i].end,
 						etat: etat,

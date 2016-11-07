@@ -23,10 +23,13 @@ angular.module('starter.services', [])
       }
     }])
 
-    .factory('etablissementsService', ['$http',function($http){
+    .factory('etablissementsService', ['$http', '$translate', function($http, $translate){
         return {
             get:function(callback) {
                 $http.get('data/JSON/etablissements.json').success(function(data) {
+                    for(var i=0; i < data.length; i++){
+                        data[i].type = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
+                    }
                     callback(data);
                 });
             }
@@ -40,7 +43,7 @@ angular.module('starter.services', [])
                     callback(data);
                 });
             }
-      }
+        }
     }])
 
     .factory('sponsorsService', ['$http',function($http){

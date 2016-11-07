@@ -1,7 +1,7 @@
 <ion-view view-title="{{ 'PROGRAMMES_TITLE' | translate }}" id="page_programmes">
   <ion-content>
   <ion-refresher
-      pulling-text="Pull to refresh..."
+      pulling-text="Tirez pour raffraîchir..."
       on-refresh="doRefresh()">
     </ion-refresher>
     <ion-list>
@@ -14,7 +14,7 @@
       </ion-item>
     </ion-list>
   </ion-content>
-  
+
   <ion-nav-buttons side="right">
     <button class="button button-icon button-clear ion-android-funnel" ng-click="openFilter('app.programmes')"></button>
     <div id="filtres" class="hidden">

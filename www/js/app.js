@@ -237,6 +237,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('app.concourstavre', {
+    url: '/concourstavre',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/concours-tavre.html',
+        controller: 'ConcoursTavreCtrl'
+      }
+    }
+  })
   .state('app.parametres', {
     url: '/parametres',
     views: {
