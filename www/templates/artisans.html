@@ -2,10 +2,10 @@
 <div class="bar bar-subheader item-input-inset">
   <label class="item-input-wrapper">
     <i class="icon ion-ios-search placeholder-icon"></i>
-    <input type="search" placeholder="Search">
+    <input ng-model="search.name" type="search" placeholder="Search"> <!-- -- -- -- -- -- -- A TRADUIRE -- -- -- -- -- -- -->
   </label>
   <button class="button button-clear" style="color: black;">
-    Cancel
+    Annuler <!-- -- -- -- -- -- -- A TRADUIRE -- -- -- -- -- -- -->
   </button>
 </div>
   <ion-content class="has-subheader">
@@ -14,7 +14,7 @@
       on-refresh="doRefresh()">
     </ion-refresher>
     <ion-list>
-      <ion-item class="item item-thumbnail-left" ng-repeat="artisan in artisans | orderBy:getFilter('app.artisans')" href="#/app/artisan/{{artisan.id}}">
+      <ion-item class="item item-thumbnail-left" ng-repeat="artisan in artisans | orderBy:getFilter('app.artisans') | filter: search" href="#/app/artisan/{{artisan.id}}">
         <img src="data/img/blacksmith.png"/>
         <h2>{{artisan.name}}</h2>
         <p>{{artisan.description}}</p>
