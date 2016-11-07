@@ -17,7 +17,8 @@ angular.module('starter.controllers')
 						id: i,
 						name: $scope.etablissementsRow[i]["name_" + window.localStorage.getItem("lang")],
 						description: $scope.etablissementsRow[i]["description_" + window.localStorage.getItem("lang")],
-	         			type: $scope.etablissementsRow[i].type
+	         			type: $scope.etablissementsRow[i].type,
+	         			typeString: $scope.etablissementsRow[i].typeString,
 					};
 				}
 				$scope.$broadcast('scroll.refreshComplete');

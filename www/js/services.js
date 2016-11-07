@@ -28,7 +28,7 @@ angular.module('starter.services', [])
             get:function(callback) {
                 $http.get('data/JSON/etablissements.json').success(function(data) {
                     for(var i=0; i < data.length; i++){
-                        data[i].type = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
+                        data[i].typeString = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
                     }
                     callback(data);
                 });
@@ -59,8 +59,6 @@ angular.module('starter.services', [])
     .factory('votesService', ['$http', '$rootScope', '$ionicPopup', function($http, $rootScope, $ionicPopup){
         return {
             post:function(etablissement, noteRepas, noteAmbiance, noteDeco) {
-
-
 
                 var ratingArray = [];
                 voteUpdate = false;

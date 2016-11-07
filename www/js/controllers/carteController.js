@@ -275,17 +275,18 @@ angular.module('starter.controllers')
 					name: $scope.etablissementsRow[index]["name_" + window.localStorage.getItem("lang")],
 					description: $scope.etablissementsRow[index]["description_" + window.localStorage.getItem("lang")],
          	type: $scope.etablissementsRow[index].type,
+          typeString: $scope.etablissementsRow[index].typeString,
           latitude: $scope.etablissementsRow[index].latitude,
           longitude: $scope.etablissementsRow[index].longitude
 			  };
 
         function setMarker(i){
 
-          if ($scope.etablissements[i].type == 'Taverne'){
-            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: taverne}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
+          if ($scope.etablissements[i].type == 4){
+            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: taverne}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].typeString, 'etablissement', i)});
 
           } else {
-            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].type, 'etablissement', i)});
+            markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){setMapPopupFullMap(pageID, $scope.etablissements[i].name, $scope.etablissements[i].typeString, 'etablissement', i)});
             //markerEtablissement = new L.marker([$scope.etablissements[i].latitude, $scope.etablissements[i].longitude], {icon: restaurant}).on('click', function(){$state.go("app.etablissement", { url: '/etablissement/' + i})});
           }
 

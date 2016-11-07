@@ -10,10 +10,11 @@ angular.module('starter.controllers')
 				name: data[etaid]["name_" + window.localStorage.getItem("lang")],
 				description: data[etaid]["description_" + window.localStorage.getItem("lang")],
 				menu: data[etaid]["menu_" + window.localStorage.getItem("lang")],
-				type: data[etaid].type
+				type: data[etaid].type,
+				typeString: data[etaid].typeString
 			};
 
-			//if(window.Connection && navigator.connection.type != Connection.NONE) {
+			if(window.Connection && navigator.connection.type != Connection.NONE) {
 				if(data[etaid].type == "1" || data[etaid].type == "4" || data[etaid].type == "5"){
 					$('.ratingSystemTitle').show();
 					if($scope.rating.noteRep == -1 && $scope.rating.noteAmbiance == -1 && $scope.rating.noteDeco == -1) {
@@ -22,7 +23,7 @@ angular.module('starter.controllers')
 						$('.editVote').show();
 					}
 				}
-			//}
+			}
   		});
 
 		if(window.localStorage.getItem('ratingEta') != undefined){
