@@ -2,7 +2,6 @@ angular.module('starter.services', [])
     .factory('programmesService', ['$http', '$rootScope', function($http, $rootScope){
         return {
             get:function(callback) {
-
                 if(window.Connection && navigator.connection.type != Connection.NONE) {
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getEvents').success(function(data) {
@@ -23,35 +22,77 @@ angular.module('starter.services', [])
       }
     }])
 
-    .factory('etablissementsService', ['$http', '$translate', function($http, $translate){
+    .factory('etablissementsService', ['$http', '$rootScope', '$translate', function($http, $rootScope, $translate){
         return {
             get:function(callback) {
-                $http.get('data/JSON/etablissements.json').success(function(data) {
-                    for(var i=0; i < data.length; i++){
-                        data[i].typeString = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
+                if(window.Connection && navigator.connection.type != Connection.NONE) {
+                    //si il a de la co
+                    $http.get($rootScope.apiUrl + '/getEtablissements').success(function(data) {
+                        for(var i=0; i < data.length; i++){
+                            data[i].typeString = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
+                        }
+                        window.localStorage.setItem('etablissements-json', JSON.stringify(data));
+                        callback(data);
+                    });
+                } else {
+                    //si il a pas de co
+                    if(window.localStorage.getItem('etablissements-json')){
+                        callback(JSON.parse(window.localStorage.getItem('etablissements-json')));
+                    } else {
+                        $http.get('data/JSON/etablissements.json').success(function(data) {
+                            for(var i=0; i < data.length; i++){
+                                data[i].typeString = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
+                            }
+                            callback(data);
+                        });
                     }
-                    callback(data);
-                });
+                }
             }
         }
     }])
 
-    .factory('artisansService', ['$http',function($http){
+    .factory('artisansService', ['$http', '$rootScope' ,function($http, $rootScope){
         return {
             get:function(callback) {
-                $http.get('data/JSON/artisans.json').success(function(data) {
-                    callback(data);
-                });
+                 if(window.Connection && navigator.connection.type != Connection.NONE) {
+                    //si il a de la co
+                    $http.get($rootScope.apiUrl + '/getArtisans').success(function(data) {
+                        window.localStorage.setItem('artisans-json', JSON.stringify(data));
+                        callback(data);
+                    });
+                } else {
+                    //si il a pas de co
+                    if(window.localStorage.getItem('artisans-json')){
+                        callback(JSON.parse(window.localStorage.getItem('artisans-json')));
+                    } else {
+                        $http.get('data/JSON/artisans.json').success(function(data) {
+                            callback(data);
+                        });
+                    }
+                }
             }
         }
     }])
 
-    .factory('sponsorsService', ['$http',function($http){
+    .factory('sponsorsService', ['$http', '$rootScope' ,function($http, $rootScope){
         return {
             get:function(callback) {
-                $http.get('data/JSON/sponsors.json').success(function(data) {
-                    callback(data);
-                });
+                if(window.Connection && navigator.connection.type != Connection.NONE) {
+                    //si il a de la co
+                    $http.get($rootScope.apiUrl + '/getSponsors').success(function(data) {
+                        window.localStorage.setItem('sponsors-json', JSON.stringify(data));
+                        callback(data);
+                    });
+                } else {
+                    //si il a pas de co
+                    if(window.localStorage.getItem('sponsors-json')){
+                        callback(JSON.parse(window.localStorage.getItem('sponsors-json')));
+                    } else {
+                        $http.get('data/JSON/sponsors.json').success(function(data) {
+                            callback(data);
+                        });
+                    }
+                }
             }
       }
     }])
