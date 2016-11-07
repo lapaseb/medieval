@@ -63,6 +63,11 @@
     "RESTAURANT_TEXTE_NOTE3": "Beachten Sie die Dekoration",
     "RESTAURANT_TEXTE_MERCI": "Vielen Dank für Ihre Bewertung!",
     "RESTAURANT_TEXTE_CHANGERVOTE": "Ändern Sie meine Stimme",
+    "RESTAURANT_TYPE_1": "Restaurant",
+    "RESTAURANT_TYPE_2": "Hotel",
+    "RESTAURANT_TYPE_3": "Hotel-Restaurant",
+    "RESTAURANT_TYPE_4": "Schenke",
+    "RESTAURANT_TYPE_5": "Gasthof",
 
 
 

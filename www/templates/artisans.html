@@ -1,5 +1,14 @@
 <ion-view view-title="{{ 'ARTISANS_TITLE' | translate }}" id="page_artisants">
-  <ion-content >
+<div class="bar bar-subheader item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" placeholder="Search">
+  </label>
+  <button class="button button-clear" style="color: black;">
+    Cancel
+  </button>
+</div>
+  <ion-content class="has-subheader">
     <ion-refresher
       pulling-text="Pull to refresh..."
       on-refresh="doRefresh()">
