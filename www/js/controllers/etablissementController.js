@@ -13,7 +13,7 @@ angular.module('starter.controllers')
 				type: data[etaid].type
 			};
 
-			if(window.Connection && navigator.connection.type != Connection.NONE) {
+			//if(window.Connection && navigator.connection.type != Connection.NONE) {
 				if(data[etaid].type == "1" || data[etaid].type == "4" || data[etaid].type == "5"){
 					$('.ratingSystemTitle').show();
 					if($scope.rating.noteRep == -1 && $scope.rating.noteAmbiance == -1 && $scope.rating.noteDeco == -1) {
@@ -22,7 +22,7 @@ angular.module('starter.controllers')
 						$('.editVote').show();
 					}
 				}
-			}
+			//}
   		});
 
 		if(window.localStorage.getItem('ratingEta') != undefined){

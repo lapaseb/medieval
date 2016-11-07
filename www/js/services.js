@@ -53,41 +53,76 @@ angular.module('starter.services', [])
       }
     }])
 
-    .factory('votesService', ['$http', '$rootScope', function($http, $rootScope){
+    .factory('votesService', ['$http', '$rootScope', '$ionicPopup', function($http, $rootScope, $ionicPopup){
         return {
             post:function(etablissement, noteRepas, noteAmbiance, noteDeco) {
 
-                var ratingArray = [];
-                var sendSql = true;
 
+
+                var ratingArray = [];
+                voteUpdate = false;
+
+                //if id deja présent
                 if(window.localStorage.getItem('ratingEta') != undefined){
+                     //modifier BD
                     var ratingArray = JSON.parse(window.localStorage.getItem('ratingEta'));
 
                     for(var i = 0; i < ratingArray.length; i++){
                         if(ratingArray[i].eta == etablissement){
-                            ratingArray.splice(i, 1);
-                            sendSql = false;
+
+                            ratingArray[i]["noteRep"] = noteRepas;
+                            ratingArray[i]["noteAmbiance"] = noteAmbiance;
+                            ratingArray[i]["noteDeco"] = noteDeco;
+
+                            window.localStorage.setItem('ratingEta', JSON.stringify(ratingArray));
+
+                            $http.post($rootScope.apiUrl + '/editRates', {
+                                "id" : ratingArray[i].id,
+                                "apiKey" : "ZF2k9r4h",
+                                "etablissement" : etablissement,
+                                "noteRepas" : noteRepas,
+                                "noteAmbiance" : noteAmbiance,
+                                "noteDeco" : noteDeco,
+                            }).success(function(data) {
+                                
+                            }).error(function(){
+                                var alertPopup = $ionicPopup.alert({
+                                    title: 'Erreur de votation',
+                                    template: 'La votation a échoué, verifiez votre connexion internet puis réessayez.'
+                                });
+                            });
+
+                            voteUpdate = true;
                         }
                     }
-                }
+                } 
 
-                ratingArray.push({
-                    "eta" : etablissement,
-                    "noteRep" : noteRepas,
-                    "noteAmbiance" : noteAmbiance,
-                    "noteDeco" : noteDeco
-                });
-
-                window.localStorage.setItem('ratingEta', JSON.stringify(ratingArray));
-
-                if(sendSql){
+                if(voteUpdate == false){
                     $http.post($rootScope.apiUrl + '/setRates', {
+                        "apiKey" : "ZF2k9r4h",
                         "etablissement" : etablissement,
                         "noteRepas" : noteRepas,
                         "noteAmbiance" : noteAmbiance,
                         "noteDeco" : noteDeco,
-                    });
+                    }).success(function(data) {
+                        ratingArray.push({
+                            "id" : data,
+                            "eta" : etablissement,
+                            "noteRep" : noteRepas,
+                            "noteAmbiance" : noteAmbiance,
+                            "noteDeco" : noteDeco
+                        });
+
+                        window.localStorage.setItem('ratingEta', JSON.stringify(ratingArray));
+                    }).error(function(){
+                        var alertPopup = $ionicPopup.alert({
+                            title: 'Erreur de votation',
+                            template: 'La votation a échoué, verifiez votre connexion internet puis réessayez.'
+                        });
+                    });;
                 }
+
+
 
             }
       }
