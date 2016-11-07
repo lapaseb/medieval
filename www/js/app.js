@@ -114,6 +114,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('app.artisanMap', {
+      url: '/artisanMap/:id',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/artisanMap.html',
+        controller: 'ArtisanMapCtrl'
+      }
+    }
+  })
   .state('app.carte', {
       url: '/carte',
       views: {

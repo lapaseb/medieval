@@ -1,10 +1,14 @@
 <ion-view view-title="{{ 'ARTISAN_TITLE' | translate }}" id="page_artisan">
-  <ion-content scroll="false">
-    <div id="mapArtisan">
+  <ion-content scroll="false" class="padding">
+    <img class="full-image" src="data/img/blacksmith.png" />
+    <div id="pageContent" class="">
+      <h2>{{artisan.name}}</h2>
+    	<p>{{artisan.description}}</p>
+    	<a href="#/app/artisanMap/{{artisan.id}}">
+        <button class="button button-positive showMap" >
+          {{ 'PROGRAMME_TEXTE_AFFICHER_CARTE' | translate }}
+        </button>
+      </a>
     </div>
   </ion-content>
-  <div class="item map-popup">
-  	<h2>Titre</h2>
-  	<p id="description-popup">Description</p>
-  </div>
 </ion-view>
