@@ -57,7 +57,7 @@
 				<h2>{{programme.name}}</h2>
 				<p>{{programme.description}}</p>
 				<p>{{programme.start}} - {{programme.end}}</p>
-				<p>Statut: <span style="color:green;">À venir</span></p>
+				<p>{{ 'PROGRAMME_TEXTE_STATUT' | translate }} <span style="color:{{ programme.color }};">{{ programme.etat }}</span></p>
 			</ion-item>
 		</ion-list>
 		</ion-content>

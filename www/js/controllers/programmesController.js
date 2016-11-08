@@ -40,7 +40,7 @@ angular.module('starter.controllers')
 					$scope.programmes[i] = {
 						id: i,
 						name: $scope.programmesRow[i]["name_" + window.localStorage.getItem("lang")],
-	          description: $scope.programmesRow[i]["description_" + window.localStorage.getItem("lang")],
+	          			description: $scope.programmesRow[i]["description_" + window.localStorage.getItem("lang")],
 						start: $scope.programmesRow[i].start,
 						end: $scope.programmesRow[i].end,
 						etat: etat,
