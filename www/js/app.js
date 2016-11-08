@@ -6,7 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'pascalprecht.translate'])
 
-.run(function($ionicPlatform, $rootScope, programmesService) {
+.run(function($ionicPlatform, $rootScope, programmesService, $ionicPopup, $translate) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -74,6 +74,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         window.localStorage.setItem("areSetNotif", true);
       });
     }
+
+      if(window.localStorage.getItem('lang') == undefined) {
+        langPopup = $ionicPopup.show({
+          title: 'Choix de la langue',
+          template: '<div style="text-align:center;">' +
+          '           <img style="width:64px; height:64px; margin:-5px 5px 0 5px;" id="de" alt="Deutsch" onclick="selectLang(\'de\')" src="data/img/lang/de.png" />' +
+          '           <img style="width:64px; height:64px; margin:-5px 5px 0 5px;" id="fr" alt="Français" onclick="selectLang(\'fr\')" src="data/img/lang/fr.png" />' +
+          '           <p style="font-size:0.9em;">Vous pourrez toujours modifier la langue ultérieurement.</p>' +
+          '           </div>'
+        });
+      } else {
+        $translate.use(window.localStorage.getItem('lang'));
+      }
+
+      selectLang = function(lang){
+        langPopup.close();
+        $translate.use(lang);
+        window.localStorage.setItem("lang", lang);
+      };
 
   });
 })
@@ -263,10 +282,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         controller: 'ToutweekendCtrl'
       }
     }
-  })
+  });
 
   // if none of the above states are matched, use this as the fallback
-  ;$urlRouterProvider.otherwise('/app/accueil');
+  $urlRouterProvider.otherwise('/app/accueil');
 
 
   /* Traduction */
@@ -276,11 +295,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     suffix: '.json'
   });
 
+  $translateProvider.preferredLanguage("fr");
+
+/*
   if(window.localStorage.getItem("lang") != undefined){
     $translateProvider.preferredLanguage(window.localStorage.getItem("lang"));
   } else {
     $translateProvider.preferredLanguage("fr");
     window.localStorage.setItem("lang", "fr");
   }
-
+*/
 });
