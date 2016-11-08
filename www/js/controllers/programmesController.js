@@ -42,7 +42,9 @@ angular.module('starter.controllers')
 						name: $scope.programmesRow[i]["name_" + window.localStorage.getItem("lang")],
 	          			description: $scope.programmesRow[i]["description_" + window.localStorage.getItem("lang")],
 						start: $scope.programmesRow[i].start,
+						startText: start[2] + "." + start[1] + "." + start[0] + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + start[3] + ":" + start[4],
 						end: $scope.programmesRow[i].end,
+						endText: end[2] + "." + end[1] + "." + end[0]  + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + end[3] + ":" + end[4],
 						etat: etat,
 						color: color
 					};

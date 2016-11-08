@@ -31,16 +31,40 @@ angular.module('starter.controllers')
 				color = "blue";
 			}
 
+			var weekday = new Array(7);
+			weekday[0]=  "Dimanche";
+			weekday[1] = "Lundi";
+			weekday[2] = "Mardi";
+			weekday[3] = "Mercredi";
+			weekday[4] = "Jeudi";
+			weekday[5] = "Vendredi";
+			weekday[6] = "Samedi";
+
+			var months = new Array(12);
+			months[0]=  "Janvier";
+			months[1] = "Février";
+			months[2] = "Mars";
+			months[3] = "Avril";
+			months[4] = "Mai";
+			months[5] = "Juin";
+			months[6] = "Juillet";
+			months[7] = "Août";
+			months[8] = "Septembre";
+			months[9] = "Octobre";
+			months[10] = "Novembre";
+			months[11] = "Décembre";
+
 			$scope.programme = {
 				id: progid,
 				name: data[progid]["name_" + window.localStorage.getItem("lang")],
 				description: data[progid]["description_" + window.localStorage.getItem("lang")],
 				start: data[progid].start,
+				startText: $translate.instant('PROGRAMME_WEEKDAY_' + date_start.getDay()) + " " + start[2] + " " + $translate.instant('PROGRAMME_MONTH_' + start[1]) + " " + start[0] + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + start[3] + ":" + start[4],
 				end: data[progid].end,
+				endText: $translate.instant('PROGRAMME_WEEKDAY_' + date_end.getDay()) + " " + end[2] + " " + $translate.instant('PROGRAMME_MONTH_' + start[1]) + " " + end[0] + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + end[3] + ":" + end[4],
 				etat: etat,
 				color: color
 			};
 		});
-
     }
 ]);

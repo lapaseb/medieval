@@ -5,9 +5,9 @@
       <h4>{{programme.name}}</h4>
     	<p>{{programme.description}}</p>
       <h5>{{ 'PROGRAMME_TEXTE_DEBUT' | translate }}</h5>
-    	<p>{{programme.start}}</p>
+    	<p>{{programme.startText}}</p>
       <h5>{{ 'PROGRAMME_TEXTE_FIN' | translate }}</h5>
-      <p>{{programme.end}}</p>
+      <p>{{programme.endText}}</p>
     	<p>{{ 'PROGRAMME_TEXTE_STATUT' | translate }} <span style="color:{{ programme.color }};">{{ programme.etat }}</span></p>
       <a href="#/app/programme-map/{{programme.id}}">
         <button class="button button-positive showMap" >
