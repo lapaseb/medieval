@@ -119,5 +119,10 @@
 
     "PARAMETRES_TITLE": "Einstellungen",
     "PARAMETRES_TEXTE_TITLE": "Einstellungen",
-    "PARAMETRES_TEXTE_SUBTITLE_1": "Sprachauswahl"
+    "PARAMETRES_TEXTE_SUBTITLE_1": "Sprachauswahl",
+
+    "AIDE_TEXTE_SUBTITLE_1": "Die Aktualisierung der Daten",
+    "AIDE_TEXTE_CONTENT": "Die Anwendung bietet ein Kühlsystem mit dem Sie die neuesten Informationen über die Veranstaltung zu erhalten. Diese Funktion ist auf der Liste der Programmereignisse, Handwerker, Sponsoren sowie die Liste der Betriebe zur Verfügung. Um die Daten zu aktualisieren, scrollez an der Spitze der Liste nach oben. Eine Internetverbindung ist nicht erforderlich."
+
+
 }
