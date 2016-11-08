@@ -95,7 +95,11 @@
 
 
 
-    "PARAMETRES_TITLE": "Paramètres",
-    "PARAMETRES_TEXTE_TITLE": "Paramètres",
-    "PARAMETRES_TEXTE_SUBTITLE_1": "Choix de la langue"
+    "PARAMETRES_TITLE": "Paramètres et aide",
+    "PARAMETRES_TEXTE_TITLE": "Paramètres et aide",
+    "PARAMETRES_TEXTE_SUBTITLE_1": "Choix de la langue",
+
+    "AIDE_TEXTE_SUBTITLE_1": "Actualisation des données",
+    "AIDE_TEXTE_CONTENT": "L'application met à disposition un système de rafraîchissement vous permettant d'obtenir les dernières informations concernant la manifestation. Cette fonctionnalité est disponible sur la liste des événements du programme, des artisans, des sponsors ainsi que sur la liste des établissements. Pour mettre à jour les données, scrollez vers le haut tout en haut de la liste. Une connexion internet est requise."
+
 }
