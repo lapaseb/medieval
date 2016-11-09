@@ -98,10 +98,15 @@
 
     "CONCOURS_COSTUMES_TITLE": "Wettbewerb Kostüme",
     "CONCOURS_COSTUMES_TEXTE_TITLE": "Wettbewerb Kostüme",
+    "CONCOURS_COSTUMES_TEXTE_RESULT" : "Kostümwettbewerb Ergebnisse",
+    "CONCOURS_COSTUMES_TEXTE_WAITING" : "Das Ergebnis des Wettbewerbs für das beste Kostüm wird hier angezeigt.",
 
     "CONCOURS_TAVERNE_TITLE" : "Wettbewerb Tavernen und Restaurants",
     "CONCOURS_TAVERNE_TEXTE" : "Lorem Ipsum ist einfach Dummy-Text der Komposition und Layout vor dem Drucken. Lorem Ipsum ist Standard Dummy-Text seit den 1500er Jahren, als ein unbekannter Galeere der Art und krabbelte ein Musterbuch Schriftarten zu machen.",
-
+    "CONCOURS_TAVERNE_TEXTE_RESULT" : "Wettbewerb führt zu den besten Taverne",
+    "CONCOURS_TAVERNE_TEXTE_WAITING" : "Das Ergebnis des Wettbewerbs für die beste Taverne wird hier angezeigt.",
+    "CONCOURS_RESTAURANT_TEXTE_RESULT" : "Wettbewerb führt das beste Restaurant",
+    "CONCOURS_RESTAURANT_TEXTE_WAITING" : "Das Ergebnis des Wettbewerbs um das beste Restaurant werden hier veröffentlicht.",
 
 
     "SPONSORS_TITLE": "Sponsors",
@@ -117,8 +122,8 @@
 
 
 
-    "PARAMETRES_TITLE": "Einstellungen",
-    "PARAMETRES_TEXTE_TITLE": "Einstellungen",
+    "PARAMETRES_TITLE": "Einstellung und Benutzung",
+    "PARAMETRES_TEXTE_TITLE": "Einstellung und Benutzung",
     "PARAMETRES_TEXTE_SUBTITLE_1": "Sprachauswahl",
 
     "AIDE_TEXTE_SUBTITLE_1": "Die Aktualisierung der Daten",

@@ -33,7 +33,7 @@ angular.module('starter.controllers')
     var southWest = L.latLng(47.369743926768784, 7.174824539917747),
     northEast = L.latLng(47.360589810163582, 7.1379860116837257),
     bounds = L.latLngBounds(southWest, northEast);
-
+    
     var map = L.map('mapid', {
         center: [47.364965, 7.154498],
         zoom: 17,
