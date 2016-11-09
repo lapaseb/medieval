@@ -98,7 +98,8 @@ angular.module('starter.controllers')
 						start: $scope.programmesRow[i].start,
 						end: $scope.programmesRow[i].end,
 						etat: etat,
-						color: color
+						color: color,
+						img: $scope.programmesRow[i].img
 					};
 				}
 
