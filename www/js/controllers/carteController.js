@@ -1,8 +1,8 @@
 
 
 angular.module('starter.controllers')
-.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$state', '$translate',
-    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $state, $translate) {
+.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$state', '$translate', '$ionicLoading',
+    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $state, $translate, $ionicLoading) {
 
     // -------------------------------------------------------------------------------------------------------------
     //                         Fonctons utiles pour la map
@@ -67,8 +67,22 @@ angular.module('starter.controllers')
     });
 
 
+    $scope.show = function() {
+      $ionicLoading.show({
+        template: '</br><ion-spinner></ion-spinner><p></br>Localisation en cours</p>',
+      }).then(function(){
+         
+      });
+    };
+    $scope.hide = function(){
+      $ionicLoading.hide().then(function(){
+         
+      });
+    };
+
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
+      $scope.hide();
 
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
@@ -105,16 +119,17 @@ angular.module('starter.controllers')
 
     };
 
+
     // onError Callback receives a PositionError object
     //
     function onError(error) {
+      $scope.hide();
       var alertPopup = $ionicPopup.alert({
         title: 'Erreur de localisation',
         template: 'La localisation ne fonctionne pas. Vérifiez que le GPS soit correctement activé puis réessayez.'
       });
 
     }
-
 
 
     var ourCustomControl = L.Control.extend({
@@ -127,7 +142,7 @@ angular.module('starter.controllers')
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
 
         container.onclick = function(){
-
+          $scope.show();
           navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 3000});
         }
 

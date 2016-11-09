@@ -1,6 +1,6 @@
 angular.module('starter.controllers')
-.controller('EtablissementMapCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'etablissementsService', '$ionicPopup',
-    function($scope, $http, $rootScope, $stateParams, etablissementsService, $ionicPopup) {
+.controller('EtablissementMapCtrl', ['$scope', '$http','$rootScope', '$stateParams', 'etablissementsService', '$ionicPopup', '$ionicLoading',
+    function($scope, $http, $rootScope, $stateParams, etablissementsService, $ionicPopup, $ionicLoading) {
 
 
     var southWest = L.latLng(47.369743926768784, 7.174824539917747),
@@ -62,11 +62,22 @@ angular.module('starter.controllers')
 		});
 
 
-
+    $scope.show = function() {
+      $ionicLoading.show({
+        template: '</br><ion-spinner></ion-spinner><p></br>Localisation en cours</p>',
+      }).then(function(){
+         
+      });
+    };
+    $scope.hide = function(){
+      $ionicLoading.hide().then(function(){
+         
+      });
+    };
     // Callback de succès sur la fonction de localisation, si la localisation a fonctionné on affiche la position de l'utilisateur
     var onSuccess = function(position) {
 
-
+        $scope.hide();
         userLat = position.coords.latitude;
         userLng =  position.coords.longitude;
         userLatLng = L.latLng(userLat, userLng);
@@ -104,6 +115,7 @@ angular.module('starter.controllers')
     // onError Callback receives a PositionError object
     //
     function onError(error) {
+      $scope.hide();
       var alertPopup = $ionicPopup.alert({
         title: 'Erreur de localisation',
         template: 'La localisation ne fonctionne pas. Vérifiez que le GPS soit correctement activé puis réessayez.'
@@ -123,6 +135,7 @@ angular.module('starter.controllers')
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
 
         container.onclick = function(){
+          $scope.show();
           navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 3000});
         }
 
