@@ -23,8 +23,11 @@
 
 
     "CARTE_TITLE": "Carte",
-
-
+    "POPUP_ERROR_LOCALISATION_TITLE": "Erreur de localisation",
+    "POPUP_ERROR_LOCALISATION_CONTENT": "La localisation ne fonctionne pas. Vérifiez que le GPS soit correctement activé puis réessayez.",
+    "POPUP_ERROR_LOCATION_TITLE": "Erreur de localisation",
+    "POPUP_ERROR_LOCATION_CONTENT": "La localisation ne fonctionne pas en dehors de la ville de St-Ursanne.",
+    "POPUP_LOADER_LOCALISATION" : "Localisation en cours",
 
     "PROGRAMME_CARTE_TITLE": "Carte",
 
