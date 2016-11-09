@@ -6,7 +6,7 @@ angular.module('starter.services', [])
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getEvents').success(function(data) {
                         for(var i=0; i < data.length; i++){
-                            if(data[i].img == ""){
+                            if(data[i].img == "" ||data[i].img == undefined){
                                 data[i].img = "eventDefault.jpg";
                             }
                             data[i].img = "data/img/" + data[i].img;
@@ -21,7 +21,7 @@ angular.module('starter.services', [])
                     } else {
                         $http.get('data/JSON/events.json').success(function(data) {
                             for(var i=0; i < data.length; i++){
-                                if(data[i].img == ""){
+                                if(data[i].img == "" ||data[i].img == undefined){
                                     data[i].img = "eventDefault.jpg";
                                 }
                                 data[i].img = "data/img/" + data[i].img;
@@ -41,7 +41,7 @@ angular.module('starter.services', [])
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getEtablissements').success(function(data) {
                         for(var i=0; i < data.length; i++){
-                            if(data[i].img == ""){
+                            if(data[i].img == "" ||data[i].img == undefined){
                                 data[i].img = "etablissementDefault.jpg";
                             }
                             data[i].img = "data/img/" + data[i].img;
@@ -57,7 +57,7 @@ angular.module('starter.services', [])
                     } else {
                         $http.get('data/JSON/etablissements.json').success(function(data) {
                             for(var i=0; i < data.length; i++){
-                                if(data[i].img == ""){
+                                if(data[i].img == "" ||data[i].img == undefined){
                                     data[i].img = "etablissementDefault.jpg";
                                 }
                                 data[i].img = "data/img/" + data[i].img;
@@ -78,7 +78,7 @@ angular.module('starter.services', [])
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getArtisans').success(function(data) {
                         for(var i=0; i < data.length; i++){
-                            if(data[i].img == ""){
+                            if(data[i].img == "" ||data[i].img == undefined){
                                 data[i].img = "artisanDefault.png";
                             }
                             data[i].img = "data/img/" + data[i].img;
@@ -93,7 +93,7 @@ angular.module('starter.services', [])
                     } else {
                         $http.get('data/JSON/artisans.json').success(function(data) {
                             for(var i=0; i < data.length; i++){
-                                if(data[i].img == ""){
+                                if(data[i].img == "" ||data[i].img == undefined){
                                     data[i].img = "artisanDefault.png";
                                 }
                                 data[i].img = "data/img/" + data[i].img;
@@ -113,7 +113,7 @@ angular.module('starter.services', [])
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getSponsors').success(function(data) {
                         for(var i=0; i < data.length; i++){
-                            if(data[i].img == ""){
+                            if(data[i].img == "" ||data[i].img == undefined){
                                 data[i].img = "sponsorDefault.png";
                             }
                             data[i].img = "data/img/" + data[i].img;
@@ -128,7 +128,7 @@ angular.module('starter.services', [])
                     } else {
                         $http.get('data/JSON/sponsors.json').success(function(data) {
                             for(var i=0; i < data.length; i++){
-                                if(data[i].img == ""){
+                                if(data[i].img == "" ||data[i].img == undefined){
                                     data[i].img = "sponsorDefault.png";
                                 }
                                 data[i].img = "data/img/" + data[i].img;
