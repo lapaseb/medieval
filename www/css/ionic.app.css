@@ -9933,6 +9933,12 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
   list-style-type: disc;
   margin: 15px; }
 
+#page_artisan .showMap {
+  width: 100%; }
+
+#page_artisan h3 {
+  font-weight: bold; }
+
 #page_artisanMap #mapArtisan {
   width: 100%;
   height: 96vh; }
@@ -10084,6 +10090,9 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 #page_programme h5 {
   font-weight: bold; }
 
+#page_programme img {
+  width: 100%; }
+
 #page_programme_carte #mapProgramme {
   width: 100%;
   height: 100%; }
@@ -10104,6 +10113,9 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 #page_securite h4 {
   font-weight: bold; }
 
+#page_concours-costumes h4 {
+  font-weight: bold; }
+
 #page_contacts ul {
   list-style-type: disc;
   margin: 15px; }
@@ -10113,6 +10125,14 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
 
 #page_contacts img {
   width: 100%; }
+
+#page_contacts .visitapp {
+  margin-top: 50px;
+  text-align: center; }
+  #page_contacts .visitapp span {
+    display: block; }
+  #page_contacts .visitapp img {
+    width: 30%; }
 
 #page_sponsor #pageContent {
   padding: 15px; }
@@ -10124,6 +10144,15 @@ body, h1, h2, h3, h4, h5, h6, .tab-item, input, button, select, textarea {
     margin: 10px; }
   #page_parametres .item-content span {
     vertical-align: middle; }
+
+#page_parametres .explanation {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#page_concourstaverne h4 {
+  font-weight: bold; }
 
 #page_weekend .showMap {
   width: 100%; }

@@ -65,6 +65,18 @@
 
 
 
+
+    "FILTER_NAME_AZ": "Aufsteigend Name",
+    "FILTER_NAME_ZA": "Absteigend Name",
+    "FILTER_DATE_SOONER": "Erhöhung Datum",
+    "FILTER_DATE_LATER": "Absteigend Datum",
+    "FILTER_SEARCH": "Suche",
+    "FILTER_SEARCH_CANCEL": "Stornieren",
+
+
+
+
+    
     "TOUTWEEKEND_TITLE" : "Alles Weekend",
 
 

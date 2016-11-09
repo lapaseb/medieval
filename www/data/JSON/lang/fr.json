@@ -65,6 +65,17 @@
 
 
 
+
+    "FILTER_NAME_AZ": "Nom croissant",
+    "FILTER_NAME_ZA": "Nom décroissant",
+    "FILTER_DATE_SOONER": "Date croissante",
+    "FILTER_DATE_LATER": "Date décroissante",
+    "FILTER_SEARCH": "Recherche",
+    "FILTER_SEARCH_CANCEL": "Annuler",
+
+
+
+
     "TOUTWEEKEND_TITLE" : "Tout le weekend",
 
 

@@ -21,19 +21,19 @@
       <ion-list>
         <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','+name')">
           <i class="icon ion-arrow-down-c"></i>
-          A-Z
+          {{ 'FILTER_NAME_AZ' | translate }}
         </ion-item>
         <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','-name')">
-          <i class="icon ion-arrow-down-c"></i>
-          Z-A
+          <i class="icon ion-arrow-up-c"></i>
+          {{ 'FILTER_NAME_ZA' | translate }}
         </ion-item>
         <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','+start')">
           <i class="icon ion-arrow-down-c"></i>
-          Date+
+          {{ 'FILTER_DATE_SOONER' | translate }}
         </ion-item>
         <ion-item class="item item-icon-left" ng-click="changeFilter('app.programmes','-start')">
-          <i class="icon ion-arrow-down-c"></i>
-          Date-
+          <i class="icon ion-arrow-up-c"></i>
+          {{ 'FILTER_DATE_LATER' | translate }}
         </ion-item>
       </ion-list>
     </div>
