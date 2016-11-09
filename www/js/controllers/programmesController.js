@@ -46,7 +46,8 @@ angular.module('starter.controllers')
 						end: $scope.programmesRow[i].end,
 						endText: end[2] + "." + end[1] + "." + end[0]  + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + end[3] + ":" + end[4],
 						etat: etat,
-						color: color
+						color: color,
+						img: $scope.programmesRow[i].img
 					};
 				}
 				$scope.$broadcast('scroll.refreshComplete');

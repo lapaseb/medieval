@@ -10,7 +10,8 @@ angular.module('starter.controllers')
           description: data[etaid]["description_" + window.localStorage.getItem("lang")],
   				name: data[etaid]["name_" + window.localStorage.getItem("lang")],
           latitude: data[etaid].latitude,
-          longitude: data[etaid].longitude
+          longitude: data[etaid].longitude,
+          img: data[etaid].img,
   			};
 
   		});

@@ -11,7 +11,7 @@
 
     <ion-list>
       <ion-item class="item item-thumbnail-left" ng-repeat="sponsor in sponsors" href="#/app/sponsor/{{sponsor.id}}">
-      	 <img src="data/img/raiffeisen.png" />
+      	 <img src="{{sponsor.img}}" />
          <h2>{{sponsor.name}}</h2>
          <p>{{sponsor.description}}</p>
       </ion-item>

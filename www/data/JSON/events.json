@@ -6,7 +6,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-10 18:00:00",
         "end" : "2016-11-11 05:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     },
@@ -17,7 +17,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-10 18:00:00",
         "end" : "2016-11-11 05:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365107",
         "longitude" : "7.153478"
     },
@@ -28,7 +28,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-10 19:30:00",
         "end" : "2016-11-11 05:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.364182",
         "longitude" : "7.153844"
     },
@@ -39,7 +39,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-10 22:00:00",
         "end" : "2016-11-11 01:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.364843",
         "longitude" : " 7.154007"
     },
@@ -50,7 +50,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-10 22:00:00",
         "end" : "2016-11-10 23:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365414",
         "longitude" : " 7.155803"
     },
@@ -61,7 +61,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-10 22:15:00",
         "end" : "2016-11-11 00:15:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.363779",
         "longitude" : "7.152594"
     },
@@ -72,7 +72,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-11 00:15:00",
         "end" : "2016-11-11 02:15:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365230",
         "longitude" : "7.156204"
     },
@@ -83,7 +83,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-11 10:00:00",
         "end" : "2016-11-11 12:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365333",
         "longitude" : "7.154746"
     },
@@ -94,7 +94,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-11 21:30:00",
         "end" : "2016-11-11 23:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365716",
         "longitude" : "7.155179"
     },
@@ -105,7 +105,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-12 10:00:00",
         "end" : "2016-11-12 11:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365085",
         "longitude" : "7.155303"
     },
@@ -116,7 +116,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-12 16:00:00",
         "end" : "2016-11-12 17:00:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365614",
         "longitude" : " 7.155303"
     },
@@ -127,7 +127,7 @@
         "description_de" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. tzupper",
         "start" : "2016-11-12 17:00:00",
         "end" : "2016-11-12 19:30:00",
-        "img" : "event.jpg",
+        "img" : "",
         "latitude" : "47.365914",
         "longitude" : " 7.155203"
     }

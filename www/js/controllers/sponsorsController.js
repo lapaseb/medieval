@@ -17,7 +17,8 @@ angular.module('starter.controllers')
 					$scope.sponsors[i] = {
 						id: i,
 						name: $scope.sponsorsRow[i]["name_" + window.localStorage.getItem("lang")],
-						description:  $scope.sponsorsRow[i]["description_" + window.localStorage.getItem("lang")]
+						description:  $scope.sponsorsRow[i]["description_" + window.localStorage.getItem("lang")],
+						img:  $scope.sponsorsRow[i]["img"]
 					};
 				}
 				$scope.$broadcast('scroll.refreshComplete');
@@ -25,6 +26,5 @@ angular.module('starter.controllers')
 	  	};
 
 	  	$scope.doRefresh();
-
   }
 ]);

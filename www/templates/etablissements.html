@@ -10,7 +10,7 @@
     </ion-refresher>
     <ion-list>
       <ion-item class="item item-thumbnail-left" ng-repeat="etablissement in etablissements | orderBy:getFilter('app.etablissements')" href="#/app/etablissement/{{etablissement.id}}">
-        <img src="data/img/restaurant.jpg" />
+        <img src="{{etablissement.img}}" />
         <h2>{{etablissement.name}}</h2>
         <p>{{etablissement.description}}</p>
         <p>{{etablissement.typeString}}</p>

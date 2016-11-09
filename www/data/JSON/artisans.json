@@ -4,7 +4,7 @@
         "name_de" : "Leder-Schmuck-Steine",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     },
@@ -13,7 +13,7 @@
         "name_de" : "Schmiede",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     },
@@ -22,7 +22,7 @@
         "name_de" : "Honigwein",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.364907",
         "longitude" : " 7.154937"
     },
@@ -31,7 +31,7 @@
         "name_de" : "Lederbuch",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365614",
         "longitude" : " 7.155803"
     },
@@ -40,7 +40,7 @@
         "name_de" : "Tailpiece",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365414",
         "longitude" : " 7.155803"
     },
@@ -49,7 +49,7 @@
         "name_de" : "Faktor arc (H)",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365214",
         "longitude" : " 7.155803"
     },
@@ -58,7 +58,7 @@
         "name_de" : "Lederhose",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365014",
         "longitude" : " 7.155803"
     },
@@ -67,7 +67,7 @@
         "name_de" : "Hutmacherin",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365714",
         "longitude" : " 7.155603"
     },
@@ -76,7 +76,7 @@
         "name_de" : "Beads",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365237",
         "longitude" : "7.154140"
     },
@@ -85,7 +85,7 @@
         "name_de" : "Kostüme und Accessoires Kinder",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.364746",
         "longitude" : "7.153252"
     },
@@ -94,7 +94,7 @@
         "name_de" : "Tailor Balken",
         "description_fr" : "Lorem ipsum c'est super",
         "description_de" : "Lorem ipsum ist zupper",
-        "img" : "artisan.jpg",
+        "img" : "",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     }

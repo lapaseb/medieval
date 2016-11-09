@@ -16,7 +16,8 @@ angular.module('starter.controllers')
 					$scope.artisans[i] = {
 						id: i,
 						name: $scope.artisansRow[i]["name_" + window.localStorage.getItem("lang")],
-						description: $scope.artisansRow[i]["description_" + window.localStorage.getItem("lang")]
+						description: $scope.artisansRow[i]["description_" + window.localStorage.getItem("lang")],
+						img: $scope.artisansRow[i]["img"]
 					};					
 				}
 				$scope.$broadcast('scroll.refreshComplete');

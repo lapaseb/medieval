@@ -4,7 +4,7 @@
         "name_de" : "Raiffeisen",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -12,7 +12,7 @@
         "name_de" : "Tête de moine",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 3
     },
     {
@@ -20,7 +20,7 @@
         "name_de" : "Jura-gîtes",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 2
     },
     {
@@ -28,7 +28,7 @@
         "name_de" : "Landi",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -36,7 +36,7 @@
         "name_de" : "Quotidien Pressor",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -44,7 +44,7 @@
         "name_de" : "Yerly",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -52,7 +52,7 @@
         "name_de" : "Loisirs Casino",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -60,7 +60,7 @@
         "name_de" : "Quiquerez",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -68,7 +68,7 @@
         "name_de" : "Gravosig",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -76,7 +76,7 @@
         "name_de" : "Maison du tourisme restaurant",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -84,7 +84,7 @@
         "name_de" : "BKW",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -92,7 +92,7 @@
         "name_de" : "BNJ",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -100,7 +100,7 @@
         "name_de" : "Beuchat",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -108,7 +108,7 @@
         "name_de" : "Commune",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -116,7 +116,7 @@
         "name_de" : "J.-M. Maître",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -124,7 +124,7 @@
         "name_de" : "Pierre Roy",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -132,7 +132,7 @@
         "name_de" : "Canal Alpha",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -140,7 +140,7 @@
         "name_de" : "Tariche",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -148,7 +148,7 @@
         "name_de" : "Aldibois",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -156,7 +156,7 @@
         "name_de" : "Brandschutz",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -164,7 +164,7 @@
         "name_de" : "La Cigogne",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 4
     },
     {
@@ -172,7 +172,7 @@
         "name_de" : "Julien Wuillemin",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -180,7 +180,7 @@
         "name_de" : "Mont-Terri",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -188,7 +188,7 @@
         "name_de" : "Wenger",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 3
     },
     {
@@ -196,7 +196,7 @@
         "name_de" : "Auberge de la Fontaine",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 2
     },
     {
@@ -204,7 +204,7 @@
         "name_de" : "Shnoebelen",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -212,7 +212,7 @@
         "name_de" : "Marc Joliat",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -220,7 +220,7 @@
         "name_de" : "Loterie Romande",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     },
     {
@@ -228,7 +228,7 @@
         "name_de" : "Top-Net-Vigo",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 2
     },
     {
@@ -236,7 +236,7 @@
         "name_de" : "Laury Migy",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 3
     },
     {
@@ -244,7 +244,7 @@
         "name_de" : "Demotec",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 2
     },
     {
@@ -252,7 +252,7 @@
         "name_de" : "Allianz",
         "description_fr" : "Lorem ipsum description française",
         "description_de" : "Lorem ipsum description allemande",
-        "img" : "sponsor.jpg",
+        "img" : "",
         "importance" : 1
     }
 ]

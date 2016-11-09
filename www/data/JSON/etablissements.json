@@ -7,7 +7,7 @@
         "menu_fr" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "menu_de" : "Stew und Ordnung, Frische Äpfel, Vinaigrette",
         "type" : 1,
-        "img" : "etablissement.jpg",
+        "img" : "",
         "latitude" : "47.365560",
         "longitude" : "7.154737"
     },
@@ -19,7 +19,7 @@
         "menu_fr" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "menu_de" : "Stew und Ordnung, Frische Äpfel, Vinaigrette",
         "type" : 2,
-        "img" : "etablissement.jpg",
+        "img" : "",
         "latitude" : "47.365050",
         "longitude" : "7.152841"
     },
@@ -31,7 +31,7 @@
         "menu_fr" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "menu_de" : "Stew und Ordnung, Frische Äpfel, Vinaigrette",
         "type" : 1,
-        "img" : "etablissement.jpg",
+        "img" : "",
         "latitude" : "47.365714",
         "longitude" : " 7.155803"
     },
@@ -43,7 +43,7 @@
         "menu_fr" : "Mousseline d’aubergine sous son coulis de tomate et basilic et jambon cru",
         "menu_de" : "Stew und Ordnung, Frische Äpfel, Vinaigrette",
         "type" : 3,
-        "img" : "etablissement.jpg",
+        "img" : "",
         "latitude" : "47.364976",
         "longitude" : "7.155665"
     },
@@ -55,7 +55,7 @@
         "menu_fr" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "menu_de" : "Stew und Ordnung, Frische Äpfel, Vinaigrette",
         "type" : 2,
-        "img" : "etablissement.jpg",
+        "img" : "",
         "latitude" : "47.364236",
         "longitude" : "7.153423"
     },
@@ -67,7 +67,7 @@
         "menu_fr" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "menu_de" : "Stew und Ordnung, Frische Äpfel, Vinaigrette",
         "type" : 4,
-        "img" : "etablissement.jpg",
+        "img" : "",
         "latitude" : "47.365790",
         "longitude" : "7.155789"
     },
@@ -79,7 +79,7 @@
         "menu_fr" : "Pot au feu et sa garniture, Pommes nature, Sauce vinaigrette",
         "menu_de" : "Stew und Ordnung, Frische Äpfel, Vinaigrette",
         "type" : 3,
-        "img" : "etablissement.jpg",
+        "img" : "",
         "latitude" : "47.364595",
         "longitude" : "7.154322"
     }

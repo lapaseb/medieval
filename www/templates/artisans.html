@@ -20,7 +20,7 @@
     </ion-refresher>
     <ion-list>
       <ion-item class="item item-thumbnail-left" ng-repeat="artisan in artisans | orderBy:getFilter('app.artisans') | filter: search" href="#/app/artisan/{{artisan.id}}">
-        <img src="data/img/blacksmith.png"/>
+        <img src="{{artisan.img}}"/>
         <h2>{{artisan.name}}</h2>
         <p>{{artisan.description}}</p>
       </ion-item>

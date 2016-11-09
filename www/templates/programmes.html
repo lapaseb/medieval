@@ -10,7 +10,7 @@
     </ion-refresher>
     <ion-list>
       <ion-item class="item item-thumbnail-left" ng-repeat="programme in programmes | orderBy:getFilter('app.programmes')" href="#/app/programme/{{programme.id}}">
-      	 <img src="data/img/image-test.jpg" />
+      	 <img src="{{programme.img}}" />
         <h2>{{programme.name}}</h2>
         <p>{{programme.description}}</p>
         <p>{{programme.startText}} - {{programme.endText}}</p>

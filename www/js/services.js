@@ -5,6 +5,12 @@ angular.module('starter.services', [])
                 if(window.Connection && navigator.connection.type != Connection.NONE) {
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getEvents').success(function(data) {
+                        for(var i=0; i < data.length; i++){
+                            if(data[i].img == ""){
+                                data[i].img = "eventDefault.jpg";
+                            }
+                            data[i].img = "data/img/" + data[i].img;
+                        }
                         window.localStorage.setItem('programmes-json', JSON.stringify(data));
                         callback(data);
                     });
@@ -14,6 +20,12 @@ angular.module('starter.services', [])
                         callback(JSON.parse(window.localStorage.getItem('programmes-json')));
                     } else {
                         $http.get('data/JSON/events.json').success(function(data) {
+                            for(var i=0; i < data.length; i++){
+                                if(data[i].img == ""){
+                                    data[i].img = "eventDefault.jpg";
+                                }
+                                data[i].img = "data/img/" + data[i].img;
+                            }
                             callback(data);
                         });
                     }
@@ -29,6 +41,10 @@ angular.module('starter.services', [])
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getEtablissements').success(function(data) {
                         for(var i=0; i < data.length; i++){
+                            if(data[i].img == ""){
+                                data[i].img = "etablissementDefault.jpg";
+                            }
+                            data[i].img = "data/img/" + data[i].img;
                             data[i].typeString = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
                         }
                         window.localStorage.setItem('etablissements-json', JSON.stringify(data));
@@ -41,6 +57,10 @@ angular.module('starter.services', [])
                     } else {
                         $http.get('data/JSON/etablissements.json').success(function(data) {
                             for(var i=0; i < data.length; i++){
+                                if(data[i].img == ""){
+                                    data[i].img = "etablissementDefault.jpg";
+                                }
+                                data[i].img = "data/img/" + data[i].img;
                                 data[i].typeString = $translate.instant('RESTAURANT_TYPE_'+data[i].type);
                             }
                             callback(data);
@@ -57,6 +77,12 @@ angular.module('starter.services', [])
                  if(window.Connection && navigator.connection.type != Connection.NONE) {
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getArtisans').success(function(data) {
+                        for(var i=0; i < data.length; i++){
+                            if(data[i].img == ""){
+                                data[i].img = "artisanDefault.png";
+                            }
+                            data[i].img = "data/img/" + data[i].img;
+                        }
                         window.localStorage.setItem('artisans-json', JSON.stringify(data));
                         callback(data);
                     });
@@ -66,6 +92,12 @@ angular.module('starter.services', [])
                         callback(JSON.parse(window.localStorage.getItem('artisans-json')));
                     } else {
                         $http.get('data/JSON/artisans.json').success(function(data) {
+                            for(var i=0; i < data.length; i++){
+                                if(data[i].img == ""){
+                                    data[i].img = "artisanDefault.png";
+                                }
+                                data[i].img = "data/img/" + data[i].img;
+                            }
                             callback(data);
                         });
                     }
@@ -80,6 +112,12 @@ angular.module('starter.services', [])
                 if(window.Connection && navigator.connection.type != Connection.NONE) {
                     //si il a de la co
                     $http.get($rootScope.apiUrl + '/getSponsors').success(function(data) {
+                        for(var i=0; i < data.length; i++){
+                            if(data[i].img == ""){
+                                data[i].img = "sponsorDefault.png";
+                            }
+                            data[i].img = "data/img/" + data[i].img;
+                        }
                         window.localStorage.setItem('sponsors-json', JSON.stringify(data));
                         callback(data);
                     });
@@ -89,6 +127,12 @@ angular.module('starter.services', [])
                         callback(JSON.parse(window.localStorage.getItem('sponsors-json')));
                     } else {
                         $http.get('data/JSON/sponsors.json').success(function(data) {
+                            for(var i=0; i < data.length; i++){
+                                if(data[i].img == ""){
+                                    data[i].img = "sponsorDefault.png";
+                                }
+                                data[i].img = "data/img/" + data[i].img;
+                            }
                             callback(data);
                         });
                     }

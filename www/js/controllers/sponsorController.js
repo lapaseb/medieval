@@ -7,7 +7,8 @@ angular.module('starter.controllers')
 			$scope.sponsor = {
 				id: etaid,
 				name: data[etaid]["name_" + window.localStorage.getItem("lang")],
-				description: data[etaid]["description_" + window.localStorage.getItem("lang")]
+				description: data[etaid]["description_" + window.localStorage.getItem("lang")],
+				img: data[etaid]["img"]
 			};
     })
   }

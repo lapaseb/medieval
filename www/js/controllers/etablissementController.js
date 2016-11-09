@@ -11,7 +11,8 @@ angular.module('starter.controllers')
 				description: data[etaid]["description_" + window.localStorage.getItem("lang")],
 				menu: data[etaid]["menu_" + window.localStorage.getItem("lang")],
 				type: data[etaid].type,
-				typeString: data[etaid].typeString
+				typeString: data[etaid].typeString,
+				img: data[etaid].img
 			};
 
 			if(window.Connection && navigator.connection.type != Connection.NONE) {

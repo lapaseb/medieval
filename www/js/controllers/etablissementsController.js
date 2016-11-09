@@ -19,6 +19,7 @@ angular.module('starter.controllers')
 						description: $scope.etablissementsRow[i]["description_" + window.localStorage.getItem("lang")],
 	         			type: $scope.etablissementsRow[i].type,
 	         			typeString: $scope.etablissementsRow[i].typeString,
+	         			img: $scope.etablissementsRow[i].img
 					};
 				}
 				$scope.$broadcast('scroll.refreshComplete');

@@ -18,5 +18,9 @@
 		    border: 0;
 		    padding: 5px 0;
 		}
+
+		.ion-ios-pulse-strong:before {
+			content: url('../data/img/iconartisan_black.svg') !important;
+		} 
 	}
 }

@@ -63,7 +63,8 @@ angular.module('starter.controllers')
 				end: data[progid].end,
 				endText: $translate.instant('PROGRAMME_WEEKDAY_' + date_end.getDay()) + " " + end[2] + " " + $translate.instant('PROGRAMME_MONTH_' + start[1]) + " " + end[0] + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + end[3] + ":" + end[4],
 				etat: etat,
-				color: color
+				color: color,
+				img: data[progid].img
 			};
 		});
     }
