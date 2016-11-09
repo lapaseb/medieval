@@ -1,8 +1,8 @@
 
 
 angular.module('starter.controllers')
-.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$state',
-    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $state) {
+.controller('CarteCtrl', ['$scope', '$http','$rootScope', '$ionicPopup', 'etablissementsService', 'artisansService', 'programmesService', '$state', '$translate',
+    function($scope, $http, $rootScope, $ionicPopup, etablissementsService, artisansService, programmesService, $state, $translate) {
 
     // -------------------------------------------------------------------------------------------------------------
     //                         Fonctons utiles pour la map
@@ -328,12 +328,22 @@ angular.module('starter.controllers')
 			$scope.programmesRow = data;
 			$scope.programmes = [];
 			for (var index = 0; index < $scope.programmesRow.length; index++) {
+
+        var start = $scope.programmesRow[index].start.split(/[- :]/);
+        var date_start = new Date(start[0], start[1]-1, start[2], start[3], start[4], start[5]);
+
+        var end = $scope.programmesRow[index].end.split(/[- :]/);
+        var date_end = new Date(end[0], end[1]-1, end[2], end[3], end[4], end[5]);
+
+
 				$scope.programmes[index] = {
 					id: index,
 					name: $scope.programmesRow[index]["name_" + window.localStorage.getItem("lang")],
           description: $scope.programmesRow[index]["description_" + window.localStorage.getItem("lang")],
 					start: $scope.programmesRow[index].start,
+          startText: start[2] + "." + start[1] + "." + start[0] + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + start[3] + ":" + start[4],
 					end: $scope.programmesRow[index].end,
+          endText: end[2] + "." + end[1] + "." + end[0]  + " " + $translate.instant('PROGRAMME_TEXTE_HEURE') + " " + end[3] + ":" + end[4],
 					latitude: $scope.programmesRow[index].latitude,
 					longitude: $scope.programmesRow[index].longitude
 
@@ -342,7 +352,7 @@ angular.module('starter.controllers')
         function setMarker(i){
           markerEvenement = new L.marker([$scope.programmes[i].latitude, $scope.programmes[i].longitude], {icon: events});
           $scope.programmesMarkers.push(markerEvenement);
-          markerEvenement.on('click', function(){setMapPopupFullMap(pageID, $scope.programmes[i].name, $scope.programmes[i].start + " - " + $scope.programmes[i].end, 'programme', i)});
+          markerEvenement.on('click', function(){setMapPopupFullMap(pageID, $scope.programmes[i].name, $scope.programmes[i].startText + " - " + $scope.programmes[i].endText, 'programme', i)});
           $scope.EvenementLayer.addLayer(markerEvenement);
         }
 
