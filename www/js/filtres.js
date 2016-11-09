@@ -7,7 +7,6 @@ var currentFilterEtablissements = '+name';
  * Description	: Initialise et ouvre la popup des filtres
  */
 function openFilter(viewName){
-	console.log('filter.js open');
 	if(viewName == "app.artisans"){
 		$('#filtresArtisans').removeClass('hidden');
 	}
@@ -24,7 +23,6 @@ function openFilter(viewName){
  * Description	: Ferme la popup des filtres
  */
 function closeFilter(viewName){
-	console.log('filter.js close');
 	if(viewName == "app.artisans"){
 		$('#filtresArtisans').addClass('hidden');
 	}
@@ -41,7 +39,6 @@ function closeFilter(viewName){
  * Description	: Donne le filtre en cours
  */
 function getFilter(viewName){
-	console.log('filter.js get');
 	if(viewName == "app.artisans"){
 		return currentFilterArtisans;
 	}
@@ -58,7 +55,6 @@ function getFilter(viewName){
  * Description	: Change le filtre en cours
  */
 function changeFilter(viewName, filter){
-	console.log('filter.js change');
 	if(viewName == "app.artisans"){
 		currentFilterArtisans = filter;
 	}
