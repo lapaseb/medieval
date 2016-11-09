@@ -7,30 +7,33 @@ var currentFilterEtablissements = '+name';
  * Description	: Initialise et ouvre la popup des filtres
  */
 function openFilter(viewName){
+	console.log('filter.js open');
 	if(viewName == "app.artisans"){
-		var filtres = [];
-		var tris = [];
-		var recherche = false;
+		$('#filtresArtisans').removeClass('hidden');
 	}
 	if(viewName == "app.programmes"){
-		var filtres = [];
-		var tris = [];
-		var recherche = false;
+		$('#filtresProgrammes').removeClass('hidden');
 	}
-	if(viewName == "app.etablissements"){
-		var filtres = [];
-		var tris = [];
-		var recherche = false;
+	if(viewName == 'app.etablissements'){
+		$('#filtresEtablissements').removeClass('hidden');
 	}
-	$('#filtres').removeClass('hidden');
 }
 
 /* Fonction		: closeFilter
  * Paramètres	: -
  * Description	: Ferme la popup des filtres
  */
-function closeFilter(){
-	$('#filtres').addClass('hidden');
+function closeFilter(viewName){
+	console.log('filter.js close');
+	if(viewName == "app.artisans"){
+		$('#filtresArtisans').addClass('hidden');
+	}
+	if(viewName == "app.programmes"){
+		$('#filtresProgrammes').addClass('hidden');
+	}
+	if(viewName == 'app.etablissements'){
+		$('#filtresEtablissements').addClass('hidden');
+	}
 }
 
 /* Fonction		: getFilter
@@ -38,13 +41,14 @@ function closeFilter(){
  * Description	: Donne le filtre en cours
  */
 function getFilter(viewName){
+	console.log('filter.js get');
 	if(viewName == "app.artisans"){
 		return currentFilterArtisans;
 	}
 	if(viewName == "app.programmes"){
 		return currentFilterProgrammes;
 	}
-	if(viewName == "app.etablissements"){
+	if(viewName == 'app.etablissements'){
 		return currentFilterEtablissements;
 	}
 };
@@ -54,15 +58,16 @@ function getFilter(viewName){
  * Description	: Change le filtre en cours
  */
 function changeFilter(viewName, filter){
+	console.log('filter.js change');
 	if(viewName == "app.artisans"){
 		currentFilterArtisans = filter;
 	}
 	if(viewName == "app.programmes"){
 		currentFilterProgrammes = filter;
 	}
-	if(viewName == "app.etablissements"){
+	if(viewName == 'app.etablissements'){
 		currentFilterEtablissements = filter;
 	}
 
-	closeFilter();
+	closeFilter(viewName);
 };
