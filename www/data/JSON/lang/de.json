@@ -26,7 +26,8 @@
     "POPUP_ERROR_LOCALISATION_TITLE": "Ort Fehler",
     "POPUP_ERROR_LOCALISATION_CONTENT": "Die Lage funktioniert nicht. Stellen Sie sicher, dass das GPS richtig aktiviert und versuchen Sie es erneut.",
     "POPUP_ERROR_LOCATION_TITLE": "Ort Fehler",
-    "POPUP_ERROR_LOCATION_CONTENT": "Die Lage ist nicht außerhalb der Stadt St. Ursanne arbeiten.",  
+    "POPUP_ERROR_LOCATION_CONTENT": "Die Lage ist nicht außerhalb der Stadt St. Ursanne arbeiten.",
+    "POPUP_LOADER_LOCALISATION" : "aktuellen Standort",
 
 
     "PROGRAMME_CARTE_TITLE": "Karte",

@@ -68,7 +68,7 @@ angular.module('starter.controllers')
 
     $scope.show = function() {
       $ionicLoading.show({
-        template: '</br><ion-spinner></ion-spinner><p></br>Localisation en cours</p>',
+        template: '</br><ion-spinner></ion-spinner><p></br>' + $translate.instant('POPUP_LOADER_LOCALISATION') + '</p>',
       }).then(function(){
          
       });
@@ -105,8 +105,8 @@ angular.module('starter.controllers')
         } else {
 
           var alertPopup = $ionicPopup.alert({
-            title: 'Erreur de localisation',
-            template: 'La localisation ne fonctionne pas en dehors de la ville de St-Ursanne.'
+            title: $translate.instant('POPUP_ERROR_LOCALISATION_TITLE'),
+            template: $translate.instant('POPUP_ERROR_LOCATION_CONTENT')
           });
 
           map.panTo($scope.latLngProgramme);
@@ -120,8 +120,8 @@ angular.module('starter.controllers')
     function onError(error) {
       $scope.hide();
       var alertPopup = $ionicPopup.alert({
-        title: 'Erreur de localisation',
-        template: 'La localisation ne fonctionne pas. Vérifiez que le GPS soit correctement activé puis redémarrez votre application.'
+        title: $translate.instant('POPUP_ERROR_LOCALISATION_TITLE'),
+        template: $translate.instant('POPUP_ERROR_LOCALISATION_CONTENT')
       });
 
     }
