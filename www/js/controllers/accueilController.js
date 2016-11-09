@@ -12,7 +12,7 @@ angular.module('starter.controllers')
 		$rootScope.$on("$ionicView.enter", function(scopes, states) {
 			if (states.stateName == "app.accueil") {
 				$('ion-nav-bar .bar.bar-positive').css("background" , "0").css("border" , "0");
-				window.screen.lockOrientation('portrait');
+				window.screen.lockOrientation('portrait');				
 			}
 		});
 
