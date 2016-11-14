@@ -36,6 +36,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         });
         */
 
+    var appVersion = "0.1.3";
+
+    if(window.localStorage.getItem("appVersion") == undefined || window.localStorage.getItem("appVersion") =! appVersion){
+      window.localStorage.setItem("areSetNotif", false);
+    }
+
+    window.localStorage.setItem("appVersion", "0.1.2");
+
     if(window.localStorage.getItem("areSetNotif") == undefined){
       window.localStorage.setItem("areSetNotif", false);
     }
